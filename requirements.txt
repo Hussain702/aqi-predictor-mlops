@@ -1,0 +1,13 @@
+# Step 1 (Extract) dependencies -- more will be added in later steps
+requests
+python-dotenv
+
+# Will be needed later (leave commented until that step):
+# hopsworks
+# pandas
+# scikit-learn
+# tensorflow
+# flask
+# streamlit
+# shap
+# apache-airflow
