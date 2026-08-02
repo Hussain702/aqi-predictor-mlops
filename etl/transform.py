@@ -92,20 +92,4 @@ def transform(record: dict, history_df: pd.DataFrame = None) -> dict:
     return record
 
 
-if __name__ == "__main__":
-    # Fake a raw record (like what extract.py returns) for a quick standalone test
-    sample_record = {
-        "city": "lahore",
-        "timestamp": datetime.utcnow().isoformat(),
-        "temperature": 32.88,
-        "humidity": 56,
-        "wind_speed": 3.23,
-        "aqi": 34,
-        "pm25": 34,
-        "pm10": None,
-    }
 
-    # No history yet -> history features will be None, that's expected
-    result = transform(sample_record, history_df=None)
-    print("--- Transformed Record (no history) ---")
-    print(result)
