@@ -2,6 +2,10 @@
 requests
 python-dotenv
 
+
+# Step 2 (Transform) + Step 3 (Load) dependencies
+pandas
+hopsworks
 # Will be needed later (leave commented until that step):
 # hopsworks
 # pandas
