@@ -1,21 +1,4 @@
-"""
-Step 1 - EXTRACT
------------------
-This is the ONLY working file for now. Everything else in the project
-is just an empty placeholder you'll fill in on later days.
 
-What this file does:
-    1. Reads your API keys and city from the .env file
-    2. Calls the AQICN API (for AQI, PM2.5, PM10)
-    3. Calls the OpenWeather API (for temperature, humidity, wind speed)
-    4. Combines both into ONE simple dictionary
-    5. Prints it so you can see it worked
-
-How to run it:
-    1. Fill in your API keys in the .env file (same folder as requirements.txt)
-    2. pip install -r requirements.txt
-    3. python etl/extract.py
-"""
 
 import os
 import requests
