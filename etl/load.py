@@ -47,12 +47,12 @@ def load(record: dict):
     print(f"Inserted 1 record into '{FEATURE_GROUP_NAME}' feature group.")
 
 
-if __name__ == "__main__":
-    raw_record = extract()
+# if __name__ == "__main__":
+#     raw_record = extract()
 
-    if raw_record is None:
-        print("Stopping: extract() failed, nothing to load.")
-    else:
+#     if raw_record is None:
+#         print("Stopping: extract() failed, nothing to load.")
+#     else:
       
-        transformed_record = transform(raw_record, history_df=None)
-        load(transformed_record)
+#         transformed_record = transform(raw_record, history_df=None)
+#         load(transformed_record)

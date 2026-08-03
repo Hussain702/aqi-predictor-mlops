@@ -1,0 +1,189 @@
+[2026-08-03T09:54:05.443+0000] {processor.py:161} INFO - Started process (PID=643) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T09:54:05.445+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T09:54:05.451+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:54:05.450+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:54:07.906+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:54:08.006+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:54:08.005+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T09:54:08.064+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:54:08.063+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 09:00:00+00:00, run_after=2026-08-03 10:00:00+00:00
+[2026-08-03T09:54:08.459+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 3.141 seconds
+[2026-08-03T09:54:43.853+0000] {processor.py:161} INFO - Started process (PID=668) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T09:54:44.691+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T09:54:45.927+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:54:45.843+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:55:09.515+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:55:09.641+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:55:09.639+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T09:55:09.708+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:55:09.707+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 09:00:00+00:00, run_after=2026-08-03 10:00:00+00:00
+[2026-08-03T09:55:14.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 33.263 seconds
+[2026-08-03T09:55:45.413+0000] {processor.py:161} INFO - Started process (PID=691) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T09:55:45.415+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T09:55:45.420+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:55:45.419+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:55:46.754+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:55:47.176+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:55:46.841+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T09:55:47.222+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:55:47.222+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 09:00:00+00:00, run_after=2026-08-03 10:00:00+00:00
+[2026-08-03T09:55:47.253+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 1.855 seconds
+[2026-08-03T09:56:17.946+0000] {processor.py:161} INFO - Started process (PID=707) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T09:56:17.949+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T09:56:17.954+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:56:17.953+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:56:19.827+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:56:20.347+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:56:20.346+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T09:56:20.416+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:56:20.416+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 09:00:00+00:00, run_after=2026-08-03 10:00:00+00:00
+[2026-08-03T09:56:20.475+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 2.549 seconds
+[2026-08-03T09:56:50.667+0000] {processor.py:161} INFO - Started process (PID=723) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T09:56:50.670+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T09:56:50.674+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:56:50.673+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:56:52.660+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:56:52.713+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:56:52.712+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T09:56:52.757+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:56:52.757+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 09:00:00+00:00, run_after=2026-08-03 10:00:00+00:00
+[2026-08-03T09:56:52.806+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 2.158 seconds
+[2026-08-03T09:57:23.350+0000] {processor.py:161} INFO - Started process (PID=739) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T09:57:23.353+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T09:57:23.363+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:57:23.362+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:57:24.895+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:57:24.964+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:57:24.963+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T09:57:25.011+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:57:25.011+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 09:00:00+00:00, run_after=2026-08-03 10:00:00+00:00
+[2026-08-03T09:57:25.425+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 2.104 seconds
+[2026-08-03T09:57:55.760+0000] {processor.py:161} INFO - Started process (PID=755) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T09:57:55.764+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T09:57:55.769+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:57:55.768+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:57:57.403+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:57:57.465+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:57:57.464+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T09:57:57.893+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:57:57.893+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 09:00:00+00:00, run_after=2026-08-03 10:00:00+00:00
+[2026-08-03T09:57:57.933+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 2.193 seconds
+[2026-08-03T09:58:28.505+0000] {processor.py:161} INFO - Started process (PID=776) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T09:58:28.531+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T09:58:28.536+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:58:28.535+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:58:30.640+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:58:30.707+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:58:30.707+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T09:58:31.115+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:58:31.115+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 09:00:00+00:00, run_after=2026-08-03 10:00:00+00:00
+[2026-08-03T09:58:31.160+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 2.672 seconds
+[2026-08-03T09:59:01.465+0000] {processor.py:161} INFO - Started process (PID=792) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T09:59:01.467+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T09:59:01.472+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:59:01.471+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:59:03.132+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:59:03.564+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:59:03.562+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T09:59:03.612+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:59:03.611+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 09:00:00+00:00, run_after=2026-08-03 10:00:00+00:00
+[2026-08-03T09:59:03.653+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 2.205 seconds
+[2026-08-03T09:59:34.056+0000] {processor.py:161} INFO - Started process (PID=808) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T09:59:34.058+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T09:59:34.062+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:59:34.062+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:59:35.990+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T09:59:36.486+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:59:36.485+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T09:59:36.542+0000] {logging_mixin.py:188} INFO - [2026-08-03T09:59:36.541+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 09:00:00+00:00, run_after=2026-08-03 10:00:00+00:00
+[2026-08-03T09:59:36.599+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 2.563 seconds
+[2026-08-03T10:00:07.128+0000] {processor.py:161} INFO - Started process (PID=826) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:00:07.132+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:00:07.140+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:00:07.139+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:00:09.479+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:00:09.575+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:00:09.574+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:00:09.620+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:00:09.620+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:00:09.660+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 2.558 seconds
+[2026-08-03T10:00:40.005+0000] {processor.py:161} INFO - Started process (PID=868) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:00:40.007+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:00:40.011+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:00:40.010+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:00:41.585+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:00:41.662+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:00:41.661+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:00:41.740+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:00:41.739+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:00:42.336+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 2.346 seconds
+[2026-08-03T10:01:12.892+0000] {processor.py:161} INFO - Started process (PID=914) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:01:12.895+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:01:12.905+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:01:12.904+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:01:14.486+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:01:14.554+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:01:14.553+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:01:16.039+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:01:16.038+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:01:16.115+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 3.243 seconds
+[2026-08-03T10:01:46.414+0000] {processor.py:161} INFO - Started process (PID=933) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:01:46.417+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:01:46.422+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:01:46.422+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:01:47.909+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:01:47.076+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:01:47.978+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:01:47.122+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:01:47.122+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:01:47.166+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 2.150 seconds
+[2026-08-03T10:02:17.425+0000] {processor.py:161} INFO - Started process (PID=949) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:02:17.427+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:02:17.432+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:02:17.431+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:02:18.838+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:02:19.310+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:02:19.309+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:02:19.359+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:02:19.358+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:02:19.401+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 1.992 seconds
+[2026-08-03T10:02:49.956+0000] {processor.py:161} INFO - Started process (PID=965) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:02:49.984+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:02:49.988+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:02:49.988+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:02:53.147+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:02:53.185+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:02:53.182+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:02:53.226+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:02:53.226+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:02:53.301+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 3.355 seconds
+[2026-08-03T10:03:24.141+0000] {processor.py:161} INFO - Started process (PID=981) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:03:24.149+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:03:24.152+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:03:24.152+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:03:24.916+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:03:24.951+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:03:24.951+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:03:24.976+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:03:24.976+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:03:25.275+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 1.142 seconds
+[2026-08-03T10:03:55.822+0000] {processor.py:161} INFO - Started process (PID=997) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:03:55.823+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:03:55.825+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:03:55.825+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:03:56.578+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:03:56.624+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:03:56.623+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:03:57.007+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:03:57.006+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:03:57.059+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 1.245 seconds
+[2026-08-03T10:04:27.318+0000] {processor.py:161} INFO - Started process (PID=1013) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:04:27.327+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:04:27.330+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:04:27.329+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:04:28.992+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:04:29.227+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:04:29.037+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:04:29.246+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:04:29.246+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:04:29.286+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 1.976 seconds
+[2026-08-03T10:04:59.651+0000] {processor.py:161} INFO - Started process (PID=1029) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:04:59.653+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:04:59.655+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:04:59.655+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:05:00.355+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:05:00.593+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:05:00.592+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:05:00.612+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:05:00.611+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:05:00.631+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 0.988 seconds
+[2026-08-03T10:05:31.111+0000] {processor.py:161} INFO - Started process (PID=1045) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:05:31.112+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:05:31.115+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:05:31.115+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:05:31.887+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:05:31.908+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:05:31.908+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:05:31.926+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:05:31.926+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:05:31.940+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 0.837 seconds
+[2026-08-03T10:06:02.383+0000] {processor.py:161} INFO - Started process (PID=1061) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:06:02.384+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:06:02.386+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:06:02.385+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:06:02.954+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:06:02.983+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:06:02.982+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:06:03.004+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:06:03.004+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:06:03.023+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 0.647 seconds
+[2026-08-03T10:06:33.228+0000] {processor.py:161} INFO - Started process (PID=1077) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:06:33.229+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:06:33.232+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:06:33.231+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:06:33.611+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:06:33.639+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:06:33.639+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:06:32.756+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:06:32.755+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:06:32.774+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 0.884 seconds
+[2026-08-03T10:07:03.734+0000] {processor.py:161} INFO - Started process (PID=1093) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:07:03.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:07:03.738+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:07:03.738+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:07:04.332+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:07:04.360+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:07:04.359+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:07:04.552+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:07:04.552+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:07:04.567+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 0.841 seconds
+[2026-08-03T10:07:35.613+0000] {processor.py:161} INFO - Started process (PID=1109) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:07:35.614+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:07:35.616+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:07:35.616+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:07:36.373+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:07:36.399+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:07:36.398+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:07:36.418+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:07:36.417+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:07:36.433+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 0.828 seconds
+[2026-08-03T10:08:07.368+0000] {processor.py:161} INFO - Started process (PID=1125) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:08:07.369+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:08:07.371+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:08:07.371+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:08:07.977+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:08:08.219+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:08:08.219+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:08:08.237+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:08:08.237+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:08:08.252+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 0.892 seconds
+[2026-08-03T10:08:38.427+0000] {processor.py:161} INFO - Started process (PID=1141) to work on /opt/airflow/dags/orchestration.py
+[2026-08-03T10:08:38.429+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/orchestration.py for tasks to queue
+[2026-08-03T10:08:38.431+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:08:38.430+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:08:39.261+0000] {processor.py:840} INFO - DAG(s) 'first_orchestrator' retrieved from /opt/airflow/dags/orchestration.py
+[2026-08-03T10:08:39.285+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:08:39.285+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-03T10:08:39.304+0000] {logging_mixin.py:188} INFO - [2026-08-03T10:08:39.304+0000] {dag.py:3947} INFO - Setting next_dagrun for first_orchestrator to 2026-08-03 10:00:00+00:00, run_after=2026-08-03 11:00:00+00:00
+[2026-08-03T10:08:39.320+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/orchestration.py took 0.902 seconds

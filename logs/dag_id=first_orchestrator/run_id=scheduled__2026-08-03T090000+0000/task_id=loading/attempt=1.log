@@ -1,0 +1,29 @@
+[2026-08-03T10:00:52.886+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-03T10:00:52.956+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: first_orchestrator.loading scheduled__2026-08-03T09:00:00+00:00 [queued]>
+[2026-08-03T10:00:52.972+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: first_orchestrator.loading scheduled__2026-08-03T09:00:00+00:00 [queued]>
+[2026-08-03T10:00:52.973+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-08-03T10:00:53.004+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): loading> on 2026-08-03 09:00:00+00:00
+[2026-08-03T10:00:53.030+0000] {standard_task_runner.py:64} INFO - Started process 888 to run task
+[2026-08-03T10:00:53.039+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'first_orchestrator', 'loading', 'scheduled__2026-08-03T09:00:00+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/orchestration.py', '--cfg-path', '/tmp/tmpht9wmvtv']
+[2026-08-03T10:00:53.047+0000] {standard_task_runner.py:91} INFO - Job 24: Subtask loading
+[2026-08-03T10:00:53.189+0000] {task_command.py:426} INFO - Running <TaskInstance: first_orchestrator.loading scheduled__2026-08-03T09:00:00+00:00 [running]> on host 3f9c73410c8c
+[2026-08-03T10:00:53.906+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='first_orchestrator' AIRFLOW_CTX_TASK_ID='loading' AIRFLOW_CTX_EXECUTION_DATE='2026-08-03T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-03T09:00:00+00:00'
+[2026-08-03T10:00:53.909+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-03T10:00:53.996+0000] {external.py:63} INFO - Initializing external client
+[2026-08-03T10:00:53.997+0000] {external.py:70} INFO - Base URL: https://eu-west.cloud.hopsworks.ai:443
+[2026-08-03T10:00:57.702+0000] {python.py:138} INFO - Python Engine initialized.
+[2026-08-03T10:01:00.513+0000] {logging_mixin.py:188} INFO - 
+Logged in to project, explore it here https://eu-west.cloud.hopsworks.ai:443/p/41136
+[2026-08-03T10:01:12.667+0000] {logging_mixin.py:188} WARNING - Uploading Dataframe: 0.00% |          | Rows 0/1 | Elapsed Time: 00:00 | Remaining Time: ?
+[2026-08-03T10:01:16.954+0000] {logging_mixin.py:188} WARNING - Uploading Dataframe: 100.00% |##########| Rows 1/1 | Elapsed Time: 00:04 | Remaining Time: 00:00
+[2026-08-03T10:01:16.977+0000] {logging_mixin.py:188} WARNING - Uploading Dataframe: 100.00% |##########| Rows 1/1 | Elapsed Time: 00:04 | Remaining Time: 00:00
+[2026-08-03T10:01:18.305+0000] {logging_mixin.py:188} INFO - Launching job: aqi_features_1_offline_fg_materialization
+[2026-08-03T10:01:22.433+0000] {logging_mixin.py:188} INFO - Job started successfully, you can follow the progress at 
+https://eu-west.cloud.hopsworks.ai:443/p/41136/jobs/named/aqi_features_1_offline_fg_materialization/executions
+[2026-08-03T10:01:22.435+0000] {logging_mixin.py:188} INFO - Inserted 1 record into 'aqi_features' feature group.
+[2026-08-03T10:01:22.436+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-08-03T10:01:22.438+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-03T10:01:22.469+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=first_orchestrator, task_id=loading, run_id=scheduled__2026-08-03T09:00:00+00:00, execution_date=20260803T090000, start_date=20260803T100052, end_date=20260803T100122
+[2026-08-03T10:01:22.592+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-08-03T10:01:22.631+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-03T10:01:22.636+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

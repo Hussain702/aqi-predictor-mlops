@@ -6,6 +6,9 @@ python-dotenv
 # Step 2 (Transform) + Step 3 (Load) dependencies
 pandas
 hopsworks
+pyOpenSSL==24.1.0
+cryptography==42.0.8
+hopsworks[python]
 # Will be needed later (leave commented until that step):
 # hopsworks
 # pandas
