@@ -1,6 +1,6 @@
 """
 Shared helper for connecting to Hopsworks.
-
+Used by etl/load.py now, and by training/ scripts later.
 """
 
 import os
@@ -18,14 +18,19 @@ def _ensure_tmp_dir_exists():
     os.makedirs("/tmp", exist_ok=True)
 
 
-def get_feature_store():
+def get_project():
     """
-    Log into Hopsworks and return the Feature Store object for your project.
+    Log into Hopsworks and return the Project object (gives access to both
+    the Feature Store and the Model Registry).
     """
     _ensure_tmp_dir_exists()
 
-    project = hopsworks.login(
+    return hopsworks.login(
         api_key_value=HOPSWORKS_API_KEY,
         project=HOPSWORKS_PROJECT_NAME,
     )
-    return project.get_feature_store()
+
+
+def get_feature_store():
+    """Log into Hopsworks and return the Feature Store object for your project."""
+    return get_project().get_feature_store()

@@ -1,0 +1,72 @@
+[2026-08-03T11:00:18.338+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-03T11:00:18.686+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: first_orchestrator.extraction scheduled__2026-08-03T10:00:00+00:00 [queued]>
+[2026-08-03T11:00:18.701+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: first_orchestrator.extraction scheduled__2026-08-03T10:00:00+00:00 [queued]>
+[2026-08-03T11:00:18.703+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-08-03T11:00:18.733+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): extraction> on 2026-08-03 10:00:00+00:00
+[2026-08-03T11:00:18.757+0000] {standard_task_runner.py:64} INFO - Started process 1138 to run task
+[2026-08-03T11:00:18.771+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'first_orchestrator', 'extraction', 'scheduled__2026-08-03T10:00:00+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/orchestration.py', '--cfg-path', '/tmp/tmp1zq0z0pu']
+[2026-08-03T11:00:18.782+0000] {standard_task_runner.py:91} INFO - Job 26: Subtask extraction
+[2026-08-03T11:00:18.940+0000] {task_command.py:426} INFO - Running <TaskInstance: first_orchestrator.extraction scheduled__2026-08-03T10:00:00+00:00 [running]> on host 411ef98a4357
+[2026-08-03T11:00:19.209+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='first_orchestrator' AIRFLOW_CTX_TASK_ID='extraction' AIRFLOW_CTX_EXECUTION_DATE='2026-08-03T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-03T10:00:00+00:00'
+[2026-08-03T11:00:19.215+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-03T11:00:28.187+0000] {python.py:237} INFO - Done. Returned value was: {'city': 'lahore', 'timestamp': '2026-08-03T11:00:28.186760+00:00', 'temperature': 39.22, 'humidity': 34, 'wind_speed': 2.13, 'aqi': 34, 'pm25': 34, 'pm10': None}
+[2026-08-03T11:12:53.073+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-03T11:12:53.600+0000] {local_task_job_runner.py:214} ERROR - Heartbeat time limit exceeded!
+[2026-08-03T11:12:53.604+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2026-08-03T11:12:54.488+0000] {process_utils.py:132} INFO - Sending 15 to group 1138. PIDs of all processes in the group: [1138]
+[2026-08-03T11:12:54.602+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 1138
+[2026-08-03T11:12:55.059+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2026-08-03T11:12:57.605+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 486, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session)
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3197, in xcom_push
+    XCom.set(
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/xcom.py", line 221, in set
+    dag_run_id = session.query(DagRun.id).filter_by(dag_id=dag_id, run_id=run_id).scalar()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2893, in scalar
+    ret = self.one()
+          ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2870, in one
+    return self._iter().one()
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/query.py", line 2916, in _iter
+    result = self.session.execute(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/session.py", line 1717, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1710, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/sql/elements.py", line 334, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1577, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1953, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 2138, in _handle_dbapi_exception
+    util.raise_(exc_info[1], with_traceback=exc_info[2])
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/base.py", line 1910, in _execute_context
+    self.dialect.do_execute(
+  File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+  File "/usr/local/lib/python3.11/encodings/utf_8.py", line 15, in decode
+    def decode(input, errors='strict'):
+    
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2026-08-03T11:12:59.703+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=first_orchestrator, task_id=extraction, run_id=scheduled__2026-08-03T10:00:00+00:00, execution_date=20260803T100000, start_date=20260803T110018, end_date=20260803T111259
+[2026-08-03T11:13:01.668+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=1138, status='terminated', exitcode=2, started='11:00:18') (1138) terminated with exit code 2

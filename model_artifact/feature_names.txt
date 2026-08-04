@@ -1,0 +1,16 @@
+temperature
+humidity
+wind_speed
+pm25
+pm10
+hour
+day
+month
+is_weekend
+aqi_yesterday
+aqi_change_rate
+rolling_average_aqi
+city_islamabad
+city_karachi
+city_lahore
+city_peshawar
