@@ -1,0 +1,17 @@
+[2026-08-05T10:36:02.195+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-05T10:36:02.497+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: first_orchestrator.extraction scheduled__2026-08-05T09:00:00+00:00 [queued]>
+[2026-08-05T10:36:02.514+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: first_orchestrator.extraction scheduled__2026-08-05T09:00:00+00:00 [queued]>
+[2026-08-05T10:36:02.515+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-08-05T10:36:02.546+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): extraction> on 2026-08-05 09:00:00+00:00
+[2026-08-05T10:36:02.576+0000] {standard_task_runner.py:64} INFO - Started process 192 to run task
+[2026-08-05T10:36:02.587+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'first_orchestrator', 'extraction', 'scheduled__2026-08-05T09:00:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/orchestration.py', '--cfg-path', '/tmp/tmp77pem_zh']
+[2026-08-05T10:36:02.595+0000] {standard_task_runner.py:91} INFO - Job 30: Subtask extraction
+[2026-08-05T10:36:02.736+0000] {task_command.py:426} INFO - Running <TaskInstance: first_orchestrator.extraction scheduled__2026-08-05T09:00:00+00:00 [running]> on host a19e9d16724f
+[2026-08-05T10:36:03.103+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='first_orchestrator' AIRFLOW_CTX_TASK_ID='extraction' AIRFLOW_CTX_EXECUTION_DATE='2026-08-05T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-05T09:00:00+00:00'
+[2026-08-05T10:36:03.106+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-05T10:36:10.002+0000] {python.py:237} INFO - Done. Returned value was: {'city': 'lahore', 'timestamp': '2026-08-05T10:36:10.001951+00:00', 'temperature': 40.95, 'humidity': 28, 'wind_speed': 1.97, 'aqi': 34, 'pm25': 34, 'pm10': None}
+[2026-08-05T10:36:10.006+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-05T10:36:10.536+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=first_orchestrator, task_id=extraction, run_id=scheduled__2026-08-05T09:00:00+00:00, execution_date=20260805T090000, start_date=20260805T103602, end_date=20260805T103610
+[2026-08-05T10:36:10.824+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-08-05T10:36:10.909+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-08-05T10:36:10.955+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

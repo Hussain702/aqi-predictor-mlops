@@ -3641,3 +3641,29 @@ File Path                                   PID    Runtime      # DAGs    # Erro
 /opt/airflow/dags/feature_pipeline_dag.py                            0           0  0.29s           2026-08-03T11:14:29
 /opt/airflow/dags/training_pipeline_dag.py                           0           0  0.27s           2026-08-03T11:14:29
 ================================================================================
+[2026-08-05T10:33:26.885+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2026-08-05T10:33:26.903+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2026-08-05T10:33:26.906+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-08-05T10:33:26.909+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-05T10:33:27.288+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-05T10:33:29.817+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/feature_pipeline_dag.py     170  1.00s             0           0
+/opt/airflow/dags/orchestration.py                                   0           0
+/opt/airflow/dags/training_pipeline_dag.py    167  1.22s             0           0
+================================================================================
+[2026-08-05T10:34:00.237+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/feature_pipeline_dag.py     170  31.61s            0           0
+/opt/airflow/dags/orchestration.py                                   0           0
+/opt/airflow/dags/training_pipeline_dag.py    167  31.83s            0           0
+================================================================================
+[2026-08-05T10:34:10.316+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15

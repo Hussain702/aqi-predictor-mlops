@@ -1,0 +1,87 @@
+[2026-08-05T10:37:06.430+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-05T10:37:06.705+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: first_orchestrator.loading scheduled__2026-08-05T09:00:00+00:00 [queued]>
+[2026-08-05T10:37:06.725+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: first_orchestrator.loading scheduled__2026-08-05T09:00:00+00:00 [queued]>
+[2026-08-05T10:37:06.727+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-08-05T10:37:06.776+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): loading> on 2026-08-05 09:00:00+00:00
+[2026-08-05T10:37:06.797+0000] {standard_task_runner.py:64} INFO - Started process 351 to run task
+[2026-08-05T10:37:06.806+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'first_orchestrator', 'loading', 'scheduled__2026-08-05T09:00:00+00:00', '--job-id', '37', '--raw', '--subdir', 'DAGS_FOLDER/orchestration.py', '--cfg-path', '/tmp/tmpuce6s1yu']
+[2026-08-05T10:37:06.812+0000] {standard_task_runner.py:91} INFO - Job 37: Subtask loading
+[2026-08-05T10:37:06.937+0000] {task_command.py:426} INFO - Running <TaskInstance: first_orchestrator.loading scheduled__2026-08-05T09:00:00+00:00 [running]> on host a19e9d16724f
+[2026-08-05T10:37:07.167+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='first_orchestrator' AIRFLOW_CTX_TASK_ID='loading' AIRFLOW_CTX_EXECUTION_DATE='2026-08-05T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-05T09:00:00+00:00'
+[2026-08-05T10:37:07.170+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-05T10:37:07.262+0000] {external.py:63} INFO - Initializing external client
+[2026-08-05T10:37:07.263+0000] {external.py:70} INFO - Base URL: https://eu-west.cloud.hopsworks.ai:443
+[2026-08-05T10:37:11.678+0000] {python.py:138} INFO - Python Engine initialized.
+[2026-08-05T10:37:13.353+0000] {logging_mixin.py:188} INFO - 
+Logged in to project, explore it here https://eu-west.cloud.hopsworks.ai:443/p/41136
+[2026-08-05T10:37:17.511+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-05T10:37:17.513+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/orchestration.py", line 44, in loading
+    load(record)
+  File "/opt/airflow/project/etl/load.py", line 46, in load
+    feature_group.insert(df)
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/feature_group.py", line 4013, in insert
+    job, ge_report = self._feature_group_engine._insert(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/core/feature_group_engine.py", line 332, in _insert
+    engine._get_instance()._save_dataframe(
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/engine/python.py", line 1098, in _save_dataframe
+    return self._run_materialization_job(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/engine/python.py", line 1937, in _run_materialization_job
+    initial_check_point = kafka_engine._kafka_get_offsets(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hopsworks_common/decorators.py", line 176, in g
+    return f(*args, **kwds)
+           ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/core/kafka_engine.py", line 177, in _kafka_get_offsets
+    consumer = _init_kafka_consumer(feature_store_id, offline_write_options)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hopsworks_common/decorators.py", line 176, in g
+    return f(*args, **kwds)
+           ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/core/kafka_engine.py", line 66, in _init_kafka_consumer
+    consumer_config = _get_kafka_config(feature_store_id, offline_write_options)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/core/kafka_engine.py", line 294, in _get_kafka_config
+    config = storage_connector.confluent_options()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/storage_connector.py", line 2490, in confluent_options
+    self.create_pem_files(kafka_options)
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/storage_connector.py", line 2363, in create_pem_files
+    ) = client._get_instance()._write_pem(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hopsworks_common/client/base.py", line 217, in _write_pem
+    ks = jks.KeyStore.load(Path(keystore_path), keystore_pw, try_decrypt_keys=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/jks/util.py", line 88, in load
+    with open(filename, 'rb') as file:
+         ^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/eu-west.cloud.hopsworks.ai/aqi_predictor_2026_7x9k/mianhuss/keyStore.jks'
+[2026-08-05T10:37:17.714+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=first_orchestrator, task_id=loading, run_id=scheduled__2026-08-05T09:00:00+00:00, execution_date=20260805T090000, start_date=20260805T103706, end_date=20260805T103717
+[2026-08-05T10:37:17.910+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 37 for task loading ([Errno 2] No such file or directory: '/tmp/eu-west.cloud.hopsworks.ai/aqi_predictor_2026_7x9k/mianhuss/keyStore.jks'; 351)
+[2026-08-05T10:37:17.984+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-08-05T10:37:18.016+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-05T10:37:18.023+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
