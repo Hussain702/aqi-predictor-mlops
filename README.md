@@ -1,12 +1,9 @@
 # AQI Predictor - Internship MLOps Project
 
-Step-by-step build. Only Step 1 (etl/extract.py) is implemented so far -- everything
-else is an empty placeholder to be filled in on later days.
 
 ## Setup
 1. Fill in `.env` with your API keys
-2. `pip install -r requirements.txt`
-3. `python etl/extract.py`
+2. docker compose up -d
 
 ## Roadmap
 1. Extract (done)
