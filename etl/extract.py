@@ -68,8 +68,3 @@ def extract():
     return record
 
 
-# This lets you just run: python etl/extract.py
-if __name__ == "__main__":
-    result = extract()
-    print("\n--- Extracted Record ---")
-    print(result)

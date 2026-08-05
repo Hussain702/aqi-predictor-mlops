@@ -1,0 +1,102 @@
+[2026-08-02T19:26:07.387+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-02T19:26:07.459+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: first_orchestrator.transformation manual__2026-08-02T19:25:53.493830+00:00 [queued]>
+[2026-08-02T19:26:07.476+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: first_orchestrator.transformation manual__2026-08-02T19:25:53.493830+00:00 [queued]>
+[2026-08-02T19:26:07.477+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-08-02T19:26:07.505+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): transformation> on 2026-08-02 19:25:53.493830+00:00
+[2026-08-02T19:26:07.533+0000] {standard_task_runner.py:64} INFO - Started process 1769 to run task
+[2026-08-02T19:26:07.547+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'first_orchestrator', 'transformation', 'manual__2026-08-02T19:25:53.493830+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/orchestration.py', '--cfg-path', '/tmp/tmp190teeer']
+[2026-08-02T19:26:07.553+0000] {standard_task_runner.py:91} INFO - Job 7: Subtask transformation
+[2026-08-02T19:26:07.691+0000] {task_command.py:426} INFO - Running <TaskInstance: first_orchestrator.transformation manual__2026-08-02T19:25:53.493830+00:00 [running]> on host 3341868be2bb
+[2026-08-02T19:26:07.921+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='first_orchestrator' AIRFLOW_CTX_TASK_ID='transformation' AIRFLOW_CTX_EXECUTION_DATE='2026-08-02T19:25:53.493830+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-08-02T19:25:53.493830+00:00'
+[2026-08-02T19:26:07.925+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-02T19:26:09.019+0000] {external.py:63} INFO - Initializing external client
+[2026-08-02T19:26:09.020+0000] {external.py:70} INFO - Base URL: https://eu-west.cloud.hopsworks.ai:443
+[2026-08-02T19:26:19.706+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-02T19:26:19.708+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/orchestration.py", line 25, in transformation
+    fs = get_feature_store()
+         ^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/project/utils/hopsworks_client.py", line 27, in get_feature_store
+    project = hopsworks.login(
+              ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hopsworks/__init__.py", line 396, in login
+    _set_active_project(_connected_project)
+  File "/home/airflow/.local/lib/python3.11/site-packages/hopsworks/__init__.py", line 633, in _set_active_project
+    _client._provide_project(project.name)
+  File "/home/airflow/.local/lib/python3.11/site-packages/hopsworks_common/client/external.py", line 203, in _provide_project
+    hopsworks_common.client._get_connection()._provide_project()
+  File "/home/airflow/.local/lib/python3.11/site-packages/hopsworks_common/decorators.py", line 61, in if_connected
+    return fn(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hopsworks_common/connection.py", line 440, in _provide_project
+    engine._get_instance()
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/engine/__init__.py", line 63, in _get_instance
+    _init(hopsworks_common.connection._hsfs_engine_type)
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/engine/__init__.py", line 48, in _init
+    from hsfs.engine import python
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/engine/python.py", line 50, in <module>
+    import boto3
+  File "/home/airflow/.local/lib/python3.11/site-packages/boto3/__init__.py", line 17, in <module>
+    from boto3.session import Session
+  File "/home/airflow/.local/lib/python3.11/site-packages/boto3/session.py", line 17, in <module>
+    import botocore.session
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/session.py", line 26, in <module>
+    import botocore.client
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/client.py", line 15, in <module>
+    from botocore import waiter, xform_name
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/waiter.py", line 18, in <module>
+    from botocore.docs.docstring import WaiterDocstring
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/docs/__init__.py", line 15, in <module>
+    from botocore.docs.service import ServiceDocumenter
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/docs/service.py", line 14, in <module>
+    from botocore.docs.client import (
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/docs/client.py", line 18, in <module>
+    from botocore.docs.example import ResponseExampleDocumenter
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/docs/example.py", line 13, in <module>
+    from botocore.docs.shape import ShapeDocumenter
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/docs/shape.py", line 19, in <module>
+    from botocore.utils import is_json_value_header
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/utils.py", line 39, in <module>
+    import botocore.httpsession
+  File "/home/airflow/.local/lib/python3.11/site-packages/botocore/httpsession.py", line 45, in <module>
+    from urllib3.contrib.pyopenssl import (
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/contrib/pyopenssl.py", line 43, in <module>
+    import OpenSSL.SSL  # type: ignore[import]
+    ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/OpenSSL/__init__.py", line 8, in <module>
+    from OpenSSL import SSL, crypto
+  File "/home/airflow/.local/lib/python3.11/site-packages/OpenSSL/SSL.py", line 34, in <module>
+    from OpenSSL.crypto import (
+  File "/home/airflow/.local/lib/python3.11/site-packages/OpenSSL/crypto.py", line 774, in <module>
+    class X509Extension:
+  File "/home/airflow/.local/lib/python3.11/site-packages/OpenSSL/crypto.py", line 855, in X509Extension
+    _lib.GEN_EMAIL: "email",
+    ^^^^^^^^^^^^^^
+AttributeError: module 'lib' has no attribute 'GEN_EMAIL'
+[2026-08-02T19:26:19.830+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=first_orchestrator, task_id=transformation, run_id=manual__2026-08-02T19:25:53.493830+00:00, execution_date=20260802T192553, start_date=20260802T192607, end_date=20260802T192619
+[2026-08-02T19:26:19.858+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 7 for task transformation (module 'lib' has no attribute 'GEN_EMAIL'; 1769)
+[2026-08-02T19:26:19.958+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-08-02T19:26:20.000+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-02T19:26:20.019+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -6,6 +6,28 @@ python-dotenv
 # Step 2 (Transform) + Step 3 (Load) dependencies
 pandas
 hopsworks
+pyOpenSSL==24.1.0
+cryptography==42.0.8
+hopsworks[python]
+# Step 1 (Extract) dependencies
+requests
+python-dotenv
+
+
+
+# Step 5-7 (Training Pipeline) dependencies
+scikit-learn
+joblib
+
+# Step 10 (Dashboard) dependencies
+streamlit
+plotly
+
+# Will be needed later (leave commented until that step):
+# tensorflow
+# flask
+# shap
+# apache-airflow
 # Will be needed later (leave commented until that step):
 # hopsworks
 # pandas

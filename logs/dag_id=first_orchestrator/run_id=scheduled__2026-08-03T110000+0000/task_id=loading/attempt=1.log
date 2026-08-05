@@ -1,0 +1,27 @@
+[2026-08-05T10:37:18.429+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-05T10:37:18.715+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: first_orchestrator.loading scheduled__2026-08-03T11:00:00+00:00 [queued]>
+[2026-08-05T10:37:18.729+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: first_orchestrator.loading scheduled__2026-08-03T11:00:00+00:00 [queued]>
+[2026-08-05T10:37:18.730+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-08-05T10:37:18.771+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): loading> on 2026-08-03 11:00:00+00:00
+[2026-08-05T10:37:18.791+0000] {standard_task_runner.py:64} INFO - Started process 430 to run task
+[2026-08-05T10:37:18.799+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'first_orchestrator', 'loading', 'scheduled__2026-08-03T11:00:00+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/orchestration.py', '--cfg-path', '/tmp/tmple7dv2t2']
+[2026-08-05T10:37:18.804+0000] {standard_task_runner.py:91} INFO - Job 38: Subtask loading
+[2026-08-05T10:37:18.916+0000] {task_command.py:426} INFO - Running <TaskInstance: first_orchestrator.loading scheduled__2026-08-03T11:00:00+00:00 [running]> on host a19e9d16724f
+[2026-08-05T10:37:19.138+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='first_orchestrator' AIRFLOW_CTX_TASK_ID='loading' AIRFLOW_CTX_EXECUTION_DATE='2026-08-03T11:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-03T11:00:00+00:00'
+[2026-08-05T10:37:19.141+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-05T10:37:19.227+0000] {external.py:63} INFO - Initializing external client
+[2026-08-05T10:37:19.228+0000] {external.py:70} INFO - Base URL: https://eu-west.cloud.hopsworks.ai:443
+[2026-08-05T10:37:22.447+0000] {python.py:138} INFO - Python Engine initialized.
+[2026-08-05T10:37:24.215+0000] {logging_mixin.py:188} INFO - 
+Logged in to project, explore it here https://eu-west.cloud.hopsworks.ai:443/p/41136
+[2026-08-05T10:37:36.229+0000] {logging_mixin.py:188} WARNING - Uploading Dataframe: 0.00% |          | Rows 0/1 | Elapsed Time: 00:00 | Remaining Time: ?
+[2026-08-05T10:37:38.939+0000] {logging_mixin.py:188} WARNING - Uploading Dataframe: 100.00% |##########| Rows 1/1 | Elapsed Time: 00:02 | Remaining Time: 00:00
+[2026-08-05T10:37:38.943+0000] {logging_mixin.py:188} WARNING - Uploading Dataframe: 100.00% |##########| Rows 1/1 | Elapsed Time: 00:02 | Remaining Time: 00:00
+[2026-08-05T10:37:40.375+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/hopsworks_common/job.py:249 UserWarning: Materialization job is already running, aborting new execution.Please wait for the current execution to finish before triggering a new one.You can check the status of the current execution using `fg.materialization_job.get_state()`.or `fg.materialization_job.get_final_state()` or check it out in the Hopsworks UI.at https://eu-west.cloud.hopsworks.ai:443/p/41136/jobs/named/aqi_features_1_offline_fg_materialization.
+Use fg.materialization_job.run(args=-op offline_fg_materialization -path hdfs:///Projects/aqi_predictor_2026_7x9k/Resources/jobs/aqi_features_1_offline_fg_materialization/config_1785673201041) to trigger the materialization job again.
+[2026-08-05T10:37:40.377+0000] {logging_mixin.py:188} INFO - Inserted 1 record into 'aqi_features' feature group.
+[2026-08-05T10:37:40.378+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-08-05T10:37:40.379+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-05T10:37:40.401+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=first_orchestrator, task_id=loading, run_id=scheduled__2026-08-03T11:00:00+00:00, execution_date=20260803T110000, start_date=20260805T103718, end_date=20260805T103740
+[2026-08-05T10:37:40.535+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-08-05T10:37:40.557+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
