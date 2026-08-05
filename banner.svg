@@ -1,0 +1,28 @@
+<svg viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3c72"/>
+      <stop offset="100%" stop-color="#2a5298"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="220" rx="20" fill="url(#bannerGrad)"/>
+
+  <!-- decorative faint circles -->
+  <circle cx="1080" cy="40" r="70" fill="#ffffff" opacity="0.05"/>
+  <circle cx="1150" cy="160" r="100" fill="#ffffff" opacity="0.05"/>
+  <circle cx="60" cy="190" r="60" fill="#ffffff" opacity="0.05"/>
+
+  <!-- wind/air icon -->
+  <text x="70" y="140" font-size="90" font-family="Segoe UI Emoji, Apple Color Emoji, sans-serif">🌬️</text>
+
+  <text x="220" y="105" font-size="56" font-weight="800" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" letter-spacing="1">
+    AeroWatch
+  </text>
+  <text x="222" y="145" font-size="22" fill="#cbd8f0" font-family="Segoe UI, Arial, sans-serif">
+    Pakistan Air Quality Forecast &amp; MLOps Pipeline
+  </text>
+  <text x="222" y="178" font-size="16" fill="#9fb3d6" font-family="Segoe UI, Arial, sans-serif">
+    Lahore  •  Islamabad  •  Karachi  •  Peshawar
+  </text>
+</svg>
