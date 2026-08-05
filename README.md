@@ -180,7 +180,7 @@ uv run streamlit run dashboard/streamlit_app.py
 ```bash
 docker compose up -d --build
 ```
-Open `http://localhost:8080` (default: `admin` / `admin`) and confirm both
+Open `http://localhost:8081` (default: `admin` / `admin`) and confirm both
 `feature_pipeline` and `training_pipeline` are listed and unpaused.
 
 ## The Pipelines
@@ -236,6 +236,6 @@ Random Forest comfortably outperforms Ridge Regression at every horizon.
 
 <div align="center">
 
-Built by **Hussain Ali** — Data Engineering Internship Project
+Built by **Hussain Ali** — Data Science Engineer Internship 10pearls
 
 </div>
