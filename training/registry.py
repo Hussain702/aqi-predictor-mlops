@@ -44,12 +44,27 @@ def flatten_metrics(nested_metrics: dict) -> dict:
 
 
 def save_model_locally(model, feature_names: list) -> str:
-    """Dump the model + its feature list to a local folder Hopsworks can upload."""
+    """
+    Dump the model + its feature list to a local folder Hopsworks can upload.
+
+    Branches by framework: sklearn models (Ridge, Random Forest) pickle
+    fine with joblib; the Keras neural network doesn't -- it needs
+    TensorFlow's own model.save() format instead. A framework.txt marker
+    file tells the dashboard (and any future loader) which one it's
+    looking at without needing to guess from file extensions.
+    """
     if os.path.exists(MODEL_DIR):
         shutil.rmtree(MODEL_DIR)
     os.makedirs(MODEL_DIR)
 
-    joblib.dump(model, os.path.join(MODEL_DIR, "model.pkl"))
+    framework = getattr(model, "framework", "sklearn")
+    with open(os.path.join(MODEL_DIR, "framework.txt"), "w") as f:
+        f.write(framework)
+
+    if framework == "tensorflow":
+        model.model.save(os.path.join(MODEL_DIR, "keras_model.keras"))
+    else:
+        joblib.dump(model, os.path.join(MODEL_DIR, "model.pkl"))
 
     with open(os.path.join(MODEL_DIR, "feature_names.txt"), "w") as f:
         f.write("\n".join(feature_names))
@@ -69,15 +84,21 @@ def register_model(model, feature_names: list, flat_metrics: dict, project):
     """
     model_registry = project.get_model_registry()
     model_dir = save_model_locally(model, feature_names)
+    framework = getattr(model, "framework", "sklearn")
 
-    aqi_model = model_registry.sklearn.create_model(
-        name=MODEL_NAME,
-        metrics=flat_metrics,
-        description=(
-            "AQI multi-horizon forecast model (predicts +24h/+48h/+72h AQI; "
-            "best of Random Forest / Ridge Regression)"
-        ),
+    description = (
+        "AQI multi-horizon forecast model (predicts +24h/+48h/+72h AQI; "
+        f"best of Ridge Regression / Random Forest / Neural Network -- winner: {framework})"
     )
+
+    if framework == "tensorflow":
+        aqi_model = model_registry.tensorflow.create_model(
+            name=MODEL_NAME, metrics=flat_metrics, description=description,
+        )
+    else:
+        aqi_model = model_registry.sklearn.create_model(
+            name=MODEL_NAME, metrics=flat_metrics, description=description,
+        )
 
     for attempt in range(1, MAX_UPLOAD_RETRIES + 1):
         try:
@@ -91,7 +112,7 @@ def register_model(model, feature_names: list, flat_metrics: dict, project):
             print(f"Retrying in {wait_seconds}s...")
             time.sleep(wait_seconds)
 
-    print(f"Registered '{MODEL_NAME}' version {aqi_model.version} in the Model Registry.")
+    print(f"Registered '{MODEL_NAME}' version {aqi_model.version} ({framework}) in the Model Registry.")
     return aqi_model
 
 

@@ -1,10 +1,3 @@
-"""
-Step 3 - LOAD
---------------
-Takes a transformed record (output of transform.py) and saves it into the
-Hopsworks Feature Store.
-
-"""
 
 import pandas as pd
 

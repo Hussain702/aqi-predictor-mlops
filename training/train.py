@@ -33,6 +33,12 @@ from sklearn.linear_model import Ridge
 
 from utils.hopsworks_client import get_feature_store
 
+try:
+    from tensorflow import keras
+    TENSORFLOW_AVAILABLE = True
+except ImportError:
+    TENSORFLOW_AVAILABLE = False
+
 FEATURE_GROUP_NAME = "aqi_features"
 FEATURE_GROUP_VERSION = 1
 
@@ -46,6 +52,46 @@ CATEGORICAL_COLUMN = "city"
 TARGET_HORIZONS = ["24h", "48h", "72h"]
 TARGET_COLUMNS = [f"aqi_target_{h}" for h in TARGET_HORIZONS]
 HORIZON_HOURS = {"24h": 24, "48h": 48, "72h": 72}
+
+
+class KerasMultiOutputRegressor:
+    """
+    Thin wrapper around a small Keras Sequential model so it exposes the
+    same .fit(X, y) / .predict(X) interface as our sklearn models. That's
+    what lets it sit in get_models() / train_all() / evaluate.py /
+    registry.py without any of those needing special-case code for "the
+    neural network one" -- they just call .fit and .predict like normal.
+
+    The `framework` class attribute is how registry.py knows to save this
+    with model.save() (TensorFlow's format) instead of joblib.dump()
+    (which doesn't work for Keras models).
+    """
+    framework = "tensorflow"
+
+    def __init__(self, input_dim: int, output_dim: int, epochs=30, batch_size=64, verbose=0):
+        self.epochs = epochs
+        self.batch_size = batch_size
+        self.verbose = verbose
+        self.model = keras.Sequential([
+            keras.layers.Input(shape=(input_dim,)),
+            keras.layers.Dense(64, activation="relu"),
+            keras.layers.Dense(32, activation="relu"),
+            keras.layers.Dense(output_dim),  # linear output: one value per horizon
+        ])
+        self.model.compile(optimizer="adam", loss="mse", metrics=["mae"])
+
+    def fit(self, X, y):
+        X_arr = X.values if hasattr(X, "values") else X
+        y_arr = y.values if hasattr(y, "values") else y
+        self.model.fit(
+            X_arr, y_arr,
+            epochs=self.epochs, batch_size=self.batch_size, verbose=self.verbose,
+        )
+        return self
+
+    def predict(self, X):
+        X_arr = X.values if hasattr(X, "values") else X
+        return self.model.predict(X_arr, verbose=0)
 
 
 def load_training_data() -> pd.DataFrame:
@@ -91,19 +137,22 @@ def prepare_features(df: pd.DataFrame):
     return X, Y
 
 
-def get_models() -> dict:
+def get_models(input_dim: int = None, output_dim: int = None) -> dict:
     """
-    Candidate models to experiment with. Both support multi-output natively.
+    Candidate models spanning statistical -> classical ML -> deep learning:
+      - ridge_regression: linear/statistical baseline
+      - random_forest: classical ML ensemble (constrained -- see note below)
+      - neural_network: small deep learning model (only added if TensorFlow
+        is installed AND input_dim/output_dim are known, since the network's
+        shape depends on the data)
 
     RandomForestRegressor is constrained (max_depth, min_samples_leaf,
     n_estimators) -- with no limits, 200 fully-grown trees produced a
     ~600MB pickle that failed to upload. 100 trees got it to ~34MB, still
-    too slow/fragile over a poor connection (upload was resetting mid-
-    transfer). Halved again to 50 trees to shrink the upload further --
-    accuracy loss from this should be small given how strong the results
-    already were (R2 0.88-0.92 at 100 trees).
+    too slow/fragile over a poor connection. Halved again to 50 trees.
     """
-    return {
+    models = {
+        "ridge_regression": Ridge(alpha=1.0),
         "random_forest": RandomForestRegressor(
             n_estimators=50,
             max_depth=15,
@@ -111,14 +160,26 @@ def get_models() -> dict:
             random_state=42,
             n_jobs=-1,
         ),
-        "ridge_regression": Ridge(alpha=1.0),
     }
+
+    if TENSORFLOW_AVAILABLE and input_dim and output_dim:
+        models["neural_network"] = KerasMultiOutputRegressor(input_dim, output_dim)
+    elif not TENSORFLOW_AVAILABLE:
+        print(
+            "TensorFlow not installed -- skipping the neural_network candidate. "
+            "Run `uv add tensorflow` to include it."
+        )
+
+    return models
 
 
 def train_all(X_train, Y_train) -> dict:
     """Fit every candidate model on all 3 horizons at once. Returns {model_name: fitted_model}."""
+    input_dim = X_train.shape[1]
+    output_dim = Y_train.shape[1] if hasattr(Y_train, "shape") else len(TARGET_COLUMNS)
+
     fitted = {}
-    for name, model in get_models().items():
+    for name, model in get_models(input_dim, output_dim).items():
         print(f"Training {name}...")
         model.fit(X_train, Y_train)
         fitted[name] = model

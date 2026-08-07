@@ -10,8 +10,8 @@ from utils.hopsworks_client import get_feature_store
 FEATURE_GROUP_NAME = "aqi_features"
 FEATURE_GROUP_VERSION = 1
 
-START_DATE = "2025-01-01"
-END_DATE = "2025-12-31"
+START_DATE = "2025-12-31"
+END_DATE = "2026-07-31"
 
 # lat, lon for each city
 CITIES = {

@@ -23,6 +23,20 @@ joblib
 streamlit
 plotly
 
+
+
+
+
+
+
+
+# Step 12 (Advanced Analytics: deep learning model + SHAP) dependencies
+tensorflow
+shap
+
+# Will be needed later (leave commented until that step):
+# flask
+# apache-airflow
 # Will be needed later (leave commented until that step):
 # tensorflow
 # flask

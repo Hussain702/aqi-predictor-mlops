@@ -1,22 +1,3 @@
-"""
-Step 8 - Feature Pipeline DAG (TaskFlow API)
-------------------------------------------------
-Runs extract -> transform -> load every hour, forever.
-
-Improvement over the earlier version: the transform task now pulls the
-last 48 hours of real history from Hopsworks before calling transform(),
-so aqi_yesterday / aqi_change_rate / rolling_average_aqi get REAL values
-on every hourly run -- not NaN like when transform() was called with
-history_df=None.
-
-Why 48 hours, not fewer: rolling_average_aqi is a 24-hour rolling window,
-and aqi_yesterday looks exactly 24 hours back -- 48 hours of buffer
-comfortably covers both even if an hourly run is occasionally late/missed.
-
-catchup=False on purpose: historical data is handled separately by
-backfill.py (the 2025 4-city dataset). This DAG only adds NEW data
-going forward.
-"""
 
 from airflow.decorators import dag, task
 from datetime import datetime
