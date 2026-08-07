@@ -73,6 +73,12 @@ Two Airflow DAGs drive the system:
 - 📊 **Interactive dashboard** (Streamlit): live "Today" reading + 3-day forecast, color-coded by AQI severity, per city
 - 🐳 **Fully containerized orchestration** — Airflow + Postgres via Docker Compose
 
+### Dashboard Preview
+
+<img src="docs/dashboard-preview.svg" alt="AeroWatch dashboard preview" width="100%"/>
+
+*(Illustrative mockup matching the real UI's layout/colors — actual values are pulled live from Hopsworks when you run the dashboard.)*
+
 ## Advanced Analytics
 
 - 📈 **Exploratory Data Analysis tab** — AQI trend over time (per city), hourly and
@@ -141,7 +147,9 @@ aqi-predictor/
 │
 ├── docs/                       # README graphics
 │   ├── banner.svg
-│   └── architecture.svg
+│   ├── architecture.svg
+│   ├── model-comparison.svg
+│   └── dashboard-preview.svg
 │
 ├── Dockerfile.airflow           # custom Airflow image with project dependencies
 ├── compose.yaml                 # Airflow + Postgres (LocalExecutor)
@@ -193,7 +201,7 @@ uv run python -m streamlit run dashboard/streamlit_app.py
 ```bash
 docker compose up -d --build
 ```
-Open `http://localhost:8080` (default: `admin` / `admin`) and confirm both
+Open `http://localhost:8081` (default: `admin` / `admin`) and confirm both
 `feature_pipeline` and `training_pipeline` are listed and unpaused.
 
 ## The Pipelines
@@ -217,6 +225,8 @@ the right format automatically.
 *Example results from a training run (Ridge Regression vs. Random Forest);
 your own numbers will vary run to run as more data accumulates, and once the
 neural network candidate is included in the comparison.*
+
+<img src="docs/model-comparison.svg" alt="Model comparison chart" width="100%"/>
 
 | Horizon | Model | RMSE | MAE | R² |
 |---|---|---|---|---|
@@ -288,6 +298,6 @@ then check Docker Desktop's network DNS settings.
 
 <div align="center">
 
-Built by **Hussain Ali** — Data Engineering Internship Project
+Built by **Hussain Ali** — Data Science Engineer Internship, 10Pearls
 
 </div>

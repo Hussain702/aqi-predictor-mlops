@@ -1,0 +1,51 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="700" height="420" fill="#ffffff"/>
+
+  <text x="350" y="22" font-size="16" font-weight="800" fill="#222" text-anchor="middle">
+    Model Comparison: RMSE by Forecast Horizon (lower is better)
+  </text>
+
+  <!-- axes -->
+  <line x1="80" y1="320" x2="650" y2="320" stroke="#999" stroke-width="1.5"/>
+  <line x1="80" y1="40" x2="80" y2="320" stroke="#999" stroke-width="1.5"/>
+  <text x="30" y="185" font-size="12" fill="#666" transform="rotate(-90 30 185)" text-anchor="middle">RMSE</text>
+
+  <!-- gridlines + y labels (0-30 step 10) -->
+  <g font-size="11" fill="#999">
+    <line x1="80" y1="320" x2="650" y2="320" stroke="#eee"/>
+    <text x="70" y="324" text-anchor="end">0</text>
+    <line x1="80" y1="227" x2="650" y2="227" stroke="#eee"/>
+    <text x="70" y="231" text-anchor="end">10</text>
+    <line x1="80" y1="133" x2="650" y2="133" stroke="#eee"/>
+    <text x="70" y="137" text-anchor="end">20</text>
+    <line x1="80" y1="40" x2="650" y2="40" stroke="#eee"/>
+    <text x="70" y="44" text-anchor="end">30</text>
+  </g>
+
+  <!-- +24h group -->
+  <rect x="130" y="215" width="40" height="105" rx="3" fill="#3498db"/>
+  <text x="150" y="205" font-size="12" font-weight="700" fill="#2471a3" text-anchor="middle">11.29</text>
+  <rect x="180" y="105" width="40" height="215" rx="3" fill="#e67e22"/>
+  <text x="200" y="95" font-size="12" font-weight="700" fill="#af601a" text-anchor="middle">23.09</text>
+  <text x="200" y="345" font-size="13" font-weight="700" fill="#333" text-anchor="middle">+24h</text>
+
+  <!-- +48h group -->
+  <rect x="310" y="191" width="40" height="129" rx="3" fill="#3498db"/>
+  <text x="330" y="181" font-size="12" font-weight="700" fill="#2471a3" text-anchor="middle">13.81</text>
+  <rect x="360" y="59" width="40" height="261" rx="3" fill="#e67e22"/>
+  <text x="380" y="49" font-size="12" font-weight="700" fill="#af601a" text-anchor="middle">27.95</text>
+  <text x="380" y="345" font-size="13" font-weight="700" fill="#333" text-anchor="middle">+48h</text>
+
+  <!-- +72h group -->
+  <rect x="490" y="188" width="40" height="132" rx="3" fill="#3498db"/>
+  <text x="510" y="178" font-size="12" font-weight="700" fill="#2471a3" text-anchor="middle">14.18</text>
+  <rect x="540" y="48" width="40" height="272" rx="3" fill="#e67e22"/>
+  <text x="560" y="42" font-size="12" font-weight="700" fill="#af601a" text-anchor="middle">29.54</text>
+  <text x="560" y="345" font-size="13" font-weight="700" fill="#333" text-anchor="middle">+72h</text>
+
+  <!-- legend -->
+  <rect x="480" y="370" width="14" height="14" rx="3" fill="#3498db"/>
+  <text x="500" y="382" font-size="12" fill="#333">Random Forest</text>
+  <rect x="610" y="370" width="14" height="14" rx="3" fill="#e67e22"/>
+  <text x="630" y="382" font-size="12" fill="#333">Ridge</text>
+</svg>
