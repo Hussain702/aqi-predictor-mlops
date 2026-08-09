@@ -1,0 +1,194 @@
+[2026-08-09T15:15:45.690+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-09T15:15:45.762+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: forecast_logging.log_forecasts manual__2026-08-09T15:15:34.361882+00:00 [queued]>
+[2026-08-09T15:15:45.771+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: forecast_logging.log_forecasts manual__2026-08-09T15:15:34.361882+00:00 [queued]>
+[2026-08-09T15:15:45.772+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-08-09T15:15:45.787+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): log_forecasts> on 2026-08-09 15:15:34.361882+00:00
+[2026-08-09T15:15:45.838+0000] {standard_task_runner.py:64} INFO - Started process 447 to run task
+[2026-08-09T15:15:45.845+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'forecast_logging', 'log_forecasts', 'manual__2026-08-09T15:15:34.361882+00:00', '--job-id', '223', '--raw', '--subdir', 'DAGS_FOLDER/forecast_logging_dag.py', '--cfg-path', '/tmp/tmptyb4ey1_']
+[2026-08-09T15:15:45.853+0000] {standard_task_runner.py:91} INFO - Job 223: Subtask log_forecasts
+[2026-08-09T15:15:45.946+0000] {task_command.py:426} INFO - Running <TaskInstance: forecast_logging.log_forecasts manual__2026-08-09T15:15:34.361882+00:00 [running]> on host 864517f40158
+[2026-08-09T15:15:46.961+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='forecast_logging' AIRFLOW_CTX_TASK_ID='log_forecasts' AIRFLOW_CTX_EXECUTION_DATE='2026-08-09T15:15:34.361882+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-08-09T15:15:34.361882+00:00'
+[2026-08-09T15:15:46.963+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-09T15:15:47.083+0000] {external.py:63} INFO - Initializing external client
+[2026-08-09T15:15:47.084+0000] {external.py:70} INFO - Base URL: https://eu-west.cloud.hopsworks.ai:443
+[2026-08-09T15:16:20.864+0000] {python.py:138} INFO - Python Engine initialized.
+[2026-08-09T15:16:28.531+0000] {logging_mixin.py:188} INFO - 
+Logged in to project, explore it here https://eu-west.cloud.hopsworks.ai:443/p/41136
+[2026-08-09T15:17:00.156+0000] {logging_mixin.py:188} WARNING - Downloading: 0.000%|          | 0/591806465 elapsed<00:00 remaining<?
+[2026-08-09T15:17:00.499+0000] {logging_mixin.py:188} WARNING - Downloading: 0.002%|          | 11958/591806465 elapsed<00:00 remaining<4:37:31
+[2026-08-09T15:17:00.599+0000] {logging_mixin.py:188} WARNING - Downloading: 0.009%|          | 52516/591806465 elapsed<00:00 remaining<1:07:43
+[2026-08-09T15:17:03.235+0000] {logging_mixin.py:188} WARNING - Downloading: 0.014%|          | 81262/591806465 elapsed<00:03 remaining<7:29:27
+[2026-08-09T15:17:06.046+0000] {logging_mixin.py:188} WARNING - Downloading: 0.017%|          | 98590/591806465 elapsed<00:05 remaining<12:53:56
+[2026-08-09T15:17:06.667+0000] {logging_mixin.py:188} WARNING - Downloading: 0.019%|          | 113678/591806465 elapsed<00:06 remaining<11:18:25
+[2026-08-09T15:17:07.230+0000] {logging_mixin.py:188} WARNING - Downloading: 0.022%|          | 130046/591806465 elapsed<00:07 remaining<9:40:57 
+[2026-08-09T15:17:07.345+0000] {logging_mixin.py:188} WARNING - Downloading: 0.023%|          | 138238/591806465 elapsed<00:07 remaining<8:25:33
+[2026-08-09T15:17:07.494+0000] {logging_mixin.py:188} WARNING - Downloading: 0.025%|          | 146102/591806465 elapsed<00:07 remaining<7:25:22
+[2026-08-09T15:17:08.595+0000] {logging_mixin.py:188} WARNING - Downloading: 0.027%|          | 160850/591806465 elapsed<00:08 remaining<9:03:09
+[2026-08-09T15:17:09.111+0000] {logging_mixin.py:188} WARNING - Downloading: 0.031%|          | 181314/591806465 elapsed<00:08 remaining<7:05:12
+[2026-08-09T15:17:09.641+0000] {logging_mixin.py:188} WARNING - Downloading: 0.032%|          | 189498/591806465 elapsed<00:09 remaining<7:44:58
+[2026-08-09T15:17:09.892+0000] {logging_mixin.py:188} WARNING - Downloading: 0.033%|          | 193586/591806465 elapsed<00:09 remaining<8:01:24
+[2026-08-09T15:17:10.166+0000] {logging_mixin.py:188} WARNING - Downloading: 0.034%|          | 201778/591806465 elapsed<00:10 remaining<7:23:21
+[2026-08-09T15:17:10.579+0000] {logging_mixin.py:188} WARNING - Downloading: 0.035%|          | 205866/591806465 elapsed<00:10 remaining<8:47:23
+[2026-08-09T15:17:10.703+0000] {logging_mixin.py:188} WARNING - Downloading: 0.036%|          | 214050/591806465 elapsed<00:10 remaining<6:52:42
+[2026-08-09T15:17:11.032+0000] {logging_mixin.py:188} WARNING - Downloading: 0.037%|          | 218146/591806465 elapsed<00:10 remaining<8:00:30
+[2026-08-09T15:17:11.961+0000] {logging_mixin.py:188} WARNING - Downloading: 0.038%|          | 226330/591806465 elapsed<00:11 remaining<11:35:41
+[2026-08-09T15:17:12.815+0000] {logging_mixin.py:188} WARNING - Downloading: 0.040%|          | 238610/591806465 elapsed<00:12 remaining<11:31:11
+[2026-08-09T15:17:14.198+0000] {logging_mixin.py:188} WARNING - Downloading: 0.042%|          | 246794/591806465 elapsed<00:14 remaining<16:09:21
+[2026-08-09T15:17:14.753+0000] {logging_mixin.py:188} WARNING - Downloading: 0.042%|          | 250882/591806465 elapsed<00:14 remaining<17:11:51
+[2026-08-09T15:17:15.317+0000] {logging_mixin.py:188} WARNING - Downloading: 0.047%|          | 279530/591806465 elapsed<00:15 remaining<8:25:06 
+[2026-08-09T15:17:15.847+0000] {logging_mixin.py:188} WARNING - Downloading: 0.050%|          | 295898/591806465 elapsed<00:15 remaining<7:22:00
+[2026-08-09T15:17:24.699+0000] {logging_mixin.py:188} WARNING - Downloading: 0.054%|          | 322098/591806465 elapsed<00:24 remaining<28:23:45
+[2026-08-09T15:17:25.591+0000] {logging_mixin.py:188} WARNING - Downloading: 0.057%|          | 335866/591806465 elapsed<00:25 remaining<24:00:44
+[2026-08-09T15:17:26.204+0000] {logging_mixin.py:188} WARNING - Downloading: 0.059%|          | 347042/591806465 elapsed<00:26 remaining<20:40:22
+[2026-08-09T15:17:26.730+0000] {logging_mixin.py:188} WARNING - Downloading: 0.059%|          | 350034/591806465 elapsed<00:26 remaining<21:18:58
+[2026-08-09T15:17:27.326+0000] {logging_mixin.py:188} WARNING - Downloading: 0.061%|          | 358218/591806465 elapsed<00:27 remaining<19:07:23
+[2026-08-09T15:17:29.362+0000] {logging_mixin.py:188} WARNING - Downloading: 0.061%|          | 362306/591806465 elapsed<00:29 remaining<28:06:50
+[2026-08-09T15:17:37.980+0000] {logging_mixin.py:188} WARNING - Downloading: 0.062%|          | 366402/591806465 elapsed<00:37 remaining<82:12:10
+[2026-08-09T15:17:39.498+0000] {logging_mixin.py:188} WARNING - Downloading: 0.063%|          | 370490/591806465 elapsed<00:39 remaining<78:03:28
+[2026-08-09T15:17:40.481+0000] {logging_mixin.py:188} WARNING - Downloading: 0.064%|          | 378674/591806465 elapsed<00:40 remaining<57:08:48
+[2026-08-09T15:17:41.040+0000] {logging_mixin.py:188} WARNING - Downloading: 0.066%|          | 390954/591806465 elapsed<00:40 remaining<35:34:04
+[2026-08-09T15:17:41.632+0000] {logging_mixin.py:188} WARNING - Downloading: 0.067%|          | 395050/591806465 elapsed<00:41 remaining<33:32:20
+[2026-08-09T15:17:44.721+0000] {logging_mixin.py:188} WARNING - Downloading: 0.069%|          | 407322/591806465 elapsed<00:44 remaining<36:50:41
+[2026-08-09T15:17:45.849+0000] {logging_mixin.py:188} WARNING - Downloading: 0.070%|          | 411418/591806465 elapsed<00:45 remaining<38:15:14
+[2026-08-09T15:17:52.339+0000] {logging_mixin.py:188} WARNING - Downloading: 0.070%|          | 415506/591806465 elapsed<00:52 remaining<81:15:06
+[2026-08-09T15:17:54.418+0000] {logging_mixin.py:188} WARNING - Downloading: 0.071%|          | 419602/591806465 elapsed<00:54 remaining<81:42:23
+[2026-08-09T15:17:55.450+0000] {logging_mixin.py:188} WARNING - Downloading: 0.074%|          | 435970/591806465 elapsed<00:55 remaining<42:15:28
+[2026-08-09T15:17:56.101+0000] {logging_mixin.py:188} WARNING - Downloading: 0.076%|          | 452338/591806465 elapsed<00:55 remaining<26:29:24
+[2026-08-09T15:17:58.007+0000] {logging_mixin.py:188} WARNING - Downloading: 0.078%|          | 460530/591806465 elapsed<00:57 remaining<29:18:20
+[2026-08-09T15:17:58.379+0000] {logging_mixin.py:188} WARNING - Downloading: 0.079%|          | 468714/591806465 elapsed<00:58 remaining<23:44:11
+[2026-08-09T15:17:58.499+0000] {logging_mixin.py:188} WARNING - Downloading: 0.081%|          | 480986/591806465 elapsed<00:58 remaining<15:54:52
+[2026-08-09T15:17:58.705+0000] {logging_mixin.py:188} WARNING - Downloading: 0.082%|          | 485082/591806465 elapsed<00:58 remaining<14:48:55
+[2026-08-09T15:17:58.973+0000] {logging_mixin.py:188} WARNING - Downloading: 0.083%|          | 493266/591806465 elapsed<00:58 remaining<12:03:39
+[2026-08-09T15:17:59.239+0000] {logging_mixin.py:188} WARNING - Downloading: 0.086%|          | 509164/591806465 elapsed<00:59 remaining<7:53:47 
+[2026-08-09T15:17:59.537+0000] {logging_mixin.py:188} WARNING - Downloading: 0.088%|          | 520242/591806465 elapsed<00:59 remaining<6:49:32
+[2026-08-09T15:18:00.022+0000] {logging_mixin.py:188} WARNING - Downloading: 0.091%|          | 540706/591806465 elapsed<00:59 remaining<5:30:37
+[2026-08-09T15:18:00.388+0000] {logging_mixin.py:188} WARNING - Downloading: 0.092%|          | 544794/591806465 elapsed<01:00 remaining<6:33:02
+[2026-08-09T15:18:01.066+0000] {logging_mixin.py:188} WARNING - Downloading: 0.093%|          | 552978/591806465 elapsed<01:00 remaining<8:16:49
+[2026-08-09T15:18:01.538+0000] {logging_mixin.py:188} WARNING - Downloading: 0.096%|          | 569354/591806465 elapsed<01:01 remaining<6:49:14
+[2026-08-09T15:18:05.115+0000] {logging_mixin.py:188} WARNING - Downloading: 0.097%|          | 573442/591806465 elapsed<01:04 remaining<24:20:57
+[2026-08-09T15:18:06.103+0000] {logging_mixin.py:188} WARNING - Downloading: 0.103%|          | 610274/591806465 elapsed<01:05 remaining<11:56:05
+[2026-08-09T15:18:14.312+0000] {logging_mixin.py:188} WARNING - Downloading: 0.104%|          | 614370/591806465 elapsed<01:14 remaining<40:28:40
+[2026-08-09T15:18:15.119+0000] {logging_mixin.py:188} WARNING - Downloading: 0.105%|          | 618458/591806465 elapsed<01:14 remaining<39:33:33
+[2026-08-09T15:18:23.653+0000] {logging_mixin.py:188} WARNING - Downloading: 0.105%|          | 622554/591806465 elapsed<01:23 remaining<81:54:54
+[2026-08-09T15:18:40.749+0000] {logging_mixin.py:188} WARNING - Downloading: 0.106%|          | 626650/591806465 elapsed<01:40 remaining<81:54:52
+[2026-08-09T15:20:54.602+0000] {model_engine.py:743} WARNING - Failed to download the model into '/tmp/hopsworks/models/aqi_predictor_2026_7x9k/aqi_predictor_model/1/aqi_predictor_model_1': ("Connection broken: InvalidChunkLength(got length b'', 0 bytes read)", InvalidChunkLength(got length b'', 0 bytes read)). Retrying in the next location...
+[2026-08-09T15:20:54.642+0000] {logging_mixin.py:188} INFO - Failed to download the model into '/tmp/hopsworks/models/aqi_predictor_2026_7x9k/aqi_predictor_model/1/aqi_predictor_model_1': ("Connection broken: InvalidChunkLength(got length b'', 0 bytes read)", InvalidChunkLength(got length b'', 0 bytes read)). Retrying in the next location...
+[2026-08-09T15:20:58.992+0000] {logging_mixin.py:188} WARNING - Downloading: 0.106%|          | 626650/591806465 elapsed<03:58 remaining<62:35:09
+[2026-08-09T15:20:59.002+0000] {model_engine.py:743} WARNING - Failed to download the model into '/home/***/.hopsworks/cache/models/aqi_predictor_2026_7x9k/aqi_predictor_model/1/aqi_predictor_model_1': HTTPSConnectionPool(host='eu-west.cloud.hopsworks.ai', port=443): Max retries exceeded with url: /hopsworks-api/api/project/41136/dataset/%2FProjects%2Faqi_predictor_2026_7x9k%2FModels%2Faqi_predictor_model%2F1%2FFiles (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7174fe9de5d0>: Failed to resolve 'eu-west.cloud.hopsworks.ai' ([Errno -5] No address associated with hostname)")). Retrying in the next location...
+[2026-08-09T15:20:59.039+0000] {logging_mixin.py:188} INFO - Failed to download the model into '/home/***/.hopsworks/cache/models/aqi_predictor_2026_7x9k/aqi_predictor_model/1/aqi_predictor_model_1': HTTPSConnectionPool(host='eu-west.cloud.hopsworks.ai', port=443): Max retries exceeded with url: /hopsworks-api/api/project/41136/dataset/%2FProjects%2Faqi_predictor_2026_7x9k%2FModels%2Faqi_predictor_model%2F1%2FFiles (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7174fe9de5d0>: Failed to resolve 'eu-west.cloud.hopsworks.ai' ([Errno -5] No address associated with hostname)")). Retrying in the next location...
+[2026-08-09T15:21:03.070+0000] {model_engine.py:743} WARNING - Failed to download the model into '/opt/***/.hopsworks_cache/models/aqi_predictor_2026_7x9k/aqi_predictor_model/1/aqi_predictor_model_1': HTTPSConnectionPool(host='eu-west.cloud.hopsworks.ai', port=443): Max retries exceeded with url: /hopsworks-api/api/project/41136/dataset/%2FProjects%2Faqi_predictor_2026_7x9k%2FModels%2Faqi_predictor_model%2F1%2FFiles (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7174ffd44f10>: Failed to resolve 'eu-west.cloud.hopsworks.ai' ([Errno -5] No address associated with hostname)")). No fallback locations remain.
+[2026-08-09T15:21:03.071+0000] {logging_mixin.py:188} INFO - Failed to download the model into '/opt/***/.hopsworks_cache/models/aqi_predictor_2026_7x9k/aqi_predictor_model/1/aqi_predictor_model_1': HTTPSConnectionPool(host='eu-west.cloud.hopsworks.ai', port=443): Max retries exceeded with url: /hopsworks-api/api/project/41136/dataset/%2FProjects%2Faqi_predictor_2026_7x9k%2FModels%2Faqi_predictor_model%2F1%2FFiles (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7174ffd44f10>: Failed to resolve 'eu-west.cloud.hopsworks.ai' ([Errno -5] No address associated with hostname)")). No fallback locations remain.
+[2026-08-09T15:21:03.083+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-09T15:21:03.152+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -5] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 791, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 492, in _make_request
+    raise new_e
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 468, in _make_request
+    self._validate_conn(conn)
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1097, in _validate_conn
+    conn.connect()
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x7174ffd44f10>: Failed to resolve 'eu-west.cloud.hopsworks.ai' ([Errno -5] No address associated with hostname)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/connectionpool.py", line 845, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eu-west.cloud.hopsworks.ai', port=443): Max retries exceeded with url: /hopsworks-api/api/project/41136/dataset/%2FProjects%2Faqi_predictor_2026_7x9k%2FModels%2Faqi_predictor_model%2F1%2FFiles (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7174ffd44f10>: Failed to resolve 'eu-west.cloud.hopsworks.ai' ([Errno -5] No address associated with hostname)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/forecast_logging_dag.py", line 30, in log_forecasts
+    log_todays_forecasts()
+  File "/opt/airflow/project/analytics/forecast_log.py", line 63, in log_todays_forecasts
+    model, feature_names, model_name, framework, model_version = load_latest_model(project)
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/project/serving/predict.py", line 46, in load_latest_model
+    model_dir = model_meta.download()
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsml/model.py", line 209, in download
+    return self._model_engine._download(model_instance=self, local_path=local_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsml/engine/model_engine.py", line 590, in _download
+    self._download_model_files(model_instance, cache_path)
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsml/engine/model_engine.py", line 880, in _download_model_files
+    raise be
+  File "/home/airflow/.local/lib/python3.11/site-packages/hsml/engine/model_engine.py", line 869, in _download_model_files
+    if not self._dataset_api.path_exists(from_hdfs_model_path):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hopsworks_common/core/dataset_api.py", line 486, in path_exists
+    return self.exists(remote_path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hopsworks_common/core/dataset_api.py", line 469, in exists
+    self._get(path)
+  File "/home/airflow/.local/lib/python3.11/site-packages/hopsworks_common/core/dataset_api.py", line 442, in _get
+    return _client._send_request("GET", path_params, headers=headers)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hopsworks_common/decorators.py", line 61, in if_connected
+    return fn(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/hopsworks_common/client/base.py", line 171, in _send_request
+    response = self._session.send(prepped, verify=self._verify, stream=stream)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/requests/adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='eu-west.cloud.hopsworks.ai', port=443): Max retries exceeded with url: /hopsworks-api/api/project/41136/dataset/%2FProjects%2Faqi_predictor_2026_7x9k%2FModels%2Faqi_predictor_model%2F1%2FFiles (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7174ffd44f10>: Failed to resolve 'eu-west.cloud.hopsworks.ai' ([Errno -5] No address associated with hostname)"))
+[2026-08-09T15:21:03.387+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=forecast_logging, task_id=log_forecasts, run_id=manual__2026-08-09T15:15:34.361882+00:00, execution_date=20260809T151534, start_date=20260809T151545, end_date=20260809T152103
+[2026-08-09T15:21:03.517+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 223 for task log_forecasts (HTTPSConnectionPool(host='eu-west.cloud.hopsworks.ai', port=443): Max retries exceeded with url: /hopsworks-api/api/project/41136/dataset/%2FProjects%2Faqi_predictor_2026_7x9k%2FModels%2Faqi_predictor_model%2F1%2FFiles (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7174ffd44f10>: Failed to resolve 'eu-west.cloud.hopsworks.ai' ([Errno -5] No address associated with hostname)")); 447)
+[2026-08-09T15:21:03.665+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2026-08-09T15:21:04.103+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-09T15:21:04.106+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

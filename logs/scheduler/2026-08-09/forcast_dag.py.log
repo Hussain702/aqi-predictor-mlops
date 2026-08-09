@@ -1,0 +1,271 @@
+[2026-08-09T13:49:39.265+0000] {processor.py:161} INFO - Started process (PID=168) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:49:39.271+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:49:39.280+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:49:39.278+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:49:39.474+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:49:39.438+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:49:39.512+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:49:39.668+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.437 seconds
+[2026-08-09T13:50:09.845+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:50:09.850+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:50:09.858+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:50:09.857+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:50:09.955+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:50:09.940+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:50:09.960+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:50:10.036+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.215 seconds
+[2026-08-09T13:50:40.882+0000] {processor.py:161} INFO - Started process (PID=202) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:50:41.307+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:50:41.691+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:50:41.690+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:50:42.801+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:50:42.504+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:50:42.805+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:50:44.450+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 3.591 seconds
+[2026-08-09T13:51:14.724+0000] {processor.py:161} INFO - Started process (PID=219) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:51:14.728+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:51:14.735+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:51:14.734+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:51:14.859+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:51:14.847+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:51:14.863+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:51:14.937+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.239 seconds
+[2026-08-09T13:51:45.910+0000] {processor.py:161} INFO - Started process (PID=236) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:51:45.914+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:51:45.923+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:51:45.922+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:51:46.051+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:51:45.998+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:51:46.055+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:51:46.133+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.247 seconds
+[2026-08-09T13:52:16.412+0000] {processor.py:161} INFO - Started process (PID=253) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:52:16.415+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:52:16.784+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:52:16.784+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:52:16.864+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:52:16.854+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:52:16.868+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:52:17.013+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.623 seconds
+[2026-08-09T13:52:47.859+0000] {processor.py:161} INFO - Started process (PID=270) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:52:47.888+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:52:47.910+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:52:47.895+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:52:48.056+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:52:48.034+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:52:48.060+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:52:48.124+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.331 seconds
+[2026-08-09T13:53:18.952+0000] {processor.py:161} INFO - Started process (PID=287) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:53:18.955+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:53:18.960+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:53:18.959+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:53:19.047+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:53:19.034+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:53:19.051+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:53:19.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.176 seconds
+[2026-08-09T13:53:50.115+0000] {processor.py:161} INFO - Started process (PID=304) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:53:50.118+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:53:50.123+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:53:50.122+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:53:50.200+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:53:50.188+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:53:50.205+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:53:50.258+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.159 seconds
+[2026-08-09T13:54:20.866+0000] {processor.py:161} INFO - Started process (PID=321) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:54:20.869+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:54:20.875+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:54:20.874+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:54:20.968+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:54:20.954+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:54:20.972+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:54:21.039+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.191 seconds
+[2026-08-09T13:54:52.434+0000] {processor.py:161} INFO - Started process (PID=338) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:54:52.436+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:54:52.453+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:54:52.452+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:54:52.555+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:54:52.543+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:54:52.561+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:54:52.698+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.298 seconds
+[2026-08-09T13:55:22.968+0000] {processor.py:161} INFO - Started process (PID=355) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:55:22.970+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:55:22.976+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:55:22.975+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:55:23.064+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:55:23.051+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:55:23.069+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:55:23.133+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.190 seconds
+[2026-08-09T13:55:53.788+0000] {processor.py:161} INFO - Started process (PID=372) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:55:53.791+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:55:53.797+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:55:53.796+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:55:53.892+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:55:53.879+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:55:53.896+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:55:53.958+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.194 seconds
+[2026-08-09T13:56:24.842+0000] {processor.py:161} INFO - Started process (PID=389) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:56:24.846+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:56:24.851+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:56:24.850+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:56:24.925+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:56:24.912+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:56:24.932+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:56:24.988+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.167 seconds
+[2026-08-09T13:58:02.921+0000] {processor.py:161} INFO - Started process (PID=168) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:58:02.926+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:58:02.939+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:58:02.934+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:58:03.069+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:58:03.053+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:58:03.077+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:58:03.210+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.325 seconds
+[2026-08-09T13:58:34.418+0000] {processor.py:161} INFO - Started process (PID=185) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:58:34.427+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:58:34.440+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:58:34.439+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:58:34.541+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:58:34.530+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:58:34.545+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:58:34.618+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.632 seconds
+[2026-08-09T13:59:05.578+0000] {processor.py:161} INFO - Started process (PID=202) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:59:05.580+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:59:05.585+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:59:05.584+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:59:05.666+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:59:05.653+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:59:05.670+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:59:05.718+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.157 seconds
+[2026-08-09T13:59:37.430+0000] {processor.py:161} INFO - Started process (PID=219) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:59:37.432+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T13:59:37.455+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:59:37.437+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:59:37.548+0000] {logging_mixin.py:188} INFO - [2026-08-09T13:59:37.530+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T13:59:37.560+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T13:59:37.648+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.238 seconds
+[2026-08-09T14:00:07.839+0000] {processor.py:161} INFO - Started process (PID=239) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T14:00:07.841+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T14:00:07.846+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:00:07.845+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T14:00:07.937+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:00:07.925+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/forcast_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/forcast_dag.py", line 15, in <module>
+    from analytics.forecast_log import log_todays_forecasts
+ModuleNotFoundError: No module named 'analytics.forecast_log'
+[2026-08-09T14:00:07.941+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T14:00:07.997+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.175 seconds
+[2026-08-09T14:01:20.761+0000] {processor.py:161} INFO - Started process (PID=264) to work on /opt/airflow/dags/forcast_dag.py
+[2026-08-09T14:01:20.787+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forcast_dag.py for tasks to queue
+[2026-08-09T14:01:20.792+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:01:20.792+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T14:01:20.796+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/forcast_dag.py
+[2026-08-09T14:01:20.870+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forcast_dag.py took 0.169 seconds

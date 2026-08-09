@@ -22,7 +22,6 @@ Run:
     streamlit run dashboard/streamlit_app.py
 """
 
-import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -32,22 +31,15 @@ from pathlib import Path
 # `from utils...` / `from training...` fail with ModuleNotFoundError.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-import joblib
-import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
 from utils.hopsworks_client import get_project
-from training.registry import MODEL_NAME
-from training.train import (
-    FEATURE_GROUP_NAME,
-    FEATURE_GROUP_VERSION,
-    FEATURE_COLUMNS,
-    CATEGORICAL_COLUMN,
-    prepare_features,
-)
+from training.train import FEATURE_GROUP_NAME, FEATURE_GROUP_VERSION, prepare_features
 from serving.explain import explain_prediction
+from serving.predict import load_latest_model, predict_for_city
+from analytics.forecast_log import compute_accuracy
 from analytics.eda import (
     aqi_trend_figure,
     aqi_distribution_figure,
@@ -87,40 +79,7 @@ def aqi_category(aqi: float):
 def load_model_and_data():
     project = get_project()
 
-    mr = project.get_model_registry()
-    try:
-        model_meta = mr.get_best_model(MODEL_NAME, "rmse_24h", "min")
-    except Exception:
-        models = mr.get_models(MODEL_NAME)
-        if not models:
-            raise RuntimeError(
-                f"No registered model named '{MODEL_NAME}' found. "
-                "Run `python -m training.registry` first."
-            )
-        model_meta = max(models, key=lambda m: m.version)
-
-    model_dir = model_meta.download()
-
-    framework_path = os.path.join(model_dir, "framework.txt")
-    framework = open(framework_path).read().strip() if os.path.exists(framework_path) else "sklearn"
-
-    if framework == "tensorflow":
-        import tensorflow as tf
-
-        keras_model = tf.keras.models.load_model(os.path.join(model_dir, "keras_model.keras"))
-
-        class _LoadedKerasModel:
-            """Matches the .predict(X) interface the rest of the dashboard expects."""
-            def predict(self, X):
-                X_arr = X.values if hasattr(X, "values") else X
-                return keras_model.predict(X_arr, verbose=0)
-
-        model = _LoadedKerasModel()
-    else:
-        model = joblib.load(os.path.join(model_dir, "model.pkl"))
-
-    with open(os.path.join(model_dir, "feature_names.txt")) as f:
-        feature_names = f.read().splitlines()
+    model, feature_names, winning_model_name, framework, model_version = load_latest_model(project)
 
     fs = project.get_feature_store()
     fg = fs.get_feature_group(name=FEATURE_GROUP_NAME, version=FEATURE_GROUP_VERSION)
@@ -133,24 +92,7 @@ def load_model_and_data():
     X_full, _ = prepare_features(raw_df)
     X_background = X_full.sample(min(200, len(X_full)), random_state=42)
 
-    return model, feature_names, latest_per_city, model_meta.version, raw_df, X_background, framework
-
-
-def build_feature_row(city_row: pd.Series, feature_names: list) -> pd.DataFrame:
-    """Build a single-row DataFrame matching the model's expected column order."""
-    row = {col: city_row[col] for col in FEATURE_COLUMNS}
-    for name in feature_names:
-        if name.startswith("city_"):
-            row[name] = 1 if name == f"city_{city_row[CATEGORICAL_COLUMN]}" else 0
-    return pd.DataFrame([row])[feature_names]
-
-
-def predict_for_city(city_row: pd.Series, model, feature_names: list):
-    """Returns (values=[today, +24h, +48h, +72h], as_of timestamp, X_row used for the prediction)."""
-    X = build_feature_row(city_row, feature_names)
-    predictions = np.asarray(model.predict(X)).flatten()
-    values = [float(city_row["aqi"])] + list(predictions)
-    return values, city_row["timestamp"], X
+    return model, feature_names, latest_per_city, model_version, raw_df, X_background, framework, winning_model_name
 
 
 # ---------------- UI building blocks ----------------
@@ -175,13 +117,13 @@ def render_header():
     )
 
 
-def render_footer(model_version, framework):
+def render_footer(model_version, model_name, framework):
     st.divider()
     st.markdown(
         f"""
         <div style="text-align:center;color:#888;font-size:12px;padding:8px 0;">
             AeroWatch &bull; Data: Hopsworks Feature Store &bull;
-            Model: v{model_version} ({framework}) &bull;
+            Model: v{model_version} &mdash; {model_name} ({framework}) &bull;
             Dashboard refreshed {datetime.now(timezone.utc):%Y-%m-%d %H:%M} UTC
         </div>
         """,
@@ -189,9 +131,9 @@ def render_footer(model_version, framework):
     )
 
 
-def render_sidebar(model_version, framework):
+def render_sidebar(model_version, model_name, framework):
     st.sidebar.markdown("### \U0001F32C AeroWatch")
-    st.sidebar.caption(f"Model version: {model_version} ({framework})")
+    st.sidebar.caption(f"Model version: {model_version} \u2014 {model_name} ({framework})")
 
     if st.sidebar.button("\U0001F504 Refresh Data", use_container_width=True):
         load_model_and_data.clear()
@@ -361,34 +303,97 @@ def render_eda_tab(raw_df: pd.DataFrame):
     st.plotly_chart(correlation_heatmap_figure(raw_df), use_container_width=True)
 
 
+def render_accuracy_tab():
+    """
+    Real-world accuracy: what the model predicted vs. what actually
+    happened, once enough time has passed for logged forecasts' target
+    dates to have arrived. Different from the Model Performance numbers
+    in the README, which come from a held-out TEST SPLIT of historical
+    data -- this is the live model being checked against reality.
+    """
+    st.subheader("Forecast Accuracy \u2014 predicted vs. actual")
+    st.caption(
+        "Requires the daily forecast_logging DAG to have been running for at least "
+        "a day or two, so some logged +24h predictions have had time to actually happen."
+    )
+
+    try:
+        with st.spinner("Comparing logged forecasts against actual outcomes..."):
+            accuracy_df = compute_accuracy()
+    except Exception as e:
+        st.info(f"Forecast log not available yet ({e}). Run the `forecast_logging` DAG first.")
+        return
+
+    if accuracy_df.empty:
+        st.info(
+            "No matched predictions yet \u2014 check back in a day or two once some "
+            "logged forecasts' target dates have actually passed."
+        )
+        return
+
+    summary = (
+        accuracy_df.groupby(["horizon", "model_name"])["abs_error"]
+        .agg(["mean", "count"])
+        .reset_index()
+        .rename(columns={"mean": "MAE", "count": "n_predictions"})
+    )
+    st.dataframe(summary, use_container_width=True, hide_index=True)
+    st.caption(
+        "MAE = mean absolute error in AQI points, on REAL predictions the model "
+        "already made and that have since come true \u2014 not a test-set estimate."
+    )
+
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(
+        x=accuracy_df["aqi"], y=accuracy_df["predicted_aqi"], mode="markers",
+        marker=dict(color="#3498db", size=7, opacity=0.6),
+        text=accuracy_df["city"] + " \u00b7 " + accuracy_df["horizon"],
+    ))
+    max_val = max(accuracy_df["aqi"].max(), accuracy_df["predicted_aqi"].max()) + 10
+    fig.add_trace(go.Scatter(
+        x=[0, max_val], y=[0, max_val], mode="lines",
+        line=dict(color="#999", dash="dash"), showlegend=False,
+    ))
+    fig.update_layout(
+        height=380, margin=dict(l=10, r=10, t=30, b=10),
+        xaxis_title="Actual AQI", yaxis_title="Predicted AQI",
+        title="Predicted vs. actual (closer to the dashed line = better)",
+        plot_bgcolor="rgba(0,0,0,0)", paper_bgcolor="rgba(0,0,0,0)",
+    )
+    st.plotly_chart(fig, use_container_width=True)
+
+
 def main():
     render_header()
 
     try:
         (model, feature_names, latest_per_city, model_version,
-         raw_df, X_background, framework) = load_model_and_data()
+         raw_df, X_background, framework, winning_model_name) = load_model_and_data()
     except Exception as e:
         st.error(f"Could not load model/data from Hopsworks: {e}")
         return
 
-    render_sidebar(model_version, framework)
+    render_sidebar(model_version, winning_model_name, framework)
 
     tab_labels = ["\U0001F3E0 Overview"] + [
         f"{CITY_TAB_ICONS[c]} {c.title()}" for c in CITIES
-    ] + ["\U0001F4CA EDA"]
+    ] + ["\U0001F4CA EDA", "\U0001F3AF Accuracy"]
     tabs = st.tabs(tab_labels)
 
     with tabs[0]:
         render_overview_tab(latest_per_city, model, feature_names)
 
-    for tab, city in zip(tabs[1:-1], CITIES):
+    for tab, city in zip(tabs[1:-2], CITIES):
         with tab:
             render_city_tab(city, latest_per_city, model, feature_names, X_background)
 
-    with tabs[-1]:
+    with tabs[-2]:
         render_eda_tab(raw_df)
 
-    render_footer(model_version, framework)
+    with tabs[-1]:
+        render_accuracy_tab()
+
+    render_footer(model_version, winning_model_name, framework)
 
 
 if __name__ == "__main__":

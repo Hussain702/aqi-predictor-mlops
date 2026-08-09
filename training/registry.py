@@ -43,7 +43,7 @@ def flatten_metrics(nested_metrics: dict) -> dict:
     return flat
 
 
-def save_model_locally(model, feature_names: list) -> str:
+def save_model_locally(model, feature_names: list, model_name: str) -> str:
     """
     Dump the model + its feature list to a local folder Hopsworks can upload.
 
@@ -52,6 +52,10 @@ def save_model_locally(model, feature_names: list) -> str:
     TensorFlow's own model.save() format instead. A framework.txt marker
     file tells the dashboard (and any future loader) which one it's
     looking at without needing to guess from file extensions.
+
+    model_name.txt records the SPECIFIC winning algorithm (e.g.
+    "random_forest") -- framework alone can't distinguish Ridge from
+    Random Forest, since both are "sklearn".
     """
     if os.path.exists(MODEL_DIR):
         shutil.rmtree(MODEL_DIR)
@@ -60,6 +64,8 @@ def save_model_locally(model, feature_names: list) -> str:
     framework = getattr(model, "framework", "sklearn")
     with open(os.path.join(MODEL_DIR, "framework.txt"), "w") as f:
         f.write(framework)
+    with open(os.path.join(MODEL_DIR, "model_name.txt"), "w") as f:
+        f.write(model_name)
 
     if framework == "tensorflow":
         model.model.save(os.path.join(MODEL_DIR, "keras_model.keras"))
@@ -72,7 +78,7 @@ def save_model_locally(model, feature_names: list) -> str:
     return MODEL_DIR
 
 
-def register_model(model, feature_names: list, flat_metrics: dict, project):
+def register_model(model, feature_names: list, flat_metrics: dict, project, model_name: str):
     """
     Upload the model folder to the Hopsworks Model Registry.
 
@@ -83,12 +89,12 @@ def register_model(model, feature_names: list, flat_metrics: dict, project):
     safe to just retry .save() again on the same model object.
     """
     model_registry = project.get_model_registry()
-    model_dir = save_model_locally(model, feature_names)
+    model_dir = save_model_locally(model, feature_names, model_name)
     framework = getattr(model, "framework", "sklearn")
 
     description = (
         "AQI multi-horizon forecast model (predicts +24h/+48h/+72h AQI; "
-        f"best of Ridge Regression / Random Forest / Neural Network -- winner: {framework})"
+        f"best of Ridge Regression / Random Forest / Neural Network -- winner: {model_name}"
     )
 
     if framework == "tensorflow":
@@ -112,7 +118,7 @@ def register_model(model, feature_names: list, flat_metrics: dict, project):
             print(f"Retrying in {wait_seconds}s...")
             time.sleep(wait_seconds)
 
-    print(f"Registered '{MODEL_NAME}' version {aqi_model.version} ({framework}) in the Model Registry.")
+    print(f"Registered '{MODEL_NAME}' version {aqi_model.version} ({model_name}, {framework}) in the Model Registry.")
     return aqi_model
 
 
@@ -138,7 +144,7 @@ def run_training_pipeline():
     flat_metrics = flatten_metrics(results[best_name])
 
     project = get_project()
-    register_model(best_model, X.columns.tolist(), flat_metrics, project)
+    register_model(best_model, X.columns.tolist(), flat_metrics, project, best_name)
 
 
 if __name__ == "__main__":

@@ -26,6 +26,7 @@ Run standalone (just trains + prints, no evaluation/registration):
     python -m training.train
 """
 
+import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
@@ -52,6 +53,24 @@ CATEGORICAL_COLUMN = "city"
 TARGET_HORIZONS = ["24h", "48h", "72h"]
 TARGET_COLUMNS = [f"aqi_target_{h}" for h in TARGET_HORIZONS]
 HORIZON_HOURS = {"24h": 24, "48h": 48, "72h": 72}
+
+
+def _to_float_array(data) -> np.ndarray:
+    """
+    Force a clean float32 numpy array, regardless of input dtype quirks.
+
+    Hopsworks reads data back via its Arrow-based Feature Query Service,
+    which often returns columns as pandas' NULLABLE extension dtypes
+    (capital-letter "Int64", "boolean") instead of plain numpy dtypes.
+    A DataFrame mixing extension dtypes with regular numpy columns turns
+    into dtype=object on a plain `.values`/`.to_numpy()` call -- sklearn
+    tolerates that (it coerces internally), but TensorFlow does not and
+    raises "ValueError: Invalid dtype: object". .to_numpy(dtype="float32")
+    forces the real numeric cast instead of leaving it to guess.
+    """
+    if hasattr(data, "to_numpy"):
+        return data.to_numpy(dtype="float32")
+    return np.asarray(data, dtype="float32")
 
 
 class KerasMultiOutputRegressor:
@@ -81,8 +100,8 @@ class KerasMultiOutputRegressor:
         self.model.compile(optimizer="adam", loss="mse", metrics=["mae"])
 
     def fit(self, X, y):
-        X_arr = X.values if hasattr(X, "values") else X
-        y_arr = y.values if hasattr(y, "values") else y
+        X_arr = _to_float_array(X)
+        y_arr = _to_float_array(y)
         self.model.fit(
             X_arr, y_arr,
             epochs=self.epochs, batch_size=self.batch_size, verbose=self.verbose,
@@ -90,7 +109,7 @@ class KerasMultiOutputRegressor:
         return self
 
     def predict(self, X):
-        X_arr = X.values if hasattr(X, "values") else X
+        X_arr = _to_float_array(X)
         return self.model.predict(X_arr, verbose=0)
 
 

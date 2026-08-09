@@ -1,0 +1,962 @@
+[2026-08-09T14:04:30.419+0000] {processor.py:161} INFO - Started process (PID=169) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:04:30.422+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:04:30.428+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:04:30.428+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:04:58.700+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:04:58.698+0000] {timeout.py:68} ERROR - Process timed out, PID: 169
+[2026-08-09T14:05:29.343+0000] {processor.py:161} INFO - Started process (PID=212) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:05:29.346+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:05:29.356+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:05:29.355+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:05:49.380+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:05:50.950+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:05:50.948+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:forecast_logging
+[2026-08-09T14:05:50.984+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:05:50.983+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:forecast_logging
+[2026-08-09T14:05:51.016+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:05:51.015+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:forecast_logging
+[2026-08-09T14:05:51.018+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:05:51.017+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:05:51.047+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:05:51.045+0000] {dag.py:3111} INFO - Creating ORM DAG for forecast_logging
+[2026-08-09T14:05:51.105+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:05:51.102+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-08 00:00:00+00:00, run_after=2026-08-09 00:00:00+00:00
+[2026-08-09T14:05:51.186+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 23.746 seconds
+[2026-08-09T14:06:21.704+0000] {processor.py:161} INFO - Started process (PID=259) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:06:21.719+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:06:21.752+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:06:21.736+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:06:48.744+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:06:48.802+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:06:48.800+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:06:48.867+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:06:48.866+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:06:48.942+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 29.380 seconds
+[2026-08-09T14:07:19.350+0000] {processor.py:161} INFO - Started process (PID=303) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:07:19.353+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:07:19.358+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:07:19.357+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:07:32.511+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:07:32.617+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:07:32.616+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:07:32.698+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:07:32.697+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:07:32.752+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 13.419 seconds
+[2026-08-09T14:08:03.456+0000] {processor.py:161} INFO - Started process (PID=334) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:08:03.467+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:08:03.478+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:08:03.475+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:08:16.469+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:08:17.225+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:08:17.223+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:08:18.005+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:08:17.949+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:08:18.228+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 16.838 seconds
+[2026-08-09T14:08:49.087+0000] {processor.py:161} INFO - Started process (PID=365) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:08:49.089+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:08:49.094+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:08:49.093+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:09:08.239+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:09:08.335+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:09:08.334+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:09:08.396+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:09:08.395+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:09:08.454+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 21.138 seconds
+[2026-08-09T14:09:39.252+0000] {processor.py:161} INFO - Started process (PID=408) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:09:39.262+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:09:39.269+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:09:39.268+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:11:02.289+0000] {processor.py:161} INFO - Started process (PID=539) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:11:02.292+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:11:02.295+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:11:02.294+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:11:30.493+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:11:30.492+0000] {timeout.py:68} ERROR - Process timed out, PID: 539
+[2026-08-09T14:12:01.325+0000] {processor.py:161} INFO - Started process (PID=692) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:12:01.328+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:12:01.330+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:12:01.330+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:12:25.533+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:12:25.969+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:12:25.968+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:12:26.014+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:12:26.013+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:12:26.062+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 26.880 seconds
+[2026-08-09T14:12:57.201+0000] {processor.py:161} INFO - Started process (PID=735) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:12:57.204+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:12:57.207+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:12:57.206+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:13:06.673+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:13:06.728+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:13:06.726+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:13:06.794+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:13:06.793+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:13:06.845+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.662 seconds
+[2026-08-09T14:13:38.070+0000] {processor.py:161} INFO - Started process (PID=766) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:13:38.072+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:13:38.075+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:13:38.074+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:13:48.822+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:13:48.885+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:13:48.884+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:13:48.933+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:13:48.933+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:13:48.983+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 10.935 seconds
+[2026-08-09T14:14:19.759+0000] {processor.py:161} INFO - Started process (PID=797) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:14:19.762+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:14:19.764+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:14:19.764+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:14:29.420+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:14:29.483+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:14:29.481+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:14:29.524+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:14:29.524+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:14:29.569+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.826 seconds
+[2026-08-09T14:15:00.857+0000] {processor.py:161} INFO - Started process (PID=847) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:15:00.862+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:15:00.884+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:15:00.864+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:15:29.446+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:15:29.445+0000] {timeout.py:68} ERROR - Process timed out, PID: 847
+[2026-08-09T14:15:29.582+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2026-08-09T14:15:29.583+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.11/site-packages/google/protobuf/descriptor_pool.py", line 1270, in Default
+[2026-08-09T14:15:29.609+0000] {logging_mixin.py:188} WARNING -     def Default():
+[2026-08-09T14:15:29.611+0000] {logging_mixin.py:188} WARNING -     
+[2026-08-09T14:15:29.612+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+[2026-08-09T14:15:29.713+0000] {logging_mixin.py:188} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2026-08-09T14:15:29.718+0000] {logging_mixin.py:188} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/forecast_logging_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.9.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.9.3/best-practices.html#reducing-dag-complexity, PID: 847
+[2026-08-09T14:16:22.175+0000] {processor.py:161} INFO - Started process (PID=910) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:16:22.182+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:16:22.185+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:16:22.184+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:16:49.916+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:16:49.913+0000] {timeout.py:68} ERROR - Process timed out, PID: 910
+[2026-08-09T14:16:49.921+0000] {logging_mixin.py:188} WARNING - Exception ignored in: <function WeakKeyDictionary.__init__.<locals>.remove at 0x7c070e8fccc0>
+[2026-08-09T14:16:49.924+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2026-08-09T14:16:49.926+0000] {logging_mixin.py:188} WARNING -   File "/usr/local/lib/python3.11/weakref.py", line 369, in remove
+[2026-08-09T14:16:49.975+0000] {logging_mixin.py:188} WARNING -     def remove(k, selfref=ref(self)):
+[2026-08-09T14:16:49.976+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+[2026-08-09T14:16:49.979+0000] {logging_mixin.py:188} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2026-08-09T14:16:49.980+0000] {logging_mixin.py:188} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/forecast_logging_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.9.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.9.3/best-practices.html#reducing-dag-complexity, PID: 910
+[2026-08-09T14:17:42.362+0000] {processor.py:161} INFO - Started process (PID=1087) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:17:42.411+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:17:42.414+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:17:42.413+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:18:09.328+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:18:10.928+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:18:10.927+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:18:11.000+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:18:10.999+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:18:11.064+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 30.842 seconds
+[2026-08-09T14:18:42.341+0000] {processor.py:161} INFO - Started process (PID=1202) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:18:42.372+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:18:42.376+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:18:42.375+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:19:05.105+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:19:05.167+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:19:05.166+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:19:05.212+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:19:05.212+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:19:05.255+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 24.912 seconds
+[2026-08-09T14:19:36.103+0000] {processor.py:161} INFO - Started process (PID=1261) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:19:36.108+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:19:36.112+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:19:36.111+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:19:50.296+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:19:50.519+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:19:50.518+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:19:50.575+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:19:50.574+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:19:50.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 16.645 seconds
+[2026-08-09T14:20:21.246+0000] {processor.py:161} INFO - Started process (PID=1348) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:20:21.250+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:20:21.253+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:20:21.252+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:20:54.875+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:20:54.873+0000] {timeout.py:68} ERROR - Process timed out, PID: 1348
+[2026-08-09T14:21:25.572+0000] {processor.py:161} INFO - Started process (PID=2011) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:21:25.576+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:21:25.578+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:21:25.577+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:21:53.393+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:21:53.392+0000] {timeout.py:68} ERROR - Process timed out, PID: 2011
+[2026-08-09T14:22:24.664+0000] {processor.py:161} INFO - Started process (PID=2323) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:22:24.671+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:22:24.676+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:22:24.674+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:22:49.530+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:22:50.288+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:22:50.278+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:22:50.324+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:22:50.323+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:22:50.376+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 27.666 seconds
+[2026-08-09T14:23:21.335+0000] {processor.py:161} INFO - Started process (PID=2366) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:23:21.338+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:23:21.340+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:23:21.339+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:23:49.203+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:23:49.201+0000] {timeout.py:68} ERROR - Process timed out, PID: 2366
+[2026-08-09T14:24:19.627+0000] {processor.py:161} INFO - Started process (PID=2426) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:24:19.630+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:24:19.633+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:24:19.632+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:24:38.820+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:24:39.056+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:24:39.055+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:24:39.119+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:24:39.118+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:24:39.177+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 21.656 seconds
+[2026-08-09T14:25:24.178+0000] {processor.py:161} INFO - Started process (PID=2459) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:25:24.185+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:25:24.784+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:25:24.221+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:30:44.923+0000] {processor.py:161} INFO - Started process (PID=2471) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:30:45.163+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:30:45.666+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:30:45.458+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:31:27.370+0000] {processor.py:161} INFO - Started process (PID=2480) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:31:27.372+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:31:27.375+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:31:27.374+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:31:56.962+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:31:56.961+0000] {timeout.py:68} ERROR - Process timed out, PID: 2480
+[2026-08-09T14:32:27.985+0000] {processor.py:161} INFO - Started process (PID=2519) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:32:27.988+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:32:27.991+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:32:27.990+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:32:42.534+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:32:42.894+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:32:42.892+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:32:42.956+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:32:42.955+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:32:43.010+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 15.048 seconds
+[2026-08-09T14:33:14.100+0000] {processor.py:161} INFO - Started process (PID=2566) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:33:14.103+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:33:14.111+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:33:14.107+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:33:50.898+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:33:44.081+0000] {timeout.py:68} ERROR - Process timed out, PID: 2566
+[2026-08-09T14:38:23.578+0000] {processor.py:161} INFO - Started process (PID=2596) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:38:39.256+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:38:39.966+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:38:39.687+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:39:44.014+0000] {processor.py:161} INFO - Started process (PID=2606) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:39:44.249+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:39:44.416+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:39:44.251+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:41:17.987+0000] {processor.py:161} INFO - Started process (PID=2616) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:41:18.240+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:41:18.269+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:41:18.241+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:42:23.010+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:42:15.596+0000] {timeout.py:68} ERROR - Process timed out, PID: 2616
+[2026-08-09T14:42:51.876+0000] {processor.py:161} INFO - Started process (PID=2633) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:42:51.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:42:51.900+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:42:51.880+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:43:26.097+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:43:23.675+0000] {timeout.py:68} ERROR - Process timed out, PID: 2633
+[2026-08-09T14:44:00.418+0000] {processor.py:161} INFO - Started process (PID=2647) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:44:00.420+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:44:00.421+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:44:00.421+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:44:29.468+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:44:29.467+0000] {timeout.py:68} ERROR - Process timed out, PID: 2647
+[2026-08-09T14:45:00.508+0000] {processor.py:161} INFO - Started process (PID=2683) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:45:00.510+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:45:00.511+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:45:00.510+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:45:21.986+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:45:22.103+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:45:22.103+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T14:45:22.121+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:45:22.121+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T14:45:22.138+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 23.347 seconds
+[2026-08-09T14:45:55.259+0000] {processor.py:161} INFO - Started process (PID=2736) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:45:55.302+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:45:55.319+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:45:55.309+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:46:31.694+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:46:25.123+0000] {timeout.py:68} ERROR - Process timed out, PID: 2736
+[2026-08-09T14:59:25.845+0000] {processor.py:161} INFO - Started process (PID=2750) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:59:25.853+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T14:59:25.927+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:59:25.855+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T14:59:57.203+0000] {logging_mixin.py:188} INFO - [2026-08-09T14:59:57.105+0000] {timeout.py:68} ERROR - Process timed out, PID: 2750
+[2026-08-09T15:00:27.707+0000] {processor.py:161} INFO - Started process (PID=2768) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:00:27.709+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:00:27.711+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:00:27.710+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:00:56.201+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:00:56.200+0000] {timeout.py:68} ERROR - Process timed out, PID: 2768
+[2026-08-09T15:00:56.319+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:00:56.356+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:00:56.356+0000] {taskinstance.py:2907} ERROR - {'DAG Id': 'forecast_logging', 'Task Id': 'log_forecasts', 'Run Id': 'manual__2026-08-09T14:24:03.660019+00:00', 'Hostname': '5e2fdb1b3637'}
+[2026-08-09T15:00:56.432+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:00:56.431+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=forecast_logging, task_id=log_forecasts, run_id=manual__2026-08-09T14:24:03.660019+00:00, execution_date=20260809T142403, start_date=20260809T144533, end_date=20260809T150056
+[2026-08-09T15:00:56.444+0000] {processor.py:791} INFO - Executed failure callback for <TaskInstance: forecast_logging.log_forecasts manual__2026-08-09T14:24:03.660019+00:00 [failed]> in state failed
+[2026-08-09T15:00:57.167+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:00:57.166+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:00:57.203+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:00:57.203+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:00:57.259+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 31.095 seconds
+[2026-08-09T15:01:27.878+0000] {processor.py:161} INFO - Started process (PID=2994) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:01:27.900+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:01:27.936+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:01:27.916+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:09:33.318+0000] {processor.py:161} INFO - Started process (PID=167) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:09:33.705+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:09:33.795+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:09:33.792+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:10:03.062+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:10:03.061+0000] {timeout.py:68} ERROR - Process timed out, PID: 167
+[2026-08-09T15:10:50.994+0000] {processor.py:161} INFO - Started process (PID=236) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:10:51.005+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:10:51.027+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:10:51.008+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:11:33.771+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:11:33.770+0000] {timeout.py:68} ERROR - Process timed out, PID: 236
+[2026-08-09T15:11:33.772+0000] {logging_mixin.py:188} WARNING - Exception ignored in: <bound method _MultipleClassMarker._remove_item of <sqlalchemy.orm.clsregistry._MultipleClassMarker object at 0x717514c76400>>
+[2026-08-09T15:11:33.774+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2026-08-09T15:11:33.775+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.11/site-packages/sqlalchemy/orm/clsregistry.py", line 157, in _remove_item
+[2026-08-09T15:11:33.786+0000] {logging_mixin.py:188} WARNING -     def _remove_item(self, ref):
+[2026-08-09T15:11:33.786+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+[2026-08-09T15:11:33.789+0000] {logging_mixin.py:188} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2026-08-09T15:11:33.789+0000] {logging_mixin.py:188} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/forecast_logging_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.9.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.9.3/best-practices.html#reducing-dag-complexity, PID: 236
+[2026-08-09T15:12:12.872+0000] {processor.py:161} INFO - Started process (PID=252) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:12:12.984+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:12:13.049+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:12:13.048+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:12:42.195+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:12:42.194+0000] {timeout.py:68} ERROR - Process timed out, PID: 252
+[2026-08-09T15:13:12.965+0000] {processor.py:161} INFO - Started process (PID=294) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:13:12.978+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:13:12.979+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:13:12.978+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:13:40.603+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:13:40.599+0000] {timeout.py:68} ERROR - Process timed out, PID: 294
+[2026-08-09T15:13:42.912+0000] {processor.py:161} INFO - Started process (PID=325) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:13:42.914+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:13:42.915+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:13:42.914+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:13:57.765+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:13:58.183+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:13:58.182+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:13:58.234+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:13:58.234+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:13:58.265+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 15.368 seconds
+[2026-08-09T15:14:29.094+0000] {processor.py:161} INFO - Started process (PID=358) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:14:29.097+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:14:29.098+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:14:29.098+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:14:53.604+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:14:53.715+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:14:53.714+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:14:53.786+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:14:53.786+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:14:53.890+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 26.624 seconds
+[2026-08-09T15:15:24.890+0000] {processor.py:161} INFO - Started process (PID=401) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:15:24.892+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:15:24.893+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:15:24.893+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:15:31.141+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:15:31.168+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:15:31.167+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:15:31.194+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:15:31.193+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:15:31.211+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 6.336 seconds
+[2026-08-09T15:16:10.114+0000] {processor.py:161} INFO - Started process (PID=460) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:16:10.134+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:16:10.135+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:16:10.134+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:16:18.542+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:16:18.595+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:16:18.594+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:16:18.628+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:16:18.627+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:16:18.664+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 11.063 seconds
+[2026-08-09T15:16:51.714+0000] {processor.py:161} INFO - Started process (PID=491) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:16:51.716+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:16:51.718+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:16:51.717+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:17:00.534+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:17:00.582+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:17:00.581+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:17:00.610+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:17:00.609+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:17:00.667+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 11.004 seconds
+[2026-08-09T15:17:31.347+0000] {processor.py:161} INFO - Started process (PID=523) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:17:31.349+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:17:31.350+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:17:31.349+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:17:46.470+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:17:46.505+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:17:46.504+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:17:46.528+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:17:46.528+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:17:46.567+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 15.229 seconds
+[2026-08-09T15:18:17.074+0000] {processor.py:161} INFO - Started process (PID=554) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:18:17.077+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:18:17.080+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:18:17.079+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:18:23.011+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:18:23.037+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:18:23.037+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:18:23.058+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:18:23.058+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:18:23.075+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 6.002 seconds
+[2026-08-09T15:18:53.388+0000] {processor.py:161} INFO - Started process (PID=585) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:18:53.407+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:18:53.410+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:18:53.409+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:19:00.487+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:19:00.517+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:19:00.517+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:19:00.589+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:19:00.587+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:19:01.448+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.069 seconds
+[2026-08-09T15:19:31.650+0000] {processor.py:161} INFO - Started process (PID=616) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:19:31.652+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:19:31.653+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:19:31.653+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:19:37.861+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:19:38.049+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:19:38.049+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:19:38.108+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:19:38.107+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:19:38.186+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 6.545 seconds
+[2026-08-09T15:20:08.401+0000] {processor.py:161} INFO - Started process (PID=659) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:20:08.403+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:20:08.404+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:20:08.404+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:20:12.756+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:20:12.783+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:20:12.782+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:20:12.805+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:20:12.805+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:20:12.824+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 4.433 seconds
+[2026-08-09T15:20:43.474+0000] {processor.py:161} INFO - Started process (PID=690) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:20:43.475+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:20:43.476+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:20:43.476+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:20:49.121+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:20:49.151+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:20:49.150+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:20:49.176+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:20:49.176+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:20:49.198+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 4.431 seconds
+[2026-08-09T15:21:19.791+0000] {processor.py:161} INFO - Started process (PID=721) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:21:19.792+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:21:19.793+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:21:19.793+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:21:24.316+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:21:24.349+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:21:24.348+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:21:24.369+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:21:24.369+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:21:24.387+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 4.603 seconds
+[2026-08-09T15:21:54.778+0000] {processor.py:161} INFO - Started process (PID=752) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:21:54.779+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:21:54.780+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:21:54.780+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:21:58.950+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:21:58.971+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:21:58.971+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:21:58.988+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:21:58.987+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:21:59.003+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 4.235 seconds
+[2026-08-09T15:22:29.204+0000] {processor.py:161} INFO - Started process (PID=783) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:22:29.205+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:22:29.206+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:22:29.206+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:22:33.061+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:22:33.087+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:22:33.087+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:22:33.103+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:22:33.103+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:22:33.122+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.924 seconds
+[2026-08-09T15:23:03.677+0000] {processor.py:161} INFO - Started process (PID=814) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:23:03.678+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:23:03.679+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:23:03.679+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:23:07.655+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:23:07.678+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:23:07.677+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:23:07.697+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:23:07.697+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:23:07.712+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 4.042 seconds
+[2026-08-09T15:23:38.016+0000] {processor.py:161} INFO - Started process (PID=845) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:23:38.017+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:23:38.019+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:23:38.018+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:23:41.905+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:23:41.926+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:23:41.925+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:23:41.944+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:23:41.943+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:23:41.959+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.951 seconds
+[2026-08-09T15:24:13.047+0000] {processor.py:161} INFO - Started process (PID=876) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:24:13.049+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:24:13.050+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:24:13.049+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:24:19.117+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:24:19.146+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:24:19.146+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:24:19.167+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:24:19.167+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:24:19.186+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 5.199 seconds
+[2026-08-09T15:24:49.741+0000] {processor.py:161} INFO - Started process (PID=913) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:24:49.742+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:24:49.743+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:24:49.743+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:24:53.674+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:24:53.697+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:24:53.697+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:24:53.714+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:24:53.714+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:24:53.729+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.997 seconds
+[2026-08-09T15:25:24.141+0000] {processor.py:161} INFO - Started process (PID=950) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:25:24.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:25:24.143+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:25:24.142+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:25:27.961+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:25:27.987+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:25:27.986+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:25:28.004+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:25:28.004+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:25:28.023+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.890 seconds
+[2026-08-09T15:25:58.340+0000] {processor.py:161} INFO - Started process (PID=981) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:25:58.341+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:25:58.342+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:25:58.342+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:26:01.949+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:26:01.971+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:26:01.971+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:26:01.988+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:26:01.988+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:26:02.005+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.672 seconds
+[2026-08-09T15:26:32.674+0000] {processor.py:161} INFO - Started process (PID=1012) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:26:32.675+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:26:32.676+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:26:32.676+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:26:36.657+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:26:36.812+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:26:36.811+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:26:36.831+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:26:36.830+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:26:36.864+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 4.199 seconds
+[2026-08-09T15:27:07.007+0000] {processor.py:161} INFO - Started process (PID=1043) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:27:07.008+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:27:07.009+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:27:07.009+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:27:10.726+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:27:10.749+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:27:10.749+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:27:10.767+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:27:10.767+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:27:10.795+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.795 seconds
+[2026-08-09T15:27:41.086+0000] {processor.py:161} INFO - Started process (PID=1074) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:27:41.088+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:27:41.089+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:27:41.089+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:27:44.943+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:27:44.968+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:27:44.967+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:27:44.985+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:27:44.985+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:27:45.000+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.924 seconds
+[2026-08-09T15:28:15.325+0000] {processor.py:161} INFO - Started process (PID=1105) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:28:15.326+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:28:15.327+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:28:15.327+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:28:19.184+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:28:19.208+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:28:19.207+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:28:19.224+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:28:19.224+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:28:19.239+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.923 seconds
+[2026-08-09T15:28:49.434+0000] {processor.py:161} INFO - Started process (PID=1136) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:28:49.435+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:28:49.436+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:28:49.436+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:28:53.221+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:28:53.243+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:28:53.243+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:28:53.260+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:28:53.260+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:28:53.278+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.854 seconds
+[2026-08-09T15:29:23.678+0000] {processor.py:161} INFO - Started process (PID=1167) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:29:23.679+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:29:23.680+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:29:23.680+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:29:27.325+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:29:27.347+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:29:27.346+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:29:27.365+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:29:27.365+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:29:27.381+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.711 seconds
+[2026-08-09T15:29:58.340+0000] {processor.py:161} INFO - Started process (PID=1198) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:29:58.341+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:29:58.342+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:29:58.342+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:30:02.097+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:30:02.119+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:30:02.118+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:30:02.136+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:30:02.136+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:30:02.151+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.820 seconds
+[2026-08-09T15:30:32.484+0000] {processor.py:161} INFO - Started process (PID=1239) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:30:32.486+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:30:32.487+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:30:32.486+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:30:36.297+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:30:36.320+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:30:36.320+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:30:36.339+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:30:36.338+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:30:36.353+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.877 seconds
+[2026-08-09T15:31:06.711+0000] {processor.py:161} INFO - Started process (PID=1272) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:31:06.713+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:31:06.714+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:31:06.713+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:31:10.376+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:31:10.397+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:31:10.397+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:31:10.413+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:31:10.413+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:31:10.429+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.725 seconds
+[2026-08-09T15:31:40.639+0000] {processor.py:161} INFO - Started process (PID=1303) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:31:40.640+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:31:40.641+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:31:40.640+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:31:44.215+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:31:44.241+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:31:44.240+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:31:44.259+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:31:44.259+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:31:44.278+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.647 seconds
+[2026-08-09T15:32:14.785+0000] {processor.py:161} INFO - Started process (PID=1334) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:32:14.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:32:14.787+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:32:14.787+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:32:18.519+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:32:18.541+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:32:18.541+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:32:18.562+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:32:18.561+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:32:18.591+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.815 seconds
+[2026-08-09T15:32:48.726+0000] {processor.py:161} INFO - Started process (PID=1365) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:32:48.727+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:32:48.728+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:32:48.727+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:32:52.520+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:32:52.542+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:32:52.542+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:32:52.561+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:32:52.560+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:32:52.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.859 seconds
+[2026-08-09T15:33:22.912+0000] {processor.py:161} INFO - Started process (PID=1396) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:33:22.913+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:33:22.914+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:33:22.914+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:33:26.642+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:33:26.666+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:33:26.665+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:33:26.684+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:33:26.683+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:33:26.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.794 seconds
+[2026-08-09T15:33:56.936+0000] {processor.py:161} INFO - Started process (PID=1427) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:33:56.937+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:33:56.938+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:33:56.937+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:34:00.700+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:34:00.722+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:34:00.722+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:34:00.739+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:34:00.739+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:34:00.755+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.827 seconds
+[2026-08-09T15:34:31.009+0000] {processor.py:161} INFO - Started process (PID=1458) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:34:31.011+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:34:31.012+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:34:31.011+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:34:34.718+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:34:34.740+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:34:34.740+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:34:34.756+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:34:34.755+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:34:34.769+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.768 seconds
+[2026-08-09T15:35:05.071+0000] {processor.py:161} INFO - Started process (PID=1489) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:35:05.072+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:35:05.073+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:35:05.073+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:35:08.748+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:35:08.770+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:35:08.770+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:35:08.789+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:35:08.788+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:35:08.805+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.741 seconds
+[2026-08-09T15:35:38.965+0000] {processor.py:161} INFO - Started process (PID=1520) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:35:38.966+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:35:38.967+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:35:38.967+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:35:42.902+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:35:42.937+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:35:42.936+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:35:42.959+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:35:42.959+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:35:42.976+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 4.018 seconds
+[2026-08-09T15:36:13.283+0000] {processor.py:161} INFO - Started process (PID=1555) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:36:13.284+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:36:13.284+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:36:13.284+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:36:17.117+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:36:17.140+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:36:17.140+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:36:17.158+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:36:17.158+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:36:17.173+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.900 seconds
+[2026-08-09T15:36:47.487+0000] {processor.py:161} INFO - Started process (PID=1594) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:36:47.488+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T15:36:47.489+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:36:47.489+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:36:51.378+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T15:36:51.402+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:36:51.401+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T15:36:51.421+0000] {logging_mixin.py:188} INFO - [2026-08-09T15:36:51.421+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T15:36:51.437+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 3.958 seconds
+[2026-08-09T17:03:40.488+0000] {processor.py:161} INFO - Started process (PID=1613) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:03:40.490+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:03:40.491+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:03:40.491+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:03:48.556+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:03:48.609+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:03:48.608+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:03:48.658+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:03:48.657+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:03:48.702+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.226 seconds
+[2026-08-09T17:04:18.942+0000] {processor.py:161} INFO - Started process (PID=1656) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:04:18.945+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:04:18.947+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:04:18.946+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:04:32.163+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:04:32.210+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:04:32.209+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:04:32.250+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:04:32.249+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:04:32.296+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 13.392 seconds
+[2026-08-09T17:05:03.121+0000] {processor.py:161} INFO - Started process (PID=1690) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:05:03.124+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:05:03.126+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:05:03.125+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:05:33.283+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:05:33.280+0000] {timeout.py:68} ERROR - Process timed out, PID: 1690
+[2026-08-09T17:06:04.399+0000] {processor.py:161} INFO - Started process (PID=1748) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:06:04.403+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:06:04.407+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:06:04.406+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:06:34.444+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:06:34.443+0000] {timeout.py:68} ERROR - Process timed out, PID: 1748
+[2026-08-09T17:07:21.222+0000] {processor.py:161} INFO - Started process (PID=1998) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:07:21.225+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:07:21.231+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:07:21.229+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:09:12.366+0000] {processor.py:161} INFO - Started process (PID=168) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:09:12.397+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:09:12.439+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:09:12.436+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:09:37.610+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:09:38.891+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:09:38.890+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:09:38.953+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:09:38.952+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:09:39.000+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 26.836 seconds
+[2026-08-09T17:10:10.112+0000] {processor.py:161} INFO - Started process (PID=211) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:10:10.115+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:10:10.124+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:10:10.121+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:10:35.729+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:10:35.817+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:10:35.812+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:10:35.938+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:10:35.937+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:10:36.012+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 26.340 seconds
+[2026-08-09T17:11:07.058+0000] {processor.py:161} INFO - Started process (PID=257) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:11:07.061+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:11:07.070+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:11:07.068+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:11:37.612+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:11:37.611+0000] {timeout.py:68} ERROR - Process timed out, PID: 257
+[2026-08-09T17:12:08.100+0000] {processor.py:161} INFO - Started process (PID=301) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:12:08.103+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:12:08.107+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:12:08.106+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:12:29.596+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:12:30.048+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:12:30.047+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:12:30.084+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:12:30.084+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:12:30.127+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 21.936 seconds
+[2026-08-09T17:13:00.924+0000] {processor.py:161} INFO - Started process (PID=338) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:13:00.927+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:13:00.929+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:13:00.929+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:13:10.478+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:13:10.534+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:13:10.533+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:13:10.603+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:13:10.603+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:13:10.650+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.744 seconds
+[2026-08-09T17:13:41.416+0000] {processor.py:161} INFO - Started process (PID=375) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:13:41.418+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:13:41.420+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:13:41.420+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:13:51.395+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:13:51.447+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:13:51.446+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:13:51.486+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:13:51.486+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:13:51.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 10.173 seconds
+[2026-08-09T17:14:21.830+0000] {processor.py:161} INFO - Started process (PID=406) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:14:21.832+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:14:21.835+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:14:21.834+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:14:31.058+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:14:31.112+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:14:31.111+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:14:31.158+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:14:31.158+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:14:31.198+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.385 seconds
+[2026-08-09T17:15:01.646+0000] {processor.py:161} INFO - Started process (PID=437) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:15:01.649+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:15:01.651+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:15:01.650+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:15:11.489+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:15:11.537+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:15:11.536+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:15:11.583+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:15:11.582+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:15:11.622+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.993 seconds
+[2026-08-09T17:15:42.307+0000] {processor.py:161} INFO - Started process (PID=474) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:15:42.309+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:15:42.312+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:15:42.311+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:15:51.773+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:15:51.830+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:15:51.829+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:15:51.876+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:15:51.875+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:15:51.923+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.558 seconds
+[2026-08-09T17:16:22.311+0000] {processor.py:161} INFO - Started process (PID=511) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:16:22.314+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:16:22.316+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:16:22.315+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:16:31.846+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:16:31.894+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:16:31.893+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:16:31.934+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:16:31.933+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:16:31.973+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.683 seconds
+[2026-08-09T17:17:02.682+0000] {processor.py:161} INFO - Started process (PID=542) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:17:02.684+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:17:02.686+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:17:02.686+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:17:11.419+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:17:11.467+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:17:11.466+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:17:11.505+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:17:11.504+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:17:11.541+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.876 seconds
+[2026-08-09T17:17:41.955+0000] {processor.py:161} INFO - Started process (PID=573) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:17:41.957+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:17:41.960+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:17:41.959+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:17:52.999+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:17:53.047+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:17:53.047+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:17:53.091+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:17:53.091+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:17:53.138+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 11.213 seconds
+[2026-08-09T17:18:24.082+0000] {processor.py:161} INFO - Started process (PID=608) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:18:24.090+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:18:24.097+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:18:24.095+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:18:33.860+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:18:33.905+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:18:33.904+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:18:33.941+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:18:33.941+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:18:33.973+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.958 seconds
+[2026-08-09T17:19:04.324+0000] {processor.py:161} INFO - Started process (PID=647) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:19:04.327+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:19:04.329+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:19:04.328+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:19:12.900+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:19:12.947+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:19:12.946+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:19:12.985+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:19:12.984+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:19:13.019+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.714 seconds
+[2026-08-09T17:19:43.762+0000] {processor.py:161} INFO - Started process (PID=678) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:19:43.764+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:19:43.767+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:19:43.766+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:19:52.634+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:19:52.685+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:19:52.684+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:19:52.726+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:19:52.726+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:19:52.762+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.026 seconds
+[2026-08-09T17:20:23.078+0000] {processor.py:161} INFO - Started process (PID=709) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:20:23.080+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:20:23.082+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:20:23.082+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:20:31.223+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:20:31.269+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:20:31.268+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:20:31.314+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:20:31.314+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:20:31.349+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.286 seconds
+[2026-08-09T17:21:01.771+0000] {processor.py:161} INFO - Started process (PID=740) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:21:01.773+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:21:01.775+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:21:01.774+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:21:10.309+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:21:10.356+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:21:10.355+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:21:10.393+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:21:10.393+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:21:10.431+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.675 seconds
+[2026-08-09T17:21:40.890+0000] {processor.py:161} INFO - Started process (PID=775) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:21:40.893+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:21:40.897+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:21:40.895+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:21:49.302+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:21:49.353+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:21:49.352+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:21:49.405+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:21:49.405+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:21:49.442+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.573 seconds
+[2026-08-09T17:22:19.996+0000] {processor.py:161} INFO - Started process (PID=814) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:22:19.998+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:22:20.000+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:22:20.000+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:22:28.393+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:22:28.442+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:22:28.441+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:22:28.478+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:22:28.478+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:22:28.510+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.539 seconds
+[2026-08-09T17:22:59.035+0000] {processor.py:161} INFO - Started process (PID=845) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:22:59.037+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:22:59.039+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:22:59.039+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:23:07.188+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:23:07.231+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:23:07.230+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:23:07.268+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:23:07.268+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:23:07.301+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.283 seconds
+[2026-08-09T17:23:37.995+0000] {processor.py:161} INFO - Started process (PID=876) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:23:37.997+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:23:37.999+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:23:37.998+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:23:46.511+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:23:46.584+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:23:46.583+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:23:46.642+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:23:46.642+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:23:46.679+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.701 seconds
+[2026-08-09T17:24:17.069+0000] {processor.py:161} INFO - Started process (PID=907) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:24:17.071+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:24:17.073+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:24:17.073+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:24:25.912+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:24:25.963+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:24:25.963+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:24:26.008+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:24:26.008+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:24:26.064+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.050 seconds
+[2026-08-09T17:24:56.491+0000] {processor.py:161} INFO - Started process (PID=944) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:24:56.494+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:24:56.497+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:24:56.496+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:25:04.577+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:25:04.630+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:25:04.626+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:25:04.683+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:25:04.682+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:25:04.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.257 seconds
+[2026-08-09T17:25:35.211+0000] {processor.py:161} INFO - Started process (PID=981) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:25:35.214+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:25:35.217+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:25:35.216+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:25:43.229+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:25:43.274+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:25:43.273+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:25:43.307+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:25:43.306+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:25:43.343+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.159 seconds
+[2026-08-09T17:26:13.895+0000] {processor.py:161} INFO - Started process (PID=1012) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:26:13.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:26:13.900+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:26:13.899+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:26:21.741+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:26:21.784+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:26:21.784+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:26:21.820+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:26:21.819+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:26:21.854+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.031 seconds
+[2026-08-09T17:26:52.348+0000] {processor.py:161} INFO - Started process (PID=1043) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:26:52.351+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:26:52.354+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:26:52.353+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:27:00.814+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:27:00.859+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:27:00.858+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:27:00.898+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:27:00.898+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:27:00.933+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.609 seconds
+[2026-08-09T17:27:31.640+0000] {processor.py:161} INFO - Started process (PID=1074) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:27:31.642+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:27:31.644+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:27:31.643+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:27:40.472+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:27:40.518+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:27:40.517+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:27:40.557+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:27:40.556+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:27:40.594+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.968 seconds
+[2026-08-09T17:28:11.003+0000] {processor.py:161} INFO - Started process (PID=1111) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:28:11.005+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:28:11.007+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:28:11.007+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:28:20.173+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:28:20.230+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:28:20.229+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:28:20.281+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:28:20.280+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:28:20.322+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.336 seconds
+[2026-08-09T17:28:50.750+0000] {processor.py:161} INFO - Started process (PID=1148) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:28:50.752+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:28:50.755+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:28:50.754+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:28:57.666+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:28:57.717+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:28:57.716+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:28:57.760+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:28:57.760+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:28:57.803+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 7.069 seconds
+[2026-08-09T17:29:28.431+0000] {processor.py:161} INFO - Started process (PID=1179) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:29:28.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:29:28.435+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:29:28.435+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:29:36.412+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:29:36.460+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:29:36.459+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:29:36.505+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:29:36.505+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:29:36.540+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.124 seconds
+[2026-08-09T17:30:07.067+0000] {processor.py:161} INFO - Started process (PID=1210) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:30:07.070+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:30:07.073+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:30:07.072+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:30:15.518+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:30:15.564+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:30:15.564+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:30:15.603+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:30:15.603+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:30:15.639+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.603 seconds
+[2026-08-09T17:30:46.366+0000] {processor.py:161} INFO - Started process (PID=1241) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:30:46.368+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:30:46.371+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:30:46.370+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:30:54.530+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:30:54.584+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:30:54.583+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:30:54.634+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:30:54.634+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:30:55.134+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.855 seconds
+[2026-08-09T17:31:25.623+0000] {processor.py:161} INFO - Started process (PID=1278) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:31:25.626+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:31:25.628+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:31:25.627+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:31:34.466+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:31:34.515+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:31:34.514+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:31:34.560+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:31:34.560+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:31:34.595+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.988 seconds
+[2026-08-09T17:32:05.183+0000] {processor.py:161} INFO - Started process (PID=1315) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:32:05.186+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:32:05.188+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:32:05.188+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:32:13.216+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:32:13.256+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:32:13.256+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:32:13.288+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:32:13.288+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:32:13.320+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.158 seconds
+[2026-08-09T17:32:43.568+0000] {processor.py:161} INFO - Started process (PID=1346) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:32:43.572+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:32:43.574+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:32:43.573+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:32:51.794+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:32:51.841+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:32:51.840+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:32:51.886+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:32:51.886+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:32:51.922+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.237 seconds
+[2026-08-09T17:33:23.201+0000] {processor.py:161} INFO - Started process (PID=1377) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:33:23.204+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:33:23.207+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:33:23.205+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:33:32.058+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:33:32.109+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:33:32.108+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:33:32.155+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:33:32.154+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:33:32.192+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.010 seconds
+[2026-08-09T17:34:02.704+0000] {processor.py:161} INFO - Started process (PID=1408) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:34:02.706+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:34:02.710+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:34:02.709+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:34:11.706+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:34:11.763+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:34:11.762+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:34:11.815+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:34:11.815+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:34:11.868+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.185 seconds
+[2026-08-09T17:34:42.354+0000] {processor.py:161} INFO - Started process (PID=1445) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:34:42.357+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:34:42.359+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:34:42.358+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:34:50.909+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:34:50.959+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:34:50.958+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:34:50.998+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:34:50.997+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:34:51.036+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.768 seconds
+[2026-08-09T17:35:21.739+0000] {processor.py:161} INFO - Started process (PID=1482) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:35:21.742+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:35:21.744+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:35:21.743+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:35:30.324+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:35:30.371+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:35:30.370+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:35:30.412+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:35:30.412+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:35:30.448+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.724 seconds
+[2026-08-09T17:36:01.071+0000] {processor.py:161} INFO - Started process (PID=1513) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:36:01.074+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:36:01.077+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:36:01.076+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:36:09.929+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:36:09.979+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:36:09.979+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:36:10.020+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:36:10.020+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:36:10.056+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.006 seconds
+[2026-08-09T17:36:40.550+0000] {processor.py:161} INFO - Started process (PID=1544) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:36:40.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:36:40.556+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:36:40.555+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:36:49.281+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:36:49.327+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:36:49.327+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:36:49.367+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:36:49.367+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:36:49.348+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.881 seconds
+[2026-08-09T17:37:19.748+0000] {processor.py:161} INFO - Started process (PID=1579) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:37:19.751+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:37:19.753+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:37:19.752+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:37:28.271+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:37:28.331+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:37:28.330+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:37:28.370+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:37:28.369+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:37:28.405+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.675 seconds
+[2026-08-09T17:37:58.757+0000] {processor.py:161} INFO - Started process (PID=1618) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:37:58.759+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:37:58.762+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:37:58.761+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:38:07.320+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:38:07.388+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:38:07.387+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:38:07.433+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:38:07.433+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:38:07.473+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.733 seconds
+[2026-08-09T17:38:38.228+0000] {processor.py:161} INFO - Started process (PID=1649) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:38:38.230+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:38:38.233+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:38:38.232+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:38:47.687+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:38:47.732+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:38:47.731+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:38:47.770+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:38:47.770+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:38:47.807+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.596 seconds
+[2026-08-09T17:39:18.461+0000] {processor.py:161} INFO - Started process (PID=1680) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:39:18.464+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:39:18.467+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:39:18.466+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:39:27.567+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:39:27.622+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:39:27.621+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:39:27.675+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:39:27.675+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:39:27.721+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.453 seconds
+[2026-08-09T17:39:58.291+0000] {processor.py:161} INFO - Started process (PID=1711) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:39:58.293+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:39:58.295+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:39:58.294+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:40:07.944+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:40:08.018+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:40:08.017+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:40:08.066+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:40:08.066+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:40:08.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.834 seconds
+[2026-08-09T17:40:38.959+0000] {processor.py:161} INFO - Started process (PID=1748) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:40:38.962+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:40:38.965+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:40:38.964+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:40:47.420+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:40:47.468+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:40:47.467+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:40:47.507+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:40:47.507+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:40:47.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.642 seconds
+[2026-08-09T17:41:18.162+0000] {processor.py:161} INFO - Started process (PID=1785) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:41:18.165+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:41:18.167+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:41:18.167+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:41:26.735+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:41:26.784+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:41:26.783+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:41:26.823+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:41:26.823+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:41:26.859+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.891 seconds
+[2026-08-09T17:41:57.512+0000] {processor.py:161} INFO - Started process (PID=1816) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:41:57.514+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:41:57.517+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:41:57.516+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:42:06.530+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:42:06.588+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:42:06.587+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:42:06.634+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:42:06.634+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:42:06.676+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.183 seconds
+[2026-08-09T17:42:37.077+0000] {processor.py:161} INFO - Started process (PID=1847) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:42:37.079+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:42:37.081+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:42:37.080+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:42:45.536+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:42:45.605+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:42:45.604+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:42:45.663+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:42:45.662+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:42:45.708+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.645 seconds
+[2026-08-09T17:43:16.248+0000] {processor.py:161} INFO - Started process (PID=1882) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:43:16.250+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:43:16.252+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:43:16.251+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:43:24.852+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:43:24.901+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:43:24.900+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:43:24.937+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:43:24.936+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:43:24.970+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.804 seconds
+[2026-08-09T17:43:56.154+0000] {processor.py:161} INFO - Started process (PID=1921) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:43:56.157+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:43:56.159+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:43:56.158+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:44:05.633+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:44:05.683+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:44:05.682+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:44:05.721+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:44:05.720+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:44:05.757+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.623 seconds
+[2026-08-09T17:44:36.170+0000] {processor.py:161} INFO - Started process (PID=1952) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:44:36.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:44:36.175+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:44:36.174+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:44:44.257+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:44:44.311+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:44:44.310+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:44:44.350+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:44:44.350+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:44:44.387+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.232 seconds
+[2026-08-09T17:45:14.988+0000] {processor.py:161} INFO - Started process (PID=1983) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:45:14.991+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:45:14.993+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:45:14.992+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:45:22.859+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:45:22.906+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:45:22.905+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:45:22.943+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:45:22.943+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:45:22.981+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.572 seconds
+[2026-08-09T17:45:53.697+0000] {processor.py:161} INFO - Started process (PID=2014) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:45:53.699+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:45:53.703+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:45:53.703+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:46:02.726+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:46:02.786+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:46:02.785+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:46:02.828+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:46:02.828+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:46:02.865+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.187 seconds
+[2026-08-09T17:46:34.028+0000] {processor.py:161} INFO - Started process (PID=2051) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:46:34.031+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:46:34.034+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:46:34.033+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:46:42.671+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:46:42.728+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:46:42.727+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:46:42.769+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:46:42.769+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:46:42.808+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.804 seconds
+[2026-08-09T17:47:13.645+0000] {processor.py:161} INFO - Started process (PID=2088) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:47:13.648+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:47:13.650+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:47:13.650+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:47:21.873+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:47:21.922+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:47:21.921+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:47:21.971+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:47:21.970+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:47:22.833+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.278 seconds
+[2026-08-09T17:47:53.296+0000] {processor.py:161} INFO - Started process (PID=2119) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:47:53.298+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:47:53.301+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:47:53.300+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:48:01.822+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:48:01.882+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:48:01.881+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:48:01.924+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:48:01.924+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:48:01.960+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.681 seconds
+[2026-08-09T17:48:32.552+0000] {processor.py:161} INFO - Started process (PID=2150) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:48:32.555+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:48:32.558+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:48:32.557+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:48:41.717+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:48:41.764+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:48:41.763+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:48:41.805+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:48:41.804+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:48:41.838+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 9.307 seconds
+[2026-08-09T17:49:12.421+0000] {processor.py:161} INFO - Started process (PID=2185) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:49:12.423+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-09T17:49:12.425+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:49:12.425+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:49:21.155+0000] {processor.py:840} INFO - DAG(s) 'forecast_logging' retrieved from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-09T17:49:21.206+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:49:21.205+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-09T17:49:21.243+0000] {logging_mixin.py:188} INFO - [2026-08-09T17:49:21.243+0000] {dag.py:3947} INFO - Setting next_dagrun for forecast_logging to 2026-08-09 00:00:00+00:00, run_after=2026-08-10 00:00:00+00:00
+[2026-08-09T17:49:21.278+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/forecast_logging_dag.py took 8.999 seconds
