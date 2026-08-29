@@ -1,143 +1,0 @@
-[2026-08-07T10:00:22.461+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
-[2026-08-07T10:00:22.529+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: feature_pipeline.transformation scheduled__2026-08-07T09:00:00+00:00 [queued]>
-[2026-08-07T10:00:22.547+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: feature_pipeline.transformation scheduled__2026-08-07T09:00:00+00:00 [queued]>
-[2026-08-07T10:00:22.549+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
-[2026-08-07T10:00:22.591+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): transformation> on 2026-08-07 09:00:00+00:00
-[2026-08-07T10:00:22.612+0000] {standard_task_runner.py:64} INFO - Started process 2133 to run task
-[2026-08-07T10:00:22.620+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'feature_pipeline', 'transformation', 'scheduled__2026-08-07T09:00:00+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/feature_pipeline_dag.py', '--cfg-path', '/tmp/tmpp6k_9n1l']
-[2026-08-07T10:00:22.626+0000] {standard_task_runner.py:91} INFO - Job 79: Subtask transformation
-[2026-08-07T10:00:22.774+0000] {task_command.py:426} INFO - Running <TaskInstance: feature_pipeline.transformation scheduled__2026-08-07T09:00:00+00:00 [running]> on host 9b2347349ce6
-[2026-08-07T10:00:23.759+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='feature_pipeline' AIRFLOW_CTX_TASK_ID='transformation' AIRFLOW_CTX_EXECUTION_DATE='2026-08-07T09:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-07T09:00:00+00:00'
-[2026-08-07T10:00:23.763+0000] {taskinstance.py:430} INFO - ::endgroup::
-[2026-08-07T10:00:24.230+0000] {external.py:63} INFO - Initializing external client
-[2026-08-07T10:00:24.231+0000] {external.py:70} INFO - Base URL: https://eu-west.cloud.hopsworks.ai:443
-[2026-08-07T10:00:40.218+0000] {python.py:138} INFO - Python Engine initialized.
-[2026-08-07T10:00:42.170+0000] {logging_mixin.py:188} INFO - 
-Logged in to project, explore it here https://eu-west.cloud.hopsworks.ai:443/p/41136
-[2026-08-07T10:01:47.066+0000] {arrow_flight_client.py:437} ERROR - Flight returned timeout error, with message: Deadline Exceeded
-Traceback (most recent call last):
-  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/core/arrow_flight_client.py", line 433, in afs_error_handler_wrapper
-    return func(instance, *args, **kw)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/core/arrow_flight_client.py", line 505, in _read_query
-    return self._get_dataset(
-           ^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 55, in wrapped_f
-    return Retrying(*dargs, **dkw).call(f, *args, **kw)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 279, in call
-    return attempt.get(self._wrap_exception)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 326, in get
-    raise exc.with_traceback(tb)
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 273, in call
-    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
-                      ^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/core/arrow_flight_client.py", line 484, in _get_dataset
-    info = self._get_flight_info(descriptor)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 55, in wrapped_f
-    return Retrying(*dargs, **dkw).call(f, *args, **kw)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 279, in call
-    return attempt.get(self._wrap_exception)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 326, in get
-    raise exc.with_traceback(tb)
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 273, in call
-    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
-                      ^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/core/arrow_flight_client.py", line 469, in _get_flight_info
-    return self._connection.get_flight_info(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "pyarrow/_flight.pyx", line 1712, in pyarrow._flight.FlightClient.get_flight_info
-  File "pyarrow/_flight.pyx", line 60, in pyarrow._flight.check_flight_status
-pyarrow._flight.FlightTimedOutError: Flight returned timeout error, with message: Deadline Exceeded
-[2026-08-07T10:01:47.141+0000] {logging_mixin.py:188} INFO - Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Error: Reading data from Hopsworks, using Hopsworks Feature Query Service           
-[2026-08-07T10:01:47.142+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
-[2026-08-07T10:01:47.148+0000] {taskinstance.py:2905} ERROR - Task failed with exception
-Traceback (most recent call last):
-  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/core/arrow_flight_client.py", line 433, in afs_error_handler_wrapper
-    return func(instance, *args, **kw)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/core/arrow_flight_client.py", line 505, in _read_query
-    return self._get_dataset(
-           ^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 55, in wrapped_f
-    return Retrying(*dargs, **dkw).call(f, *args, **kw)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 279, in call
-    return attempt.get(self._wrap_exception)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 326, in get
-    raise exc.with_traceback(tb)
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 273, in call
-    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
-                      ^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/core/arrow_flight_client.py", line 484, in _get_dataset
-    info = self._get_flight_info(descriptor)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 55, in wrapped_f
-    return Retrying(*dargs, **dkw).call(f, *args, **kw)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 279, in call
-    return attempt.get(self._wrap_exception)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 326, in get
-    raise exc.with_traceback(tb)
-  File "/home/airflow/.local/lib/python3.11/site-packages/retrying.py", line 273, in call
-    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
-                      ^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/core/arrow_flight_client.py", line 469, in _get_flight_info
-    return self._connection.get_flight_info(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "pyarrow/_flight.pyx", line 1712, in pyarrow._flight.FlightClient.get_flight_info
-  File "pyarrow/_flight.pyx", line 60, in pyarrow._flight.check_flight_status
-pyarrow._flight.FlightTimedOutError: Flight returned timeout error, with message: Deadline Exceeded
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
-    result = _execute_callable(context=context, **execute_callable_kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
-    return execute_callable(context=context, **execute_callable_kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
-    return func(self, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/decorators/base.py", line 265, in execute
-    return_value = super().execute(context)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
-    return func(self, *args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
-    return_value = self.execute_callable()
-                   ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
-    return self.python_callable(*self.op_args, **self.op_kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/airflow/dags/feature_pipeline_dag.py", line 42, in transformation
-    query.read()
-  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/constructor/query.py", line 360, in read
-    return engine._get_instance()._sql(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/engine/python.py", line 150, in _sql
-    return self._sql_offline(
-           ^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/engine/python.py", line 300, in _sql_offline
-    result_df = util._run_with_loading_animation(
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/hopsworks_common/util.py", line 430, in _run_with_loading_animation
-    result = func(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/airflow/.local/lib/python3.11/site-packages/hsfs/core/arrow_flight_client.py", line 454, in afs_error_handler_wrapper
-    raise FeatureStoreException(user_message) from e
-hopsworks_common.client.exceptions.FeatureStoreException: Could not read data using Hopsworks Query Service.
-[2026-08-07T10:01:47.226+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=feature_pipeline, task_id=transformation, run_id=scheduled__2026-08-07T09:00:00+00:00, execution_date=20260807T090000, start_date=20260807T100022, end_date=20260807T100147
-[2026-08-07T10:01:47.271+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 79 for task transformation (Could not read data using Hopsworks Query Service.; 2133)
-[2026-08-07T10:01:47.362+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
-[2026-08-07T10:01:47.420+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
-[2026-08-07T10:01:47.432+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

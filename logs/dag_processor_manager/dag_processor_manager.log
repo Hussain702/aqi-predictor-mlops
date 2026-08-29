@@ -14997,3 +14997,1605 @@ File Path                                     PID  Runtime      # DAGs    # Erro
 /opt/airflow/dags/training_pipeline_dag.py   4396  0.47s             0           1  180.39s         2026-08-27T08:37:38
 /opt/airflow/dags/feature_pipeline_dag.py                            0           1  72.71s          2026-08-27T08:38:51
 ================================================================================
+[2026-08-29T16:55:45.899+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2026-08-29T16:55:45.908+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2026-08-29T16:55:45.910+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-08-29T16:55:45.913+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T16:55:46.093+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T16:55:47.114+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/feature_pipeline_dag.py                            0           0
+/opt/airflow/dags/forecast_logging_dag.py     171  0.22s             0           0
+/opt/airflow/dags/training_pipeline_dag.py    168  0.27s             0           0
+================================================================================
+[2026-08-29T16:56:15.087+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  14.54s          2026-08-29T16:56:01
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  9.14s           2026-08-29T16:56:10
+/opt/airflow/dags/forecast_logging_dag.py     171  28.20s            0           0
+================================================================================
+[2026-08-29T16:56:16.374+0000] {manager.py:1016} ERROR - Processor for /opt/airflow/dags/forecast_logging_dag.py exited with return code 1.
+[2026-08-29T16:56:46.654+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            0          -1  29.49s          2026-08-29T16:56:16
+/opt/airflow/dags/training_pipeline_dag.py    227  14.85s            1           0  14.54s          2026-08-29T16:56:01
+/opt/airflow/dags/feature_pipeline_dag.py     231  3.22s             1           0  9.14s           2026-08-29T16:56:10
+================================================================================
+[2026-08-29T16:57:06.544+0000] {manager.py:1016} ERROR - Processor for /opt/airflow/dags/training_pipeline_dag.py exited with return code 1.
+[2026-08-29T16:57:15.888+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py                           0          -1  35.00s          2026-08-29T16:57:06
+/opt/airflow/dags/forecast_logging_dag.py     247  9.05s             0          -1  29.49s          2026-08-29T16:56:16
+/opt/airflow/dags/feature_pipeline_dag.py     231  32.52s            1           0  9.14s           2026-08-29T16:56:10
+================================================================================
+[2026-08-29T16:57:33.676+0000] {manager.py:1203} ERROR - Processor for /opt/airflow/dags/feature_pipeline_dag.py with PID 231 started at 2026-08-29T16:56:43.179974+00:00 has timed out, killing it.
+[2026-08-29T16:57:44.160+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            0           1  50.50s          2026-08-29T16:57:33
+/opt/airflow/dags/training_pipeline_dag.py    252  4.88s             0          -1  35.00s          2026-08-29T16:57:06
+/opt/airflow/dags/forecast_logging_dag.py     247  37.23s            0          -1  29.49s          2026-08-29T16:56:16
+================================================================================
+[2026-08-29T16:58:10.498+0000] {manager.py:1203} ERROR - Processor for /opt/airflow/dags/forecast_logging_dag.py with PID 247 started at 2026-08-29T16:57:06.642595+00:00 has timed out, killing it.
+[2026-08-29T16:58:13.113+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            0           1  63.86s          2026-08-29T16:58:10
+/opt/airflow/dags/feature_pipeline_dag.py     255  1.39s             0           1  50.50s          2026-08-29T16:57:33
+/opt/airflow/dags/training_pipeline_dag.py    252  33.94s            0          -1  35.00s          2026-08-29T16:57:06
+================================================================================
+[2026-08-29T16:58:29.121+0000] {manager.py:1203} ERROR - Processor for /opt/airflow/dags/training_pipeline_dag.py with PID 252 started at 2026-08-29T16:57:38.997885+00:00 has timed out, killing it.
+[2026-08-29T16:58:42.166+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py     272  0.48s             0           1  63.86s          2026-08-29T16:58:10
+/opt/airflow/dags/feature_pipeline_dag.py     255  30.16s            0           1  50.50s          2026-08-29T16:57:33
+/opt/airflow/dags/training_pipeline_dag.py                           0           1  50.12s          2026-08-29T16:58:29
+================================================================================
+[2026-08-29T16:59:01.687+0000] {manager.py:1203} ERROR - Processor for /opt/airflow/dags/feature_pipeline_dag.py with PID 255 started at 2026-08-29T16:58:11.551439+00:00 has timed out, killing it.
+[2026-08-29T16:59:25.968+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py     272  44.42s            0           1  63.86s          2026-08-29T16:58:10
+/opt/airflow/dags/feature_pipeline_dag.py                            0           1  50.14s          2026-08-29T16:59:01
+/opt/airflow/dags/training_pipeline_dag.py    275  23.75s            0           1  50.12s          2026-08-29T16:58:29
+================================================================================
+[2026-08-29T17:01:50.527+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T17:01:56.121+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T17:02:13.375+0000] {manager.py:1203} ERROR - Processor for /opt/airflow/dags/forecast_logging_dag.py with PID 272 started at 2026-08-29T16:58:41.226230+00:00 has timed out, killing it.
+[2026-08-29T17:02:13.522+0000] {manager.py:1203} ERROR - Processor for /opt/airflow/dags/training_pipeline_dag.py with PID 275 started at 2026-08-29T16:59:01.897714+00:00 has timed out, killing it.
+[2026-08-29T17:02:17.400+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            0           1  212.15s         2026-08-29T17:02:13
+/opt/airflow/dags/training_pipeline_dag.py                           0           1  191.48s         2026-08-29T17:02:13
+/opt/airflow/dags/feature_pipeline_dag.py     283  1.14s             0           1  50.14s          2026-08-29T16:59:01
+================================================================================
+[2026-08-29T17:02:45.986+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            0           1  212.15s         2026-08-29T17:02:13
+/opt/airflow/dags/training_pipeline_dag.py    287  8.10s             0           1  191.48s         2026-08-29T17:02:13
+/opt/airflow/dags/feature_pipeline_dag.py     283  31.08s            0           1  50.14s          2026-08-29T16:59:01
+================================================================================
+[2026-08-29T17:03:05.104+0000] {manager.py:1203} ERROR - Processor for /opt/airflow/dags/feature_pipeline_dag.py with PID 283 started at 2026-08-29T17:02:14.811268+00:00 has timed out, killing it.
+[2026-08-29T17:03:15.058+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py     291  9.63s             0           1  212.15s         2026-08-29T17:02:13
+/opt/airflow/dags/training_pipeline_dag.py    287  37.17s            0           1  191.48s         2026-08-29T17:02:13
+/opt/airflow/dags/feature_pipeline_dag.py                            0           1  50.29s          2026-08-29T17:03:05
+================================================================================
+[2026-08-29T17:16:39.701+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2026-08-29T17:16:39.715+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2026-08-29T17:16:39.718+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-08-29T17:16:39.731+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T17:16:40.009+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T17:16:48.363+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/feature_pipeline_dag.py                            0           0
+/opt/airflow/dags/forecast_logging_dag.py     302  6.10s             0           0
+/opt/airflow/dags/training_pipeline_dag.py    299  6.55s             0           0
+================================================================================
+[2026-08-29T17:17:16.577+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/feature_pipeline_dag.py                            0           0
+/opt/airflow/dags/forecast_logging_dag.py     302  34.74s            0           0
+/opt/airflow/dags/training_pipeline_dag.py    299  35.20s            0           0
+================================================================================
+[2026-08-29T17:17:20.926+0000] {manager.py:1016} ERROR - Processor for /opt/airflow/dags/forecast_logging_dag.py exited with return code 1.
+[2026-08-29T17:17:20.986+0000] {manager.py:1016} ERROR - Processor for /opt/airflow/dags/training_pipeline_dag.py exited with return code 1.
+[2026-08-29T17:17:45.266+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py                           0          -1  39.61s          2026-08-29T17:17:20
+/opt/airflow/dags/forecast_logging_dag.py                            0          -1  39.09s          2026-08-29T17:17:20
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  4.66s           2026-08-29T17:17:25
+================================================================================
+[2026-08-29T17:18:13.786+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  21.29s          2026-08-29T17:18:13
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  14.05s          2026-08-29T17:18:05
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.78s           2026-08-29T17:18:08
+================================================================================
+[2026-08-29T17:18:42.012+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  21.29s          2026-08-29T17:18:13
+/opt/airflow/dags/training_pipeline_dag.py    425  5.86s             1           0  14.05s          2026-08-29T17:18:05
+/opt/airflow/dags/feature_pipeline_dag.py     428  3.33s             1           0  2.78s           2026-08-29T17:18:08
+================================================================================
+[2026-08-29T17:19:11.981+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  15.91s          2026-08-29T17:18:52
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  13.86s          2026-08-29T17:18:52
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.73s           2026-08-29T17:18:56
+================================================================================
+[2026-08-29T17:19:38.560+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.73s           2026-08-29T17:19:31
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  3.15s           2026-08-29T17:19:25
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.78s           2026-08-29T17:19:25
+================================================================================
+[2026-08-29T17:20:07.039+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.42s           2026-08-29T17:20:06
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.25s           2026-08-29T17:19:58
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.15s           2026-08-29T17:19:57
+================================================================================
+[2026-08-29T17:20:35.221+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  5.00s           2026-08-29T17:20:33
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  4.94s           2026-08-29T17:20:32
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.42s           2026-08-29T17:20:06
+================================================================================
+[2026-08-29T17:31:26.081+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T17:31:27.323+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T17:31:43.043+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  4.82s           2026-08-29T17:31:37
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.51s           2026-08-29T17:31:32
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  3.92s           2026-08-29T17:31:34
+================================================================================
+[2026-08-29T17:32:14.118+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  4.97s           2026-08-29T17:32:10
+/opt/airflow/dags/training_pipeline_dag.py    603  3.86s             1           0  4.82s           2026-08-29T17:31:37
+/opt/airflow/dags/forecast_logging_dag.py     581  11.06s            1           0  4.51s           2026-08-29T17:31:32
+================================================================================
+[2026-08-29T17:32:42.215+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  11.70s          2026-08-29T17:32:14
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  7.62s           2026-08-29T17:32:17
+/opt/airflow/dags/feature_pipeline_dag.py     611  1.46s             1           0  4.97s           2026-08-29T17:32:10
+================================================================================
+[2026-08-29T17:33:10.456+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py     614  25.60s            1           0  11.70s          2026-08-29T17:32:14
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  7.62s           2026-08-29T17:32:17
+/opt/airflow/dags/feature_pipeline_dag.py     611  29.72s            1           0  4.97s           2026-08-29T17:32:10
+================================================================================
+[2026-08-29T17:33:39.784+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  29.74s          2026-08-29T17:33:10
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  29.08s          2026-08-29T17:33:13
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.76s           2026-08-29T17:33:13
+================================================================================
+[2026-08-29T17:34:07.323+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.67s           2026-08-29T17:33:48
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.19s           2026-08-29T17:33:46
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.12s           2026-08-29T17:33:42
+================================================================================
+[2026-08-29T17:34:36.329+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  2.50s           2026-08-29T17:34:22
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.06s           2026-08-29T17:34:18
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.02s           2026-08-29T17:34:15
+================================================================================
+[2026-08-29T17:35:04.580+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  4.57s           2026-08-29T17:34:50
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.04s           2026-08-29T17:34:56
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  0.47s           2026-08-29T17:34:49
+================================================================================
+[2026-08-29T17:35:32.592+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.92s           2026-08-29T17:35:30
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.15s           2026-08-29T17:35:22
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.99s           2026-08-29T17:35:21
+================================================================================
+[2026-08-29T17:36:00.394+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.92s           2026-08-29T17:35:30
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.24s           2026-08-29T17:35:54
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.22s           2026-08-29T17:35:55
+================================================================================
+[2026-08-29T17:36:26.482+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T17:36:26.651+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T17:36:28.610+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.55s           2026-08-29T17:36:05
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.29s           2026-08-29T17:36:26
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.13s           2026-08-29T17:36:27
+================================================================================
+[2026-08-29T17:36:56.414+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.25s           2026-08-29T17:36:40
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.29s           2026-08-29T17:36:26
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.13s           2026-08-29T17:36:27
+================================================================================
+[2026-08-29T17:37:25.145+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.33s           2026-08-29T17:37:15
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.26s           2026-08-29T17:36:59
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.09s           2026-08-29T17:37:00
+================================================================================
+[2026-08-29T17:37:52.998+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.31s           2026-08-29T17:37:50
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.22s           2026-08-29T17:37:33
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.14s           2026-08-29T17:37:32
+================================================================================
+[2026-08-29T17:38:21.708+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py     942  1.03s             1           0  4.31s           2026-08-29T17:37:50
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  0.12s           2026-08-29T17:38:03
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  -0.02s          2026-08-29T17:38:04
+================================================================================
+[2026-08-29T17:38:50.087+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.25s           2026-08-29T17:38:24
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.14s           2026-08-29T17:38:35
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.05s           2026-08-29T17:38:36
+================================================================================
+[2026-08-29T17:39:18.723+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.54s           2026-08-29T17:38:59
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.11s           2026-08-29T17:39:09
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.11s           2026-08-29T17:39:08
+================================================================================
+[2026-08-29T17:39:46.620+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.37s           2026-08-29T17:39:34
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.36s           2026-08-29T17:39:41
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.31s           2026-08-29T17:39:42
+================================================================================
+[2026-08-29T17:40:14.365+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.45s           2026-08-29T17:40:09
+/opt/airflow/dags/training_pipeline_dag.py   1050  2.10s             1           0  2.36s           2026-08-29T17:39:41
+/opt/airflow/dags/feature_pipeline_dag.py    1054  1.03s             1           0  2.31s           2026-08-29T17:39:42
+================================================================================
+[2026-08-29T17:40:42.080+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py    1062  2.07s             1           0  4.45s           2026-08-29T17:40:09
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.37s           2026-08-29T17:40:14
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.16s           2026-08-29T17:40:15
+================================================================================
+[2026-08-29T17:41:10.802+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.06s           2026-08-29T17:40:44
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.10s           2026-08-29T17:40:48
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.05s           2026-08-29T17:40:47
+================================================================================
+[2026-08-29T17:41:26.685+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T17:41:26.841+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T17:41:39.216+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.13s           2026-08-29T17:41:19
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.94s           2026-08-29T17:41:19
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  -0.40s          2026-08-29T17:41:17
+================================================================================
+[2026-08-29T19:44:03.705+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T19:44:04.009+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T19:44:28.345+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  18.28s          2026-08-29T19:44:22
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  13.92s          2026-08-29T19:44:17
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  5.26s           2026-08-29T19:44:23
+================================================================================
+[2026-08-29T19:44:58.727+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.10s           2026-08-29T19:44:56
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.88s           2026-08-29T19:44:50
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.68s           2026-08-29T19:44:55
+================================================================================
+[2026-08-29T19:45:28.867+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py    1198  1.69s             1           0  3.10s           2026-08-29T19:44:56
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.70s           2026-08-29T19:45:27
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.52s           2026-08-29T19:45:22
+================================================================================
+[2026-08-29T19:45:59.335+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  2.93s           2026-08-29T19:45:30
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.96s           2026-08-29T19:45:54
+/opt/airflow/dags/feature_pipeline_dag.py    1224  1.08s             1           0  1.70s           2026-08-29T19:45:27
+================================================================================
+[2026-08-29T19:46:25.922+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.02s           2026-08-29T19:46:04
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.78s           2026-08-29T19:46:01
+/opt/airflow/dags/training_pipeline_dag.py   1248  1.04s             1           0  1.96s           2026-08-29T19:45:54
+================================================================================
+[2026-08-29T19:46:59.708+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  5.09s           2026-08-29T19:46:36
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.08s           2026-08-29T19:46:39
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.93s           2026-08-29T19:46:59
+================================================================================
+[2026-08-29T19:47:26.243+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.81s           2026-08-29T19:47:13
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.04s           2026-08-29T19:47:09
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.93s           2026-08-29T19:46:59
+================================================================================
+[2026-08-29T19:48:07.024+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.53s           2026-08-29T19:47:47
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  3.04s           2026-08-29T19:47:43
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  3.00s           2026-08-29T19:47:43
+================================================================================
+[2026-08-29T19:48:34.631+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  5.81s           2026-08-29T19:48:23
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.84s           2026-08-29T19:48:15
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.69s           2026-08-29T19:48:15
+================================================================================
+[2026-08-29T19:49:04.166+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T19:49:04.404+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T19:49:07.584+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.38s           2026-08-29T19:48:57
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.93s           2026-08-29T19:48:47
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.74s           2026-08-29T19:48:47
+================================================================================
+[2026-08-29T19:49:34.734+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.16s           2026-08-29T19:49:20
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  2.06s           2026-08-29T19:49:29
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.00s           2026-08-29T19:49:20
+================================================================================
+[2026-08-29T19:50:04.163+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.35s           2026-08-29T19:49:52
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.23s           2026-08-29T19:49:53
+/opt/airflow/dags/forecast_logging_dag.py    1440  4.11s             1           0  2.06s           2026-08-29T19:49:29
+================================================================================
+[2026-08-29T19:50:32.146+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.29s           2026-08-29T19:50:04
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.17s           2026-08-29T19:50:26
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.12s           2026-08-29T19:50:25
+================================================================================
+[2026-08-29T19:51:01.224+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.34s           2026-08-29T19:50:59
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.20s           2026-08-29T19:50:59
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  1.76s           2026-08-29T19:50:37
+================================================================================
+[2026-08-29T19:51:29.077+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.98s           2026-08-29T19:51:11
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.34s           2026-08-29T19:50:59
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.20s           2026-08-29T19:50:59
+================================================================================
+[2026-08-29T19:51:57.367+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.28s           2026-08-29T19:51:47
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  -0.39s          2026-08-29T19:51:30
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  -0.46s          2026-08-29T19:51:30
+================================================================================
+[2026-08-29T19:52:23.225+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.37s           2026-08-29T19:52:21
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.37s           2026-08-29T19:52:03
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.27s           2026-08-29T19:52:03
+================================================================================
+[2026-08-29T19:52:58.826+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.00s           2026-08-29T19:52:55
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.13s           2026-08-29T19:52:35
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.05s           2026-08-29T19:52:35
+================================================================================
+[2026-08-29T19:53:29.523+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py    1620  3.15s             1           0  4.00s           2026-08-29T19:52:55
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.08s           2026-08-29T19:53:08
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.05s           2026-08-29T19:53:08
+================================================================================
+[2026-08-29T19:53:59.985+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.07s           2026-08-29T19:53:30
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.29s           2026-08-29T19:53:40
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.14s           2026-08-29T19:53:40
+================================================================================
+[2026-08-29T19:54:04.206+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T19:54:04.326+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T19:54:30.580+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.67s           2026-08-29T19:54:05
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.88s           2026-08-29T19:54:13
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.85s           2026-08-29T19:54:12
+================================================================================
+[2026-08-29T19:55:00.671+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.83s           2026-08-29T19:54:39
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.20s           2026-08-29T19:54:45
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.10s           2026-08-29T19:54:45
+================================================================================
+[2026-08-29T19:55:28.939+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.82s           2026-08-29T19:55:13
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.82s           2026-08-29T19:55:17
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.81s           2026-08-29T19:55:17
+================================================================================
+[2026-08-29T19:56:01.042+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.32s           2026-08-29T19:55:48
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.08s           2026-08-29T19:55:50
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.94s           2026-08-29T19:55:50
+================================================================================
+[2026-08-29T19:56:31.244+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.87s           2026-08-29T19:56:22
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.73s           2026-08-29T19:56:22
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.68s           2026-08-29T19:56:24
+================================================================================
+[2026-08-29T19:56:59.261+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  5.63s           2026-08-29T19:56:58
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.72s           2026-08-29T19:56:57
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  -0.87s          2026-08-29T19:56:58
+================================================================================
+[2026-08-29T19:57:32.674+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py   1852  1.79s             1           0  5.63s           2026-08-29T19:56:58
+/opt/airflow/dags/forecast_logging_dag.py    1830  4.12s             1           0  4.72s           2026-08-29T19:56:57
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.24s           2026-08-29T19:57:30
+================================================================================
+[2026-08-29T19:58:01.602+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.49s           2026-08-29T19:57:33
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.35s           2026-08-29T19:57:33
+/opt/airflow/dags/feature_pipeline_dag.py    1860  0.01s             1           0  2.24s           2026-08-29T19:57:30
+================================================================================
+[2026-08-29T20:15:14.962+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T20:15:16.756+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T20:15:16.899+0000] {manager.py:1203} ERROR - Processor for /opt/airflow/dags/feature_pipeline_dag.py with PID 1860 started at 2026-08-29T19:58:01.583921+00:00 has timed out, killing it.
+[2026-08-29T20:15:43.571+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            0           1  1035.32s        2026-08-29T20:15:16
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.29s           2026-08-29T20:15:21
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.52s           2026-08-29T20:15:19
+================================================================================
+[2026-08-29T20:16:11.070+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.48s           2026-08-29T20:15:55
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.62s           2026-08-29T20:15:49
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.58s           2026-08-29T20:15:51
+================================================================================
+[2026-08-29T20:16:40.742+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.26s           2026-08-29T20:16:29
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.81s           2026-08-29T20:16:21
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.64s           2026-08-29T20:16:23
+================================================================================
+[2026-08-29T20:17:09.666+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.13s           2026-08-29T20:17:03
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.23s           2026-08-29T20:16:54
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.03s           2026-08-29T20:16:56
+================================================================================
+[2026-08-29T20:17:38.942+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.24s           2026-08-29T20:17:27
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  2.10s           2026-08-29T20:17:35
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.08s           2026-08-29T20:17:29
+================================================================================
+[2026-08-29T20:18:09.828+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.28s           2026-08-29T20:17:59
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.21s           2026-08-29T20:18:01
+/opt/airflow/dags/forecast_logging_dag.py    2023  3.74s             1           0  2.10s           2026-08-29T20:17:35
+================================================================================
+[2026-08-29T20:18:39.851+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.22s           2026-08-29T20:18:10
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.76s           2026-08-29T20:18:33
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.49s           2026-08-29T20:18:32
+================================================================================
+[2026-08-29T20:19:10.426+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.22s           2026-08-29T20:18:45
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.07s           2026-08-29T20:19:06
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.99s           2026-08-29T20:19:04
+================================================================================
+[2026-08-29T20:19:38.604+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.94s           2026-08-29T20:19:19
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.90s           2026-08-29T20:19:36
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.85s           2026-08-29T20:19:38
+================================================================================
+[2026-08-29T20:20:09.570+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.46s           2026-08-29T20:19:54
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.20s           2026-08-29T20:20:09
+/opt/airflow/dags/training_pipeline_dag.py   2135  0.14s             1           0  1.85s           2026-08-29T20:19:38
+================================================================================
+[2026-08-29T20:20:15.415+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T20:20:15.556+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T20:20:39.048+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  5.76s           2026-08-29T20:20:30
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.20s           2026-08-29T20:20:09
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.93s           2026-08-29T20:20:11
+================================================================================
+[2026-08-29T20:21:07.178+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.38s           2026-08-29T20:21:05
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.90s           2026-08-29T20:20:41
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.87s           2026-08-29T20:20:43
+================================================================================
+[2026-08-29T20:21:33.662+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.38s           2026-08-29T20:21:05
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.61s           2026-08-29T20:21:14
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.04s           2026-08-29T20:21:16
+================================================================================
+[2026-08-29T20:22:04.532+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.50s           2026-08-29T20:21:40
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.27s           2026-08-29T20:21:47
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.10s           2026-08-29T20:21:49
+================================================================================
+[2026-08-29T20:22:33.025+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.39s           2026-08-29T20:22:15
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.12s           2026-08-29T20:22:20
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.89s           2026-08-29T20:22:21
+================================================================================
+[2026-08-29T20:23:03.745+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.27s           2026-08-29T20:22:49
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  3.06s           2026-08-29T20:22:53
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.13s           2026-08-29T20:22:54
+================================================================================
+[2026-08-29T20:23:31.816+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  1.95s           2026-08-29T20:23:21
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.89s           2026-08-29T20:23:25
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.75s           2026-08-29T20:23:26
+================================================================================
+[2026-08-29T20:24:03.666+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.19s           2026-08-29T20:23:56
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.05s           2026-08-29T20:23:58
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.92s           2026-08-29T20:23:59
+================================================================================
+[2026-08-29T20:24:32.435+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.60s           2026-08-29T20:24:31
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.17s           2026-08-29T20:24:31
+/opt/airflow/dags/training_pipeline_dag.py   2375  1.03s             1           0  1.92s           2026-08-29T20:23:59
+================================================================================
+[2026-08-29T20:25:01.888+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py    2383  0.07s             1           0  4.60s           2026-08-29T20:24:31
+/opt/airflow/dags/feature_pipeline_dag.py    2386  0.02s             1           0  2.17s           2026-08-29T20:24:31
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.70s           2026-08-29T20:24:33
+================================================================================
+[2026-08-29T20:25:15.920+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T20:25:16.061+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T20:25:30.135+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  5.13s           2026-08-29T20:25:06
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.47s           2026-08-29T20:25:04
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.39s           2026-08-29T20:25:06
+================================================================================
+[2026-08-29T20:30:52.927+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T20:30:53.301+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T20:31:07.278+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  6.65s           2026-08-29T20:31:00
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  4.70s           2026-08-29T20:31:00
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.14s           2026-08-29T20:30:55
+================================================================================
+[2026-08-29T20:31:37.486+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.10s           2026-08-29T20:31:33
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.80s           2026-08-29T20:31:27
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.64s           2026-08-29T20:31:32
+================================================================================
+[2026-08-29T20:32:06.350+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py    2513  2.27s             1           0  3.10s           2026-08-29T20:31:33
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.72s           2026-08-29T20:31:59
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.71s           2026-08-29T20:32:04
+================================================================================
+[2026-08-29T20:32:33.882+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.11s           2026-08-29T20:32:07
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.89s           2026-08-29T20:32:31
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.71s           2026-08-29T20:32:04
+================================================================================
+[2026-08-29T20:33:02.316+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.25s           2026-08-29T20:32:42
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.17s           2026-08-29T20:32:37
+/opt/airflow/dags/training_pipeline_dag.py   2563  0.02s             1           0  1.89s           2026-08-29T20:32:31
+================================================================================
+[2026-08-29T20:33:30.768+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.23s           2026-08-29T20:33:16
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.28s           2026-08-29T20:33:09
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.02s           2026-08-29T20:33:04
+================================================================================
+[2026-08-29T20:33:59.198+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.88s           2026-08-29T20:33:51
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.22s           2026-08-29T20:33:42
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.11s           2026-08-29T20:33:37
+================================================================================
+[2026-08-29T20:34:28.179+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.92s           2026-08-29T20:34:25
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.08s           2026-08-29T20:34:09
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  0.35s           2026-08-29T20:34:12
+================================================================================
+[2026-08-29T20:34:55.976+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py    2665  0.01s             1           0  3.92s           2026-08-29T20:34:25
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.21s           2026-08-29T20:34:45
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  -0.37s          2026-08-29T20:34:39
+================================================================================
+[2026-08-29T20:35:24.320+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.29s           2026-08-29T20:35:00
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.85s           2026-08-29T20:35:13
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.96s           2026-08-29T20:35:18
+================================================================================
+[2026-08-29T20:35:52.042+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.25s           2026-08-29T20:35:34
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.20s           2026-08-29T20:35:51
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.12s           2026-08-29T20:35:45
+================================================================================
+[2026-08-29T20:35:53.053+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T20:35:53.234+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T20:36:19.953+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.20s           2026-08-29T20:35:51
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.03s           2026-08-29T20:36:17
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  1.52s           2026-08-29T20:36:06
+================================================================================
+[2026-08-29T20:36:47.640+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.42s           2026-08-29T20:36:41
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.23s           2026-08-29T20:36:24
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.03s           2026-08-29T20:36:17
+================================================================================
+[2026-08-29T20:37:16.241+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py    2785  4.08s             1           0  4.42s           2026-08-29T20:36:41
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.10s           2026-08-29T20:36:56
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.03s           2026-08-29T20:36:50
+================================================================================
+[2026-08-29T20:37:43.931+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.11s           2026-08-29T20:37:16
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.16s           2026-08-29T20:37:23
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  -0.68s          2026-08-29T20:37:27
+================================================================================
+[2026-08-29T20:38:12.068+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.68s           2026-08-29T20:37:51
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.07s           2026-08-29T20:37:59
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  -0.28s          2026-08-29T20:37:53
+================================================================================
+[2026-08-29T20:38:39.857+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.38s           2026-08-29T20:38:32
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  2.07s           2026-08-29T20:38:24
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  -0.63s          2026-08-29T20:38:23
+================================================================================
+[2026-08-29T20:39:07.870+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.35s           2026-08-29T20:38:59
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.34s           2026-08-29T20:38:56
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.25s           2026-08-29T20:39:06
+================================================================================
+[2026-08-29T20:39:35.626+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.11s           2026-08-29T20:39:34
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.25s           2026-08-29T20:39:06
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.01s           2026-08-29T20:39:29
+================================================================================
+[2026-08-29T20:40:04.147+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.11s           2026-08-29T20:39:34
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.08s           2026-08-29T20:40:02
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.07s           2026-08-29T20:39:38
+================================================================================
+[2026-08-29T20:40:32.396+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.98s           2026-08-29T20:40:09
+/opt/airflow/dags/training_pipeline_dag.py   2965  0.01s             1           0  2.08s           2026-08-29T20:40:02
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.87s           2026-08-29T20:40:11
+================================================================================
+[2026-08-29T20:40:54.011+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T20:40:54.183+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T20:41:00.391+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  2.25s           2026-08-29T20:40:41
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.02s           2026-08-29T20:40:34
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  -0.45s          2026-08-29T20:40:41
+================================================================================
+[2026-08-29T20:49:20.531+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T20:49:20.630+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T20:49:30.193+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  8.74s           2026-08-29T20:49:29
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  6.22s           2026-08-29T20:49:26
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.25s           2026-08-29T20:49:29
+================================================================================
+[2026-08-29T20:49:58.115+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  8.74s           2026-08-29T20:49:29
+/opt/airflow/dags/training_pipeline_dag.py   3055  1.02s             1           0  6.22s           2026-08-29T20:49:26
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.25s           2026-08-29T20:49:29
+================================================================================
+[2026-08-29T20:50:28.138+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  3.54s           2026-08-29T20:50:03
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.74s           2026-08-29T20:50:01
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.63s           2026-08-29T20:49:58
+================================================================================
+[2026-08-29T20:50:56.174+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.76s           2026-08-29T20:50:33
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.72s           2026-08-29T20:50:30
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  0.97s           2026-08-29T20:50:34
+================================================================================
+[2026-08-29T20:51:25.198+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.48s           2026-08-29T20:51:10
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  3.61s           2026-08-29T20:51:04
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  -0.05s          2026-08-29T20:51:04
+================================================================================
+[2026-08-29T20:51:53.543+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  7.25s           2026-08-29T20:51:42
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  6.53s           2026-08-29T20:51:41
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.83s           2026-08-29T20:51:46
+================================================================================
+[2026-08-29T20:52:22.234+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.66s           2026-08-29T20:52:21
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.28s           2026-08-29T20:52:14
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.22s           2026-08-29T20:52:15
+================================================================================
+[2026-08-29T20:52:50.457+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  4.87s           2026-08-29T20:52:49
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.66s           2026-08-29T20:52:21
+/opt/airflow/dags/feature_pipeline_dag.py    3209  4.61s             1           0  2.22s           2026-08-29T20:52:15
+================================================================================
+[2026-08-29T20:53:18.503+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  5.97s           2026-08-29T20:52:51
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  5.13s           2026-08-29T20:52:56
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  4.87s           2026-08-29T20:52:49
+================================================================================
+[2026-08-29T20:53:46.782+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  7.98s           2026-08-29T20:53:35
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.29s           2026-08-29T20:53:22
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  0.25s           2026-08-29T20:53:22
+================================================================================
+[2026-08-29T20:54:15.018+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  5.94s           2026-08-29T20:53:58
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  5.12s           2026-08-29T20:53:57
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.83s           2026-08-29T20:54:10
+================================================================================
+[2026-08-29T20:54:20.830+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T20:54:20.990+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T20:54:42.751+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py    3307  2.25s             1           0  4.83s           2026-08-29T20:54:10
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.30s           2026-08-29T20:54:31
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.12s           2026-08-29T20:54:30
+================================================================================
+[2026-08-29T20:55:10.533+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.44s           2026-08-29T20:54:44
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  4.38s           2026-08-29T20:55:05
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  4.20s           2026-08-29T20:55:06
+================================================================================
+[2026-08-29T20:55:38.673+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.93s           2026-08-29T20:55:20
+/opt/airflow/dags/feature_pipeline_dag.py    3359  2.05s             1           0  4.20s           2026-08-29T20:55:06
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.22s           2026-08-29T20:55:37
+================================================================================
+[2026-08-29T20:56:07.125+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  6.39s           2026-08-29T20:55:57
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.24s           2026-08-29T20:55:38
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.22s           2026-08-29T20:55:37
+================================================================================
+[2026-08-29T20:56:35.514+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  5.41s           2026-08-29T20:56:32
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  1.84s           2026-08-29T20:56:11
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  1.43s           2026-08-29T20:56:09
+================================================================================
+[2026-08-29T20:57:03.180+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py    3427  0.35s             1           0  5.41s           2026-08-29T20:56:32
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.55s           2026-08-29T20:56:42
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.06s           2026-08-29T20:56:43
+================================================================================
+[2026-08-29T20:57:31.142+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  4.38s           2026-08-29T20:57:17
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  3.58s           2026-08-29T20:57:17
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  1.72s           2026-08-29T20:57:04
+================================================================================
+[2026-08-29T20:57:59.590+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  5.00s           2026-08-29T20:57:40
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.45s           2026-08-29T20:57:49
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.28s           2026-08-29T20:57:50
+================================================================================
+[2026-08-29T20:58:27.588+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.55s           2026-08-29T20:58:15
+/opt/airflow/dags/training_pipeline_dag.py   3505  7.54s             1           0  2.45s           2026-08-29T20:57:49
+/opt/airflow/dags/feature_pipeline_dag.py    3508  6.48s             1           0  2.28s           2026-08-29T20:57:50
+================================================================================
+[2026-08-29T20:58:55.297+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  10.38s          2026-08-29T20:58:30
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  9.20s           2026-08-29T20:58:30
+/opt/airflow/dags/forecast_logging_dag.py    3517  9.80s             1           0  4.55s           2026-08-29T20:58:15
+================================================================================
+[2026-08-29T20:59:20.921+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T20:59:21.151+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T20:59:23.728+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  20.35s          2026-08-29T20:59:20
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  19.77s          2026-08-29T20:59:20
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  15.06s          2026-08-29T20:59:00
+================================================================================
+[2026-08-29T20:59:50.836+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py   3563  -0.73s            1           0  20.35s          2026-08-29T20:59:20
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  19.77s          2026-08-29T20:59:20
+/opt/airflow/dags/forecast_logging_dag.py    3547  19.99s            1           0  15.06s          2026-08-29T20:59:00
+================================================================================
+[2026-08-29T21:00:19.487+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  22.39s          2026-08-29T20:59:53
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  3.12s           2026-08-29T20:59:54
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.42s           2026-08-29T20:59:55
+================================================================================
+[2026-08-29T21:00:47.224+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  5.98s           2026-08-29T21:00:29
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  3.01s           2026-08-29T21:00:27
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.51s           2026-08-29T21:00:30
+================================================================================
+[2026-08-29T21:01:15.108+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py    3625  15.47s            1           0  5.98s           2026-08-29T21:00:29
+/opt/airflow/dags/training_pipeline_dag.py   3622  17.04s            1           0  3.01s           2026-08-29T21:00:27
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.51s           2026-08-29T21:00:30
+================================================================================
+[2026-08-29T21:01:28.957+0000] {manager.py:1016} ERROR - Processor for /opt/airflow/dags/forecast_logging_dag.py exited with return code 1.
+[2026-08-29T21:01:42.841+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            0          -1  29.33s          2026-08-29T21:01:28
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  23.78s          2026-08-29T21:01:21
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  5.29s           2026-08-29T21:01:27
+================================================================================
+[2026-08-29T21:02:10.959+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  7.71s           2026-08-29T21:02:07
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  5.68s           2026-08-29T21:02:02
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.72s           2026-08-29T21:01:54
+================================================================================
+[2026-08-29T21:02:39.148+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py    3902  1.71s             1           0  7.71s           2026-08-29T21:02:07
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  4.05s           2026-08-29T21:02:29
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  2.33s           2026-08-29T21:02:35
+================================================================================
+[2026-08-29T21:03:07.512+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  4.28s           2026-08-29T21:02:41
+/opt/airflow/dags/feature_pipeline_dag.py    3926  1.58s             1           0  2.33s           2026-08-29T21:02:35
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.19s           2026-08-29T21:03:01
+================================================================================
+[2026-08-29T21:03:35.257+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  9.73s           2026-08-29T21:03:21
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  9.70s           2026-08-29T21:03:15
+/opt/airflow/dags/training_pipeline_dag.py   3950  3.15s             1           0  2.19s           2026-08-29T21:03:01
+================================================================================
+[2026-08-29T21:04:03.018+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  9.73s           2026-08-29T21:03:21
+/opt/airflow/dags/feature_pipeline_dag.py    3954  17.42s            1           0  9.70s           2026-08-29T21:03:15
+/opt/airflow/dags/training_pipeline_dag.py   3950  30.91s            1           0  2.19s           2026-08-29T21:03:01
+================================================================================
+[2026-08-29T21:04:21.180+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T21:04:22.534+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T21:04:33.497+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  39.79s          2026-08-29T21:04:11
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  26.35s          2026-08-29T21:04:11
+/opt/airflow/dags/forecast_logging_dag.py                            0           1  4.79s           2026-08-29T21:04:16
+================================================================================
+[2026-08-29T21:05:01.499+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py   3968  19.56s            1           0  39.79s          2026-08-29T21:04:11
+/opt/airflow/dags/feature_pipeline_dag.py    3971  18.81s            1           0  26.35s          2026-08-29T21:04:11
+/opt/airflow/dags/forecast_logging_dag.py                            0           1  4.79s           2026-08-29T21:04:16
+================================================================================
+[2026-08-29T21:06:33.354+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2026-08-29T21:06:33.360+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2026-08-29T21:06:33.363+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-08-29T21:06:33.366+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-08-29T21:06:33.525+0000] {manager.py:740} INFO - There are 3 files in /opt/airflow/dags
+[2026-08-29T21:06:38.625+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/feature_pipeline_dag.py                            0           0
+/opt/airflow/dags/forecast_logging_dag.py     172  3.07s             0           0
+/opt/airflow/dags/training_pipeline_dag.py    169  3.38s             0           0
+================================================================================
+[2026-08-29T21:07:05.100+0000] {manager.py:1016} ERROR - Processor for /opt/airflow/dags/forecast_logging_dag.py exited with return code 1.
+[2026-08-29T21:07:06.099+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            0          -1  29.55s          2026-08-29T21:07:05
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  23.81s          2026-08-29T21:06:59
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  6.95s           2026-08-29T21:07:06
+================================================================================
+[2026-08-29T21:07:34.562+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            0          -1  29.55s          2026-08-29T21:07:05
+/opt/airflow/dags/training_pipeline_dag.py    199  5.29s             1           0  23.81s          2026-08-29T21:06:59
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  6.95s           2026-08-29T21:07:06
+================================================================================
+[2026-08-29T21:08:02.279+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                   PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  22.98s          2026-08-29T21:07:52
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  22.59s          2026-08-29T21:07:58
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  5.94s           2026-08-29T21:07:58
+================================================================================
+[2026-08-29T21:08:29.773+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py     235  1.35s             1           0  22.59s          2026-08-29T21:07:58
+/opt/airflow/dags/feature_pipeline_dag.py     238  1.28s             1           0  5.94s           2026-08-29T21:07:58
+/opt/airflow/dags/training_pipeline_dag.py                           1           0  2.67s           2026-08-29T21:08:25
+================================================================================
+[2026-08-29T21:08:58.140+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/forecast_logging_dag.py                            1           0  16.90s          2026-08-29T21:08:45
+/opt/airflow/dags/feature_pipeline_dag.py                            1           0  15.15s          2026-08-29T21:08:43
+/opt/airflow/dags/training_pipeline_dag.py    262  2.71s             1           0  2.67s           2026-08-29T21:08:25
+================================================================================
+[2026-08-29T21:10:26.382+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2026-08-29T21:10:26.383+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2026-08-29T21:10:26.383+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2026-08-29T21:10:34.678+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2026-08-29T21:10:34.872+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2026-08-29T21:10:39.303+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2026-08-29T21:10:41.214+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2026-08-29T21:10:41.976+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2026-08-29T21:10:42.473+0000] {manager.py:1203} ERROR - Processor for /opt/airflow/dags/feature_pipeline_dag.py with PID 280 started at 2026-08-29T21:09:14.315256+00:00 has timed out, killing it.
