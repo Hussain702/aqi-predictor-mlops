@@ -1,0 +1,37 @@
+[2026-08-27T08:30:11.126+0000] {processor.py:161} INFO - Started process (PID=4239) to work on /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-27T08:30:11.128+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline_dag.py for tasks to queue
+[2026-08-27T08:30:11.131+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:30:11.130+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-27T08:30:14.565+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-27T08:30:18.708+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:30:18.701+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-27T08:30:18.802+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:30:18.801+0000] {dag.py:3947} INFO - Setting next_dagrun for training_pipeline to 2026-08-26 00:00:00+00:00, run_after=2026-08-27 00:00:00+00:00
+[2026-08-27T08:30:19.221+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline_dag.py took 8.119 seconds
+[2026-08-27T08:31:19.967+0000] {processor.py:161} INFO - Started process (PID=4263) to work on /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-27T08:31:19.972+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline_dag.py for tasks to queue
+[2026-08-27T08:31:20.004+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:31:19.986+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-27T08:31:53.684+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:31:53.682+0000] {timeout.py:68} ERROR - Process timed out, PID: 4263
+[2026-08-27T08:32:24.870+0000] {processor.py:161} INFO - Started process (PID=4328) to work on /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-27T08:32:24.885+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline_dag.py for tasks to queue
+[2026-08-27T08:32:24.905+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:32:24.905+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-27T08:32:53.933+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:32:53.932+0000] {timeout.py:68} ERROR - Process timed out, PID: 4328
+[2026-08-27T08:32:53.937+0000] {logging_mixin.py:188} WARNING - Exception ignored in: <function WeakKeyDictionary.__init__.<locals>.remove at 0x798115fd0cc0>
+[2026-08-27T08:32:53.940+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2026-08-27T08:32:53.941+0000] {logging_mixin.py:188} WARNING -   File "/usr/local/lib/python3.11/weakref.py", line 369, in remove
+[2026-08-27T08:32:53.944+0000] {logging_mixin.py:188} WARNING -     def remove(k, selfref=ref(self)):
+[2026-08-27T08:32:53.945+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+[2026-08-27T08:32:53.945+0000] {logging_mixin.py:188} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2026-08-27T08:32:53.946+0000] {logging_mixin.py:188} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/training_pipeline_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.9.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.9.3/best-practices.html#reducing-dag-complexity, PID: 4328
+[2026-08-27T08:32:54.125+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-27T08:32:54.725+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:32:54.725+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-27T08:32:54.759+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:32:54.759+0000] {dag.py:3947} INFO - Setting next_dagrun for training_pipeline to 2026-08-27 00:00:00+00:00, run_after=2026-08-28 00:00:00+00:00
+[2026-08-27T08:32:54.824+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline_dag.py took 32.565 seconds
+[2026-08-27T08:33:26.788+0000] {processor.py:161} INFO - Started process (PID=4343) to work on /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-27T08:33:26.909+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline_dag.py for tasks to queue
+[2026-08-27T08:33:26.929+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:33:26.928+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-27T08:33:55.819+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:33:55.740+0000] {timeout.py:68} ERROR - Process timed out, PID: 4343
+[2026-08-27T08:34:36.455+0000] {processor.py:161} INFO - Started process (PID=4361) to work on /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-27T08:34:36.461+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline_dag.py for tasks to queue
+[2026-08-27T08:34:36.523+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:34:36.498+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-27T08:35:07.851+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:35:07.213+0000] {timeout.py:68} ERROR - Process timed out, PID: 4361

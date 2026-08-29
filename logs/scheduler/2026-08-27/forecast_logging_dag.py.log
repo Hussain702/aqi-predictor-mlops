@@ -1,0 +1,28 @@
+[2026-08-27T08:30:43.120+0000] {processor.py:161} INFO - Started process (PID=4251) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-27T08:30:43.133+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-27T08:30:43.318+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:30:43.174+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-27T08:31:21.024+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:31:21.020+0000] {timeout.py:68} ERROR - Process timed out, PID: 4251
+[2026-08-27T08:31:21.027+0000] {logging_mixin.py:188} WARNING - Exception ignored in: <function WeakKeyDictionary.__init__.<locals>.remove at 0x798115fd0cc0>
+[2026-08-27T08:31:21.028+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2026-08-27T08:31:21.029+0000] {logging_mixin.py:188} WARNING -   File "/usr/local/lib/python3.11/weakref.py", line 369, in remove
+[2026-08-27T08:31:21.035+0000] {logging_mixin.py:188} WARNING -     def remove(k, selfref=ref(self)):
+[2026-08-27T08:31:21.036+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.11/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+[2026-08-27T08:31:21.037+0000] {logging_mixin.py:188} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2026-08-27T08:31:21.038+0000] {logging_mixin.py:188} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/forecast_logging_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.9.3/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.9.3/best-practices.html#reducing-dag-complexity, PID: 4251
+[2026-08-27T08:32:03.972+0000] {processor.py:161} INFO - Started process (PID=4286) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-27T08:32:04.552+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-27T08:32:04.555+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:32:04.554+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-27T08:33:25.764+0000] {processor.py:161} INFO - Started process (PID=4338) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-27T08:33:25.806+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-27T08:33:25.808+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:33:25.807+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-27T08:33:53.558+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:33:53.529+0000] {timeout.py:68} ERROR - Process timed out, PID: 4338
+[2026-08-27T08:34:34.948+0000] {processor.py:161} INFO - Started process (PID=4356) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-27T08:34:34.971+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-27T08:34:35.031+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:34:35.012+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-27T08:35:07.651+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:35:03.778+0000] {timeout.py:68} ERROR - Process timed out, PID: 4356
+[2026-08-27T08:38:23.022+0000] {processor.py:161} INFO - Started process (PID=4384) to work on /opt/airflow/dags/forecast_logging_dag.py
+[2026-08-27T08:38:23.077+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/forecast_logging_dag.py for tasks to queue
+[2026-08-27T08:38:24.481+0000] {logging_mixin.py:188} INFO - [2026-08-27T08:38:23.479+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/forecast_logging_dag.py

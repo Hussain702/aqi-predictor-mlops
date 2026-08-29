@@ -21,8 +21,18 @@ from training.train import FEATURE_COLUMNS, CATEGORICAL_COLUMN
 
 def load_latest_model(project=None):
     """
-    Loads the best registered model (by rmse_24h, falling back to the
-    highest version number if get_best_model isn't available).
+    Loads the LATEST registered model version -- not the "best ever by
+    metric" version.
+
+    Why not get_best_model()? With a daily-retraining pipeline, "best
+    across all of history" is the wrong thing to optimize: an old,
+    fully-unconstrained model can score slightly better on raw accuracy
+    than a properly size-constrained one, which means get_best_model()
+    would keep reaching back and re-selecting that old model FOREVER --
+    it doesn't know or care that the model is 591MB and unreliable to
+    download, or that it was trained on far less historical data than
+    today's version. "Latest" is what a daily retrain pipeline is
+    supposed to mean: today's model supersedes yesterday's.
 
     Returns: (model, feature_names, model_name, framework, model_version)
     model.predict(X) works the same regardless of framework -- sklearn
@@ -32,16 +42,13 @@ def load_latest_model(project=None):
     project = project or get_project()
 
     mr = project.get_model_registry()
-    try:
-        model_meta = mr.get_best_model(MODEL_NAME, "rmse_24h", "min")
-    except Exception:
-        models = mr.get_models(MODEL_NAME)
-        if not models:
-            raise RuntimeError(
-                f"No registered model named '{MODEL_NAME}' found. "
-                "Run `python -m training.registry` first."
-            )
-        model_meta = max(models, key=lambda m: m.version)
+    models = mr.get_models(MODEL_NAME)
+    if not models:
+        raise RuntimeError(
+            f"No registered model named '{MODEL_NAME}' found. "
+            "Run `python -m training.registry` first."
+        )
+    model_meta = max(models, key=lambda m: m.version)
 
     model_dir = model_meta.download()
 
