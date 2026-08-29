@@ -20,6 +20,19 @@ comfortably covers both even if an hourly run is occasionally late/missed.
 catchup=False on purpose: historical data is handled separately by
 backfill.py (the 2025 4-city dataset). This DAG only adds NEW data
 going forward.
+
+max_active_tis_per_dag=1 on transformation/loading (below): by default,
+dynamic task mapping runs all 4 cities' instances of a task CONCURRENTLY.
+Each one independently opens its own Hopsworks connection (pyarrow,
+grpcio, boto3 and friends) -- 4 of those at once was enough to exceed
+available container memory and get one process OOM-killed mid-run. That
+showed up as a confusing Airflow-internal error ("executor reported
+failed, but state attribute is queued") rather than a normal Python
+exception, because the killed process never got the chance to report its
+own failure. Capping this to 1 makes the 4 cities run one at a time --
+slightly slower, but each city's ETL takes seconds, so for an hourly
+schedule this costs nothing that matters and removes the resource race
+entirely.
 """
 
 from airflow.decorators import dag, task
@@ -45,7 +58,7 @@ def feature_pipeline_dag():
     def extraction():
         return extract()  # list of records, one per city
 
-    @task
+    @task(max_active_tis_per_dag=1)
     def transformation(record):
         fs = get_feature_store()
 
@@ -68,7 +81,7 @@ def feature_pipeline_dag():
 
         return transform(record, history_df)
 
-    @task
+    @task(max_active_tis_per_dag=1)
     def loading(record):
         load(record)
 
