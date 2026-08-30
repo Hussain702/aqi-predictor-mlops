@@ -1,14 +1,4 @@
-"""
-Step 6 - Evaluate trained models (per horizon)
---------------------------------------------------
-Scores every fitted model on the held-out test set using RMSE, MAE, R2 --
-SEPARATELY for each forecast horizon (24h/48h/72h), since accuracy
-typically drops the further out you forecast. Picks the best model by
-average RMSE across all 3 horizons.
 
-Run standalone (loads data, trains, evaluates, prints a winner):
-    python -m training.evaluate
-"""
 
 import numpy as np
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score

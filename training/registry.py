@@ -1,20 +1,3 @@
-"""
-Step 7 - Model Registry
---------------------------
-Registers the winning multi-horizon model from evaluate.py in the
-Hopsworks Model Registry (versioned: v1, v2, v3... so you can roll back
-if a future retrain performs worse).
-
-Also exposes run_training_pipeline() -- the full daily pipeline
-(fetch -> train -> evaluate -> register) as ONE function. This is what
-the Airflow training_pipeline_dag.py calls as a single task: a fitted
-model is a Python object, not something you can pass between separate
-Airflow tasks via XCom (XCom is for small JSON-like data, not model
-binaries) -- so the whole thing runs in one process, one task.
-
-Run standalone (does the full daily pipeline once, right now):
-    python -m training.registry
-"""
 
 import os
 import shutil

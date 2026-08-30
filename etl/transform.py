@@ -1,19 +1,4 @@
-"""
-Step 2 - TRANSFORM
---------------------
-Takes the raw record from extract.py and adds useful ML features.
 
-Two kinds of features:
-  1. Time features -> computed directly from the timestamp (easy)
-  2. History features (aqi_yesterday, aqi_change_rate, rolling_average_aqi)
-     -> need past records to calculate. We pass in a small history
-        (a pandas DataFrame of previous records). If there's no history yet
-        (first run ever), these are just left as None -- that's expected
-        and fixes itself after a few days of data collection.
-
-How to run it standalone (uses a fake history for testing):
-    python etl/transform.py
-"""
 
 import pandas as pd
 from datetime import datetime

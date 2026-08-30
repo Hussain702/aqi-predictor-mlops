@@ -1,12 +1,4 @@
-"""
-Shared model-loading + prediction helpers.
 
-Used by BOTH dashboard/streamlit_app.py and analytics/forecast_log.py, so
-they always load the same registered model and predict the same way --
-if this logic lived in two places, the dashboard and the ground-truth
-accuracy log could silently drift apart (e.g. one picking up a new model
-version before the other).
-"""
 
 import os
 

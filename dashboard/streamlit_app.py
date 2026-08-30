@@ -1,22 +1,3 @@
-"""
-AeroWatch - Streamlit Dashboard
---------------------------------
-
-Optimized version:
-- Fast initial dashboard
-- Hopsworks connection/model cached separately
-- Historical Feature Store data is NOT loaded on startup
-- SHAP is calculated only when explicitly requested
-- EDA is loaded only when the EDA tab is opened
-- Accuracy is loaded only when requested
-- Avoids doing expensive work for every tab during initial render
-
-Uses st.radio() instead of st.tabs() for navigation ON PURPOSE:
-st.tabs() does NOT lazy-render in Streamlit -- the whole script reruns
-top-to-bottom on every interaction, and code inside `with tabs[i]:` runs
-regardless of which tab is visually selected. Only st.radio()-driven
-if/elif branching actually skips the other pages' code.
-"""
 
 import sys
 from datetime import datetime, timezone
