@@ -348,3 +348,31 @@
 [2026-08-30T11:10:47.104+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:10:47.103+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2026-08-30T11:10:47.158+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:10:47.157+0000] {dag.py:3947} INFO - Setting next_dagrun for training_pipeline to 2026-08-30 00:00:00+00:00, run_after=2026-08-31 00:00:00+00:00
 [2026-08-30T11:10:47.227+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline_dag.py took 2.285 seconds
+[2026-08-30T11:11:17.889+0000] {processor.py:161} INFO - Started process (PID=312) to work on /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-30T11:11:17.892+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline_dag.py for tasks to queue
+[2026-08-30T11:11:17.897+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:11:17.896+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-30T11:11:19.700+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-30T11:11:19.787+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:11:19.786+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-30T11:11:19.837+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:11:19.836+0000] {dag.py:3947} INFO - Setting next_dagrun for training_pipeline to 2026-08-30 00:00:00+00:00, run_after=2026-08-31 00:00:00+00:00
+[2026-08-30T11:11:19.888+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline_dag.py took 2.017 seconds
+[2026-08-30T11:11:50.582+0000] {processor.py:161} INFO - Started process (PID=340) to work on /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-30T11:11:50.585+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline_dag.py for tasks to queue
+[2026-08-30T11:11:50.590+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:11:50.589+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-30T11:11:52.552+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-30T11:11:52.614+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:11:52.613+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-30T11:11:52.660+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:11:52.659+0000] {dag.py:3947} INFO - Setting next_dagrun for training_pipeline to 2026-08-30 00:00:00+00:00, run_after=2026-08-31 00:00:00+00:00
+[2026-08-30T11:11:52.707+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline_dag.py took 2.145 seconds
+[2026-08-30T11:12:24.503+0000] {processor.py:161} INFO - Started process (PID=370) to work on /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-30T11:12:24.507+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline_dag.py for tasks to queue
+[2026-08-30T11:12:24.514+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:12:24.513+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-30T11:12:24.066+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-30T11:12:24.124+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:12:24.124+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-30T11:12:24.171+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:12:24.171+0000] {dag.py:3947} INFO - Setting next_dagrun for training_pipeline to 2026-08-30 00:00:00+00:00, run_after=2026-08-31 00:00:00+00:00
+[2026-08-30T11:12:24.215+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline_dag.py took 3.074 seconds
+[2026-08-30T11:12:54.908+0000] {processor.py:161} INFO - Started process (PID=400) to work on /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-30T11:12:54.911+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/training_pipeline_dag.py for tasks to queue
+[2026-08-30T11:12:54.918+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:12:54.917+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-30T11:12:57.548+0000] {processor.py:840} INFO - DAG(s) 'training_pipeline' retrieved from /opt/airflow/dags/training_pipeline_dag.py
+[2026-08-30T11:12:57.752+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:12:57.751+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-30T11:12:58.198+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:12:58.198+0000] {dag.py:3947} INFO - Setting next_dagrun for training_pipeline to 2026-08-30 00:00:00+00:00, run_after=2026-08-31 00:00:00+00:00
+[2026-08-30T11:12:58.242+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/training_pipeline_dag.py took 3.360 seconds
