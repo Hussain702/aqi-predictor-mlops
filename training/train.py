@@ -34,12 +34,6 @@ from sklearn.linear_model import Ridge
 
 from utils.hopsworks_client import get_feature_store
 
-try:
-    from tensorflow import keras
-    TENSORFLOW_AVAILABLE = True
-except ImportError:
-    TENSORFLOW_AVAILABLE = False
-
 FEATURE_GROUP_NAME = "aqi_features"
 FEATURE_GROUP_VERSION = 1
 
@@ -73,6 +67,26 @@ def _to_float_array(data) -> np.ndarray:
     return np.asarray(data, dtype="float32")
 
 
+def _is_tensorflow_available() -> bool:
+    """
+    Checks for TensorFlow WITHOUT importing it at module load time.
+
+    train.py gets imported just for its constants/prepare_features by
+    things that never train anything -- notably the dashboard, which only
+    needs to READ from Hopsworks, not build models. An unconditional
+    `import tensorflow` at the top of this file meant every dashboard page
+    load paid TensorFlow's full (slow, heavy) import cost even though the
+    dashboard almost never actually uses it (Random Forest has won every
+    training run so far). Deferring the import to right before it's
+    actually needed -- building the neural_network candidate -- fixes that.
+    """
+    try:
+        import tensorflow  # noqa: F401
+        return True
+    except ImportError:
+        return False
+
+
 class KerasMultiOutputRegressor:
     """
     Thin wrapper around a small Keras Sequential model so it exposes the
@@ -88,6 +102,8 @@ class KerasMultiOutputRegressor:
     framework = "tensorflow"
 
     def __init__(self, input_dim: int, output_dim: int, epochs=30, batch_size=64, verbose=0):
+        from tensorflow import keras  # lazy import -- see _is_tensorflow_available()
+
         self.epochs = epochs
         self.batch_size = batch_size
         self.verbose = verbose
@@ -181,9 +197,9 @@ def get_models(input_dim: int = None, output_dim: int = None) -> dict:
         ),
     }
 
-    if TENSORFLOW_AVAILABLE and input_dim and output_dim:
+    if input_dim and output_dim and _is_tensorflow_available():
         models["neural_network"] = KerasMultiOutputRegressor(input_dim, output_dim)
-    elif not TENSORFLOW_AVAILABLE:
+    elif not _is_tensorflow_available():
         print(
             "TensorFlow not installed -- skipping the neural_network candidate. "
             "Run `uv add tensorflow` to include it."

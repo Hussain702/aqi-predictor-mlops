@@ -31,7 +31,7 @@ plotly
 
 
 # Step 12 (Advanced Analytics: deep learning model + SHAP) dependencies
-tensorflow
+#tensorflow
 shap
 
 # Will be needed later (leave commented until that step):

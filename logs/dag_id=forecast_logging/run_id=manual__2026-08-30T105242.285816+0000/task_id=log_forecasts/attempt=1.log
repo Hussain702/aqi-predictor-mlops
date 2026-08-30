@@ -1,0 +1,203 @@
+[2026-08-30T10:52:49.228+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-30T10:52:49.297+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: forecast_logging.log_forecasts manual__2026-08-30T10:52:42.285816+00:00 [queued]>
+[2026-08-30T10:52:49.317+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: forecast_logging.log_forecasts manual__2026-08-30T10:52:42.285816+00:00 [queued]>
+[2026-08-30T10:52:49.318+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-08-30T10:52:49.347+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): log_forecasts> on 2026-08-30 10:52:42.285816+00:00
+[2026-08-30T10:52:49.374+0000] {standard_task_runner.py:64} INFO - Started process 1594 to run task
+[2026-08-30T10:52:49.386+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'forecast_logging', 'log_forecasts', 'manual__2026-08-30T10:52:42.285816+00:00', '--job-id', '455', '--raw', '--subdir', 'DAGS_FOLDER/forecast_logging_dag.py', '--cfg-path', '/tmp/tmpr63qwjch']
+[2026-08-30T10:52:49.395+0000] {standard_task_runner.py:91} INFO - Job 455: Subtask log_forecasts
+[2026-08-30T10:52:49.524+0000] {task_command.py:426} INFO - Running <TaskInstance: forecast_logging.log_forecasts manual__2026-08-30T10:52:42.285816+00:00 [running]> on host eb0d84ea74be
+[2026-08-30T10:52:49.731+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='forecast_logging' AIRFLOW_CTX_TASK_ID='log_forecasts' AIRFLOW_CTX_EXECUTION_DATE='2026-08-30T10:52:42.285816+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-08-30T10:52:42.285816+00:00'
+[2026-08-30T10:52:49.741+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-30T10:52:49.846+0000] {external.py:63} INFO - Initializing external client
+[2026-08-30T10:52:49.847+0000] {external.py:70} INFO - Base URL: https://eu-west.cloud.hopsworks.ai:443
+[2026-08-30T10:52:52.576+0000] {python.py:140} INFO - Python Engine initialized.
+[2026-08-30T10:52:54.722+0000] {logging_mixin.py:188} INFO - 
+Logged in to project, explore it here https://eu-west.cloud.hopsworks.ai:443/p/41136
+[2026-08-30T10:53:06.813+0000] {logging_mixin.py:188} WARNING - Downloading: 0.000%|          | 0/13 elapsed<00:00 remaining<?
+[2026-08-30T10:53:06.816+0000] {logging_mixin.py:188} WARNING - Downloading: 100.000%|##########| 13/13 elapsed<00:00 remaining<00:00
+[2026-08-30T10:53:07.933+0000] {logging_mixin.py:188} INFO - Downloading model artifact (0 dirs, 1 files)... 
+[2026-08-30T10:53:07.936+0000] {logging_mixin.py:188} WARNING - Downloading: 0.000%|          | 0/23306161 elapsed<00:00 remaining<?
+[2026-08-30T10:53:08.312+0000] {logging_mixin.py:188} WARNING - Downloading: 0.063%|          | 14704/23306161 elapsed<00:00 remaining<09:52
+[2026-08-30T10:53:08.626+0000] {logging_mixin.py:188} WARNING - Downloading: 0.186%|          | 43352/23306161 elapsed<00:00 remaining<05:43
+[2026-08-30T10:53:08.729+0000] {logging_mixin.py:188} WARNING - Downloading: 0.403%|          | 94024/23306161 elapsed<00:00 remaining<02:30
+[2026-08-30T10:53:09.011+0000] {logging_mixin.py:188} WARNING - Downloading: 0.526%|          | 122672/23306161 elapsed<00:01 remaining<02:57
+[2026-08-30T10:53:09.136+0000] {logging_mixin.py:188} WARNING - Downloading: 0.671%|          | 156374/23306161 elapsed<00:01 remaining<02:23
+[2026-08-30T10:53:09.272+0000] {logging_mixin.py:188} WARNING - Downloading: 0.947%|          | 220626/23306161 elapsed<00:01 remaining<01:36
+[2026-08-30T10:53:09.397+0000] {logging_mixin.py:188} WARNING - Downloading: 1.194%|1         | 278280/23306161 elapsed<00:01 remaining<01:17
+[2026-08-30T10:53:09.499+0000] {logging_mixin.py:188} WARNING - Downloading: 1.486%|1         | 346432/23306161 elapsed<00:01 remaining<01:00
+[2026-08-30T10:53:09.613+0000] {logging_mixin.py:188} WARNING - Downloading: 1.697%|1         | 395616/23306161 elapsed<00:01 remaining<00:58
+[2026-08-30T10:53:09.714+0000] {logging_mixin.py:188} WARNING - Downloading: 1.996%|1         | 465184/23306161 elapsed<00:01 remaining<00:48
+[2026-08-30T10:53:09.832+0000] {logging_mixin.py:188} WARNING - Downloading: 2.224%|2         | 518384/23306161 elapsed<00:01 remaining<00:49
+[2026-08-30T10:53:09.957+0000] {logging_mixin.py:188} WARNING - Downloading: 2.523%|2         | 587960/23306161 elapsed<00:02 remaining<00:46
+[2026-08-30T10:53:10.173+0000] {logging_mixin.py:188} WARNING - Downloading: 2.751%|2         | 641160/23306161 elapsed<00:02 remaining<00:58
+[2026-08-30T10:53:10.320+0000] {logging_mixin.py:188} WARNING - Downloading: 3.190%|3         | 743472/23306161 elapsed<00:02 remaining<00:47
+[2026-08-30T10:53:10.543+0000] {logging_mixin.py:188} WARNING - Downloading: 3.418%|3         | 796672/23306161 elapsed<00:02 remaining<00:58
+[2026-08-30T10:53:10.706+0000] {logging_mixin.py:188} WARNING - Downloading: 3.682%|3         | 858056/23306161 elapsed<00:02 remaining<00:58
+[2026-08-30T10:53:10.842+0000] {logging_mixin.py:188} WARNING - Downloading: 4.138%|4         | 964464/23306161 elapsed<00:02 remaining<00:46
+[2026-08-30T10:53:11.157+0000] {logging_mixin.py:188} WARNING - Downloading: 4.367%|4         | 1017664/23306161 elapsed<00:03 remaining<01:05
+[2026-08-30T10:53:11.387+0000] {logging_mixin.py:188} WARNING - Downloading: 4.735%|4         | 1103608/23306161 elapsed<00:03 remaining<01:03
+[2026-08-30T10:53:11.488+0000] {logging_mixin.py:188} WARNING - Downloading: 4.946%|4         | 1152712/23306161 elapsed<00:03 remaining<00:59
+[2026-08-30T10:53:11.723+0000] {logging_mixin.py:188} WARNING - Downloading: 5.297%|5         | 1234574/23306161 elapsed<00:03 remaining<01:00
+[2026-08-30T10:53:12.097+0000] {logging_mixin.py:188} WARNING - Downloading: 5.473%|5         | 1275494/23306161 elapsed<00:04 remaining<01:28
+[2026-08-30T10:53:12.232+0000] {logging_mixin.py:188} WARNING - Downloading: 5.833%|5         | 1359366/23306161 elapsed<00:04 remaining<01:08
+[2026-08-30T10:53:12.568+0000] {logging_mixin.py:188} WARNING - Downloading: 6.008%|6         | 1400294/23306161 elapsed<00:04 remaining<01:31
+[2026-08-30T10:53:12.672+0000] {logging_mixin.py:188} WARNING - Downloading: 6.430%|6         | 1498510/23306161 elapsed<00:04 remaining<01:02
+[2026-08-30T10:53:12.852+0000] {logging_mixin.py:188} WARNING - Downloading: 6.658%|6         | 1551710/23306161 elapsed<00:04 remaining<01:05
+[2026-08-30T10:53:13.012+0000] {logging_mixin.py:188} WARNING - Downloading: 7.150%|7         | 1666302/23306161 elapsed<00:05 remaining<00:50
+[2026-08-30T10:53:13.114+0000] {logging_mixin.py:188} WARNING - Downloading: 7.448%|7         | 1735870/23306161 elapsed<00:05 remaining<00:45
+[2026-08-30T10:53:13.320+0000] {logging_mixin.py:188} WARNING - Downloading: 7.711%|7         | 1797254/23306161 elapsed<00:05 remaining<00:51
+[2026-08-30T10:53:13.502+0000] {logging_mixin.py:188} WARNING - Downloading: 7.922%|7         | 1846366/23306161 elapsed<00:05 remaining<00:57
+[2026-08-30T10:53:13.609+0000] {logging_mixin.py:188} WARNING - Downloading: 8.150%|8         | 1899566/23306161 elapsed<00:05 remaining<00:54
+[2026-08-30T10:53:13.833+0000] {logging_mixin.py:188} WARNING - Downloading: 8.449%|8         | 1969142/23306161 elapsed<00:05 remaining<00:58
+[2026-08-30T10:53:13.938+0000] {logging_mixin.py:188} WARNING - Downloading: 9.081%|9         | 2116470/23306161 elapsed<00:05 remaining<00:36
+[2026-08-30T10:53:14.236+0000] {logging_mixin.py:188} WARNING - Downloading: 9.397%|9         | 2190134/23306161 elapsed<00:06 remaining<00:49
+[2026-08-30T10:53:14.399+0000] {logging_mixin.py:188} WARNING - Downloading: 9.801%|9         | 2284262/23306161 elapsed<00:06 remaining<00:45
+[2026-08-30T10:53:14.593+0000] {logging_mixin.py:188} WARNING - Downloading: 10.047%|#         | 2341550/23306161 elapsed<00:06 remaining<00:50
+[2026-08-30T10:53:14.696+0000] {logging_mixin.py:188} WARNING - Downloading: 10.416%|#         | 2427494/23306161 elapsed<00:06 remaining<00:42
+[2026-08-30T10:53:15.003+0000] {logging_mixin.py:188} WARNING - Downloading: 10.679%|#         | 2488878/23306161 elapsed<00:07 remaining<00:57
+[2026-08-30T10:53:15.111+0000] {logging_mixin.py:188} WARNING - Downloading: 11.136%|#1        | 2595286/23306161 elapsed<00:07 remaining<00:43
+[2026-08-30T10:53:15.260+0000] {logging_mixin.py:188} WARNING - Downloading: 11.417%|#1        | 2660766/23306161 elapsed<00:07 remaining<00:44
+[2026-08-30T10:53:15.368+0000] {logging_mixin.py:188} WARNING - Downloading: 11.785%|#1        | 2746702/23306161 elapsed<00:07 remaining<00:38
+[2026-08-30T10:53:15.611+0000] {logging_mixin.py:188} WARNING - Downloading: 12.066%|#2        | 2812182/23306161 elapsed<00:07 remaining<00:47
+[2026-08-30T10:53:15.716+0000] {logging_mixin.py:188} WARNING - Downloading: 12.330%|#2        | 2873574/23306161 elapsed<00:07 remaining<00:44
+[2026-08-30T10:53:15.817+0000] {logging_mixin.py:188} WARNING - Downloading: 12.628%|#2        | 2943142/23306161 elapsed<00:07 remaining<00:39
+[2026-08-30T10:53:15.956+0000] {logging_mixin.py:188} WARNING - Downloading: 12.892%|#2        | 3004526/23306161 elapsed<00:08 remaining<00:41
+[2026-08-30T10:53:16.398+0000] {logging_mixin.py:188} WARNING - Downloading: 13.137%|#3        | 3061822/23306161 elapsed<00:08 remaining<01:11
+[2026-08-30T10:53:16.685+0000] {logging_mixin.py:188} WARNING - Downloading: 13.331%|#3        | 3106838/23306161 elapsed<00:08 remaining<01:24
+[2026-08-30T10:53:16.908+0000] {logging_mixin.py:188} WARNING - Downloading: 13.805%|#3        | 3217334/23306161 elapsed<00:08 remaining<01:04
+[2026-08-30T10:53:17.015+0000] {logging_mixin.py:188} WARNING - Downloading: 14.156%|#4        | 3299190/23306161 elapsed<00:09 remaining<00:52
+[2026-08-30T10:53:17.127+0000] {logging_mixin.py:188} WARNING - Downloading: 14.437%|#4        | 3364662/23306161 elapsed<00:09 remaining<00:47
+[2026-08-30T10:53:17.295+0000] {logging_mixin.py:188} WARNING - Downloading: 14.665%|#4        | 3417870/23306161 elapsed<00:09 remaining<00:50
+[2026-08-30T10:53:17.399+0000] {logging_mixin.py:188} WARNING - Downloading: 15.157%|#5        | 3532454/23306161 elapsed<00:09 remaining<00:36
+[2026-08-30T10:53:17.649+0000] {logging_mixin.py:188} WARNING - Downloading: 15.438%|#5        | 3597934/23306161 elapsed<00:09 remaining<00:46
+[2026-08-30T10:53:17.788+0000] {logging_mixin.py:188} WARNING - Downloading: 15.789%|#5        | 3679782/23306161 elapsed<00:09 remaining<00:42
+[2026-08-30T10:53:17.898+0000] {logging_mixin.py:188} WARNING - Downloading: 16.105%|#6        | 3753446/23306161 elapsed<00:09 remaining<00:38
+[2026-08-30T10:53:18.025+0000] {logging_mixin.py:188} WARNING - Downloading: 16.368%|#6        | 3814838/23306161 elapsed<00:10 remaining<00:38
+[2026-08-30T10:53:18.145+0000] {logging_mixin.py:188} WARNING - Downloading: 16.737%|#6        | 3900774/23306161 elapsed<00:10 remaining<00:34
+[2026-08-30T10:53:18.305+0000] {logging_mixin.py:188} WARNING - Downloading: 17.001%|#7        | 3962166/23306161 elapsed<00:10 remaining<00:38
+[2026-08-30T10:53:18.482+0000] {logging_mixin.py:188} WARNING - Downloading: 17.387%|#7        | 4052198/23306161 elapsed<00:10 remaining<00:38
+[2026-08-30T10:53:18.628+0000] {logging_mixin.py:188} WARNING - Downloading: 17.650%|#7        | 4113582/23306161 elapsed<00:10 remaining<00:40
+[2026-08-30T10:53:18.739+0000] {logging_mixin.py:188} WARNING - Downloading: 17.878%|#7        | 4166782/23306161 elapsed<00:10 remaining<00:39
+[2026-08-30T10:53:18.840+0000] {logging_mixin.py:188} WARNING - Downloading: 18.142%|#8        | 4228174/23306161 elapsed<00:10 remaining<00:37
+[2026-08-30T10:53:19.042+0000] {logging_mixin.py:188} WARNING - Downloading: 18.370%|#8        | 4281374/23306161 elapsed<00:11 remaining<00:46
+[2026-08-30T10:53:19.147+0000] {logging_mixin.py:188} WARNING - Downloading: 18.563%|#8        | 4326390/23306161 elapsed<00:11 remaining<00:45
+[2026-08-30T10:53:19.250+0000] {logging_mixin.py:188} WARNING - Downloading: 18.985%|#8        | 4424606/23306161 elapsed<00:11 remaining<00:34
+[2026-08-30T10:53:19.448+0000] {logging_mixin.py:188} WARNING - Downloading: 19.248%|#9        | 4485998/23306161 elapsed<00:11 remaining<00:41
+[2026-08-30T10:53:19.551+0000] {logging_mixin.py:188} WARNING - Downloading: 19.652%|#9        | 4580126/23306161 elapsed<00:11 remaining<00:33
+[2026-08-30T10:53:19.725+0000] {logging_mixin.py:188} WARNING - Downloading: 19.933%|#9        | 4645598/23306161 elapsed<00:11 remaining<00:37
+[2026-08-30T10:53:19.825+0000] {logging_mixin.py:188} WARNING - Downloading: 20.302%|##        | 4731542/23306161 elapsed<00:11 remaining<00:32
+[2026-08-30T10:53:20.066+0000] {logging_mixin.py:188} WARNING - Downloading: 20.583%|##        | 4797022/23306161 elapsed<00:12 remaining<00:41
+[2026-08-30T10:53:20.178+0000] {logging_mixin.py:188} WARNING - Downloading: 21.004%|##1       | 4895238/23306161 elapsed<00:12 remaining<00:34
+[2026-08-30T10:53:20.279+0000] {logging_mixin.py:188} WARNING - Downloading: 21.285%|##1       | 4960718/23306161 elapsed<00:12 remaining<00:32
+[2026-08-30T10:53:20.468+0000] {logging_mixin.py:188} WARNING - Downloading: 21.566%|##1       | 5026198/23306161 elapsed<00:12 remaining<00:37
+[2026-08-30T10:53:20.571+0000] {logging_mixin.py:188} WARNING - Downloading: 21.812%|##1       | 5083494/23306161 elapsed<00:12 remaining<00:36
+[2026-08-30T10:53:20.776+0000] {logging_mixin.py:188} WARNING - Downloading: 22.058%|##2       | 5140790/23306161 elapsed<00:12 remaining<00:43
+[2026-08-30T10:53:21.006+0000] {logging_mixin.py:188} WARNING - Downloading: 22.655%|##2       | 5279934/23306161 elapsed<00:13 remaining<00:36
+[2026-08-30T10:53:21.114+0000] {logging_mixin.py:188} WARNING - Downloading: 22.988%|##2       | 5357686/23306161 elapsed<00:13 remaining<00:33
+[2026-08-30T10:53:21.239+0000] {logging_mixin.py:188} WARNING - Downloading: 23.322%|##3       | 5435446/23306161 elapsed<00:13 remaining<00:32
+[2026-08-30T10:53:22.323+0000] {logging_mixin.py:188} WARNING - Downloading: 23.638%|##3       | 5509110/23306161 elapsed<00:14 remaining<01:35
+[2026-08-30T10:53:22.427+0000] {logging_mixin.py:188} WARNING - Downloading: 24.024%|##4       | 5599142/23306161 elapsed<00:14 remaining<01:10
+[2026-08-30T10:53:22.528+0000] {logging_mixin.py:188} WARNING - Downloading: 24.288%|##4       | 5660526/23306161 elapsed<00:14 remaining<01:00
+[2026-08-30T10:53:22.792+0000] {logging_mixin.py:188} WARNING - Downloading: 34.226%|###4      | 7976854/23306161 elapsed<00:14 remaining<00:05
+[2026-08-30T10:53:23.134+0000] {logging_mixin.py:188} WARNING - Downloading: 35.561%|###5      | 8287878/23306161 elapsed<00:15 remaining<00:06
+[2026-08-30T10:53:23.479+0000] {logging_mixin.py:188} WARNING - Downloading: 36.614%|###6      | 8533430/23306161 elapsed<00:15 remaining<00:08
+[2026-08-30T10:53:23.740+0000] {logging_mixin.py:188} WARNING - Downloading: 37.440%|###7      | 8725774/23306161 elapsed<00:15 remaining<00:10
+[2026-08-30T10:53:23.951+0000] {logging_mixin.py:188} WARNING - Downloading: 38.546%|###8      | 8983598/23306161 elapsed<00:16 remaining<00:10
+[2026-08-30T10:53:24.120+0000] {logging_mixin.py:188} WARNING - Downloading: 39.178%|###9      | 9130926/23306161 elapsed<00:16 remaining<00:11
+[2026-08-30T10:53:24.221+0000] {logging_mixin.py:188} WARNING - Downloading: 39.810%|###9      | 9278254/23306161 elapsed<00:16 remaining<00:10
+[2026-08-30T10:53:24.383+0000] {logging_mixin.py:188} WARNING - Downloading: 40.390%|####      | 9413302/23306161 elapsed<00:16 remaining<00:11
+[2026-08-30T10:53:24.485+0000] {logging_mixin.py:188} WARNING - Downloading: 40.952%|####      | 9544262/23306161 elapsed<00:16 remaining<00:11
+[2026-08-30T10:53:24.684+0000] {logging_mixin.py:188} WARNING - Downloading: 41.830%|####1     | 9748886/23306161 elapsed<00:16 remaining<00:11
+[2026-08-30T10:53:24.793+0000] {logging_mixin.py:188} WARNING - Downloading: 42.339%|####2     | 9867566/23306161 elapsed<00:16 remaining<00:11
+[2026-08-30T10:53:24.917+0000] {logging_mixin.py:188} WARNING - Downloading: 43.041%|####3     | 10031262/23306161 elapsed<00:16 remaining<00:11
+[2026-08-30T10:53:25.063+0000] {logging_mixin.py:188} WARNING - Downloading: 43.568%|####3     | 10154038/23306161 elapsed<00:17 remaining<00:12
+[2026-08-30T10:53:25.174+0000] {logging_mixin.py:188} WARNING - Downloading: 44.306%|####4     | 10325918/23306161 elapsed<00:17 remaining<00:10
+[2026-08-30T10:53:25.368+0000] {logging_mixin.py:188} WARNING - Downloading: 44.832%|####4     | 10448694/23306161 elapsed<00:17 remaining<00:13
+[2026-08-30T10:53:25.585+0000] {logging_mixin.py:188} WARNING - Downloading: 46.395%|####6     | 10812918/23306161 elapsed<00:17 remaining<00:10
+[2026-08-30T10:53:25.813+0000] {logging_mixin.py:188} WARNING - Downloading: 47.115%|####7     | 10980710/23306161 elapsed<00:17 remaining<00:11
+[2026-08-30T10:53:25.913+0000] {logging_mixin.py:188} WARNING - Downloading: 48.572%|####8     | 11320382/23306161 elapsed<00:17 remaining<00:08
+[2026-08-30T10:53:26.078+0000] {logging_mixin.py:188} WARNING - Downloading: 49.345%|####9     | 11500454/23306161 elapsed<00:18 remaining<00:08
+[2026-08-30T10:53:26.257+0000] {logging_mixin.py:188} WARNING - Downloading: 50.469%|#####     | 11762366/23306161 elapsed<00:18 remaining<00:08
+[2026-08-30T10:53:26.374+0000] {logging_mixin.py:188} WARNING - Downloading: 51.136%|#####1    | 11917878/23306161 elapsed<00:18 remaining<00:08
+[2026-08-30T10:53:26.477+0000] {logging_mixin.py:188} WARNING - Downloading: 52.330%|#####2    | 12196166/23306161 elapsed<00:18 remaining<00:06
+[2026-08-30T10:53:26.701+0000] {logging_mixin.py:188} WARNING - Downloading: 53.138%|#####3    | 12384422/23306161 elapsed<00:18 remaining<00:08
+[2026-08-30T10:53:26.854+0000] {logging_mixin.py:188} WARNING - Downloading: 54.192%|#####4    | 12629966/23306161 elapsed<00:18 remaining<00:07
+[2026-08-30T10:53:26.954+0000] {logging_mixin.py:188} WARNING - Downloading: 55.105%|#####5    | 12842774/23306161 elapsed<00:19 remaining<00:06
+[2026-08-30T10:53:27.056+0000] {logging_mixin.py:188} WARNING - Downloading: 55.877%|#####5    | 13022838/23306161 elapsed<00:19 remaining<00:06
+[2026-08-30T10:53:27.165+0000] {logging_mixin.py:188} WARNING - Downloading: 56.632%|#####6    | 13198814/23306161 elapsed<00:19 remaining<00:06
+[2026-08-30T10:53:27.265+0000] {logging_mixin.py:188} WARNING - Downloading: 57.563%|#####7    | 13415718/23306161 elapsed<00:19 remaining<00:05
+[2026-08-30T10:53:27.471+0000] {logging_mixin.py:188} WARNING - Downloading: 58.371%|#####8    | 13603966/23306161 elapsed<00:19 remaining<00:06
+[2026-08-30T10:53:27.571+0000] {logging_mixin.py:188} WARNING - Downloading: 59.354%|#####9    | 13833150/23306161 elapsed<00:19 remaining<00:05
+[2026-08-30T10:53:27.801+0000] {logging_mixin.py:188} WARNING - Downloading: 60.127%|######    | 14013214/23306161 elapsed<00:19 remaining<00:07
+[2026-08-30T10:53:27.912+0000] {logging_mixin.py:188} WARNING - Downloading: 60.776%|######    | 14164638/23306161 elapsed<00:19 remaining<00:07
+[2026-08-30T10:53:28.042+0000] {logging_mixin.py:188} WARNING - Downloading: 61.444%|######1   | 14320150/23306161 elapsed<00:20 remaining<00:07
+[2026-08-30T10:53:28.159+0000] {logging_mixin.py:188} WARNING - Downloading: 62.041%|######2   | 14459294/23306161 elapsed<00:20 remaining<00:07
+[2026-08-30T10:53:28.355+0000] {logging_mixin.py:188} WARNING - Downloading: 63.182%|######3   | 14725302/23306161 elapsed<00:20 remaining<00:06
+[2026-08-30T10:53:28.460+0000] {logging_mixin.py:188} WARNING - Downloading: 64.358%|######4   | 14999494/23306161 elapsed<00:20 remaining<00:05
+[2026-08-30T10:53:28.652+0000] {logging_mixin.py:188} WARNING - Downloading: 65.096%|######5   | 15171374/23306161 elapsed<00:20 remaining<00:06
+[2026-08-30T10:53:28.847+0000] {logging_mixin.py:188} WARNING - Downloading: 65.956%|######5   | 15371910/23306161 elapsed<00:20 remaining<00:06
+[2026-08-30T10:53:28.950+0000] {logging_mixin.py:188} WARNING - Downloading: 67.045%|######7   | 15625638/23306161 elapsed<00:21 remaining<00:05
+[2026-08-30T10:53:29.223+0000] {logging_mixin.py:188} WARNING - Downloading: 67.765%|######7   | 15793430/23306161 elapsed<00:21 remaining<00:06
+[2026-08-30T10:53:29.485+0000] {logging_mixin.py:188} WARNING - Downloading: 69.310%|######9   | 16153566/23306161 elapsed<00:21 remaining<00:05
+[2026-08-30T10:53:29.615+0000] {logging_mixin.py:188} WARNING - Downloading: 69.960%|######9   | 16304982/23306161 elapsed<00:21 remaining<00:05
+[2026-08-30T10:53:29.729+0000] {logging_mixin.py:188} WARNING - Downloading: 70.522%|#######   | 16435942/23306161 elapsed<00:21 remaining<00:05
+[2026-08-30T10:53:29.958+0000] {logging_mixin.py:188} WARNING - Downloading: 71.066%|#######1  | 16562806/23306161 elapsed<00:22 remaining<00:07
+[2026-08-30T10:53:30.212+0000] {logging_mixin.py:188} WARNING - Downloading: 71.523%|#######1  | 16669214/23306161 elapsed<00:22 remaining<00:08
+[2026-08-30T10:53:30.313+0000] {logging_mixin.py:188} WARNING - Downloading: 72.453%|#######2  | 16886110/23306161 elapsed<00:22 remaining<00:06
+[2026-08-30T10:53:30.426+0000] {logging_mixin.py:188} WARNING - Downloading: 73.173%|#######3  | 17053902/23306161 elapsed<00:22 remaining<00:05
+[2026-08-30T10:53:30.699+0000] {logging_mixin.py:188} WARNING - Downloading: 73.753%|#######3  | 17188950/23306161 elapsed<00:22 remaining<00:07
+[2026-08-30T10:53:30.934+0000] {logging_mixin.py:188} WARNING - Downloading: 75.175%|#######5  | 17520438/23306161 elapsed<00:22 remaining<00:05
+[2026-08-30T10:53:31.035+0000] {logging_mixin.py:188} WARNING - Downloading: 76.088%|#######6  | 17733246/23306161 elapsed<00:23 remaining<00:04
+[2026-08-30T10:53:31.138+0000] {logging_mixin.py:188} WARNING - Downloading: 76.861%|#######6  | 17913318/23306161 elapsed<00:23 remaining<00:04
+[2026-08-30T10:53:31.296+0000] {logging_mixin.py:188} WARNING - Downloading: 77.528%|#######7  | 18068830/23306161 elapsed<00:23 remaining<00:04
+[2026-08-30T10:53:31.473+0000] {logging_mixin.py:188} WARNING - Downloading: 78.564%|#######8  | 18310286/23306161 elapsed<00:23 remaining<00:03
+[2026-08-30T10:53:31.576+0000] {logging_mixin.py:188} WARNING - Downloading: 79.583%|#######9  | 18547646/23306161 elapsed<00:23 remaining<00:03
+[2026-08-30T10:53:31.874+0000] {logging_mixin.py:188} WARNING - Downloading: 80.303%|########  | 18715438/23306161 elapsed<00:23 remaining<00:04
+[2026-08-30T10:53:32.063+0000] {logging_mixin.py:188} WARNING - Downloading: 81.918%|########1 | 19091942/23306161 elapsed<00:24 remaining<00:03
+[2026-08-30T10:53:32.294+0000] {logging_mixin.py:188} WARNING - Downloading: 82.585%|########2 | 19247454/23306161 elapsed<00:24 remaining<00:03
+[2026-08-30T10:53:32.394+0000] {logging_mixin.py:188} WARNING - Downloading: 83.411%|########3 | 19439798/23306161 elapsed<00:24 remaining<00:03
+[2026-08-30T10:53:32.513+0000] {logging_mixin.py:188} WARNING - Downloading: 84.236%|########4 | 19632142/23306161 elapsed<00:24 remaining<00:02
+[2026-08-30T10:53:32.618+0000] {logging_mixin.py:188} WARNING - Downloading: 84.886%|########4 | 19783566/23306161 elapsed<00:24 remaining<00:02
+[2026-08-30T10:53:32.755+0000] {logging_mixin.py:188} WARNING - Downloading: 85.904%|########5 | 20020926/23306161 elapsed<00:24 remaining<00:02
+[2026-08-30T10:53:32.885+0000] {logging_mixin.py:188} WARNING - Downloading: 86.589%|########6 | 20180534/23306161 elapsed<00:24 remaining<00:02
+[2026-08-30T10:53:33.003+0000] {logging_mixin.py:188} WARNING - Downloading: 87.221%|########7 | 20327862/23306161 elapsed<00:25 remaining<00:02
+[2026-08-30T10:53:33.124+0000] {logging_mixin.py:188} WARNING - Downloading: 87.836%|########7 | 20471094/23306161 elapsed<00:25 remaining<00:02
+[2026-08-30T10:53:33.368+0000] {logging_mixin.py:188} WARNING - Downloading: 88.415%|########8 | 20606150/23306161 elapsed<00:25 remaining<00:02
+[2026-08-30T10:53:33.721+0000] {logging_mixin.py:188} WARNING - Downloading: 89.750%|########9 | 20917174/23306161 elapsed<00:25 remaining<00:02
+[2026-08-30T10:53:33.824+0000] {logging_mixin.py:188} WARNING - Downloading: 91.137%|#########1| 21240478/23306161 elapsed<00:25 remaining<00:01
+[2026-08-30T10:53:33.981+0000] {logging_mixin.py:188} WARNING - Downloading: 91.857%|#########1| 21408270/23306161 elapsed<00:26 remaining<00:01
+[2026-08-30T10:53:34.081+0000] {logging_mixin.py:188} WARNING - Downloading: 92.647%|#########2| 21592430/23306161 elapsed<00:26 remaining<00:01
+[2026-08-30T10:53:34.215+0000] {logging_mixin.py:188} WARNING - Downloading: 93.332%|#########3| 21752030/23306161 elapsed<00:26 remaining<00:01
+[2026-08-30T10:53:34.347+0000] {logging_mixin.py:188} WARNING - Downloading: 93.999%|#########3| 21907542/23306161 elapsed<00:26 remaining<00:01
+[2026-08-30T10:53:34.508+0000] {logging_mixin.py:188} WARNING - Downloading: 94.596%|#########4| 22046686/23306161 elapsed<00:26 remaining<00:01
+[2026-08-30T10:53:34.621+0000] {logging_mixin.py:188} WARNING - Downloading: 96.176%|#########6| 22415006/23306161 elapsed<00:26 remaining<00:00
+[2026-08-30T10:53:34.826+0000] {logging_mixin.py:188} WARNING - Downloading: 96.966%|#########6| 22599166/23306161 elapsed<00:26 remaining<00:00
+[2026-08-30T10:53:35.032+0000] {logging_mixin.py:188} WARNING - Downloading: 97.985%|#########7| 22836534/23306161 elapsed<00:27 remaining<00:00
+[2026-08-30T10:53:35.140+0000] {logging_mixin.py:188} WARNING - Downloading: 99.126%|#########9| 23102542/23306161 elapsed<00:27 remaining<00:00
+[2026-08-30T10:53:35.285+0000] {logging_mixin.py:188} WARNING - Downloading: 99.881%|#########9| 23278518/23306161 elapsed<00:27 remaining<00:00
+[2026-08-30T10:53:35.293+0000] {logging_mixin.py:188} WARNING - Downloading: 100.000%|##########| 23306161/23306161 elapsed<00:27 remaining<00:00
+[2026-08-30T10:53:36.338+0000] {logging_mixin.py:188} INFO - Downloading model artifact (0 dirs, 2 files)... 
+[2026-08-30T10:53:36.340+0000] {logging_mixin.py:188} WARNING - Downloading: 0.000%|          | 0/7 elapsed<00:00 remaining<?
+[2026-08-30T10:53:36.341+0000] {logging_mixin.py:188} WARNING - Downloading: 100.000%|##########| 7/7 elapsed<00:00 remaining<00:00
+[2026-08-30T10:53:37.749+0000] {logging_mixin.py:188} INFO - Downloading model artifact (0 dirs, 3 files)... 
+[2026-08-30T10:53:37.751+0000] {logging_mixin.py:188} WARNING - Downloading: 0.000%|          | 0/171 elapsed<00:00 remaining<?
+[2026-08-30T10:53:37.753+0000] {logging_mixin.py:188} WARNING - Downloading: 100.000%|##########| 171/171 elapsed<00:00 remaining<00:00
+[2026-08-30T10:54:07.520+0000] {logging_mixin.py:188} INFO - Downloading model artifact (0 dirs, 4 files)... Downloading model artifact (0 dirs, 4 files)... DONEReading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Finished: Reading data from Hopsworks, using Hopsworks Feature Query Service (22.18s) 
+[2026-08-30T10:54:08.004+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py:174 UserWarning: Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1
+[2026-08-30T10:54:08.045+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py:174 UserWarning: Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1
+[2026-08-30T10:54:08.072+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py:174 UserWarning: Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1
+[2026-08-30T10:54:08.097+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py:174 UserWarning: Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1
+[2026-08-30T10:54:16.621+0000] {logging_mixin.py:188} WARNING - Uploading Dataframe: 0.00% |          | Rows 0/12 | Elapsed Time: 00:00 | Remaining Time: ?
+[2026-08-30T10:54:18.328+0000] {logging_mixin.py:188} WARNING - Uploading Dataframe: 8.33% |8         | Rows 1/12 | Elapsed Time: 00:01 | Remaining Time: 00:18
+[2026-08-30T10:54:18.332+0000] {logging_mixin.py:188} WARNING - Uploading Dataframe: 100.00% |##########| Rows 12/12 | Elapsed Time: 00:01 | Remaining Time: 00:00
+[2026-08-30T10:54:19.689+0000] {logging_mixin.py:188} INFO - Launching job: forecast_log_1_offline_fg_materialization
+[2026-08-30T10:54:26.302+0000] {logging_mixin.py:188} INFO - Job started successfully, you can follow the progress at 
+https://eu-west.cloud.hopsworks.ai:443/p/41136/jobs/named/forecast_log_1_offline_fg_materialization/executions
+[2026-08-30T10:54:26.303+0000] {logging_mixin.py:188} INFO - Logged 12 forecasts (4 cities x 3 horizons) from model 'random_forest' v11.
+[2026-08-30T10:54:26.305+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-08-30T10:54:26.309+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-30T10:54:26.345+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=forecast_logging, task_id=log_forecasts, run_id=manual__2026-08-30T10:52:42.285816+00:00, execution_date=20260830T105242, start_date=20260830T105249, end_date=20260830T105426
+[2026-08-30T10:54:26.529+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-08-30T10:54:26.566+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-30T10:54:26.570+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

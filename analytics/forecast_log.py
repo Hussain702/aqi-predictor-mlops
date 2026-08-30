@@ -102,6 +102,37 @@ def log_todays_forecasts():
           f"from model '{model_name}' v{model_version}.")
 
 
+def get_forecast_log_stats() -> dict:
+    """
+    Quick summary of what's currently in forecast_log, independent of
+    whether anything has come due yet.
+
+    compute_accuracy() returning empty means one of two very different
+    things -- "nothing has ever been logged" (a real problem, check the
+    forecast_logging DAG) vs "things are logged, just none due yet"
+    (expected, especially right after the first run -- the earliest
+    possible match is the +24h prediction, 24 hours after it was made).
+    Without this, both look identical to the end user. Used by the
+    dashboard to show which one it actually is.
+    """
+    fs = get_feature_store()
+    try:
+        forecast_fg = fs.get_feature_group(name=FORECAST_LOG_NAME, version=FORECAST_LOG_VERSION)
+        forecast_df = forecast_fg.read()
+    except Exception:
+        return {"total_logged": 0, "earliest_target": None, "latest_target": None}
+
+    if forecast_df.empty:
+        return {"total_logged": 0, "earliest_target": None, "latest_target": None}
+
+    forecast_df["target_date"] = pd.to_datetime(forecast_df["target_date"])
+    return {
+        "total_logged": len(forecast_df),
+        "earliest_target": forecast_df["target_date"].min(),
+        "latest_target": forecast_df["target_date"].max(),
+    }
+
+
 def compute_accuracy(tolerance_hours: int = 2) -> pd.DataFrame:
     """
     For every logged prediction whose target_date has now actually
