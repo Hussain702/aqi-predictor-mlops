@@ -1,0 +1,23 @@
+[2026-08-30T10:41:20.385+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-30T10:41:20.472+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: feature_pipeline.transformation scheduled__2026-08-29T22:00:00+00:00 map_index=2 [queued]>
+[2026-08-30T10:41:20.501+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: feature_pipeline.transformation scheduled__2026-08-29T22:00:00+00:00 map_index=2 [queued]>
+[2026-08-30T10:41:20.502+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-08-30T10:41:20.559+0000] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): transformation> on 2026-08-29 22:00:00+00:00
+[2026-08-30T10:41:20.589+0000] {standard_task_runner.py:64} INFO - Started process 402 to run task
+[2026-08-30T10:41:20.599+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'feature_pipeline', 'transformation', 'scheduled__2026-08-29T22:00:00+00:00', '--job-id', '432', '--raw', '--subdir', 'DAGS_FOLDER/feature_pipeline_dag.py', '--cfg-path', '/tmp/tmpmnnhjiy4', '--map-index', '2']
+[2026-08-30T10:41:20.607+0000] {standard_task_runner.py:91} INFO - Job 432: Subtask transformation
+[2026-08-30T10:41:20.765+0000] {task_command.py:426} INFO - Running <TaskInstance: feature_pipeline.transformation scheduled__2026-08-29T22:00:00+00:00 map_index=2 [running]> on host eb0d84ea74be
+[2026-08-30T10:41:21.540+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='feature_pipeline' AIRFLOW_CTX_TASK_ID='transformation' AIRFLOW_CTX_EXECUTION_DATE='2026-08-29T22:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-29T22:00:00+00:00'
+[2026-08-30T10:41:21.543+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-30T10:41:21.639+0000] {external.py:63} INFO - Initializing external client
+[2026-08-30T10:41:21.640+0000] {external.py:70} INFO - Base URL: https://eu-west.cloud.hopsworks.ai:443
+[2026-08-30T10:41:26.944+0000] {python.py:140} INFO - Python Engine initialized.
+[2026-08-30T10:41:30.632+0000] {logging_mixin.py:188} INFO - 
+Logged in to project, explore it here https://eu-west.cloud.hopsworks.ai:443/p/41136
+[2026-08-30T10:41:42.963+0000] {logging_mixin.py:188} INFO - Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Finished: Reading data from Hopsworks, using Hopsworks Feature Query Service (3.97s) 
+[2026-08-30T10:41:43.018+0000] {python.py:237} INFO - Done. Returned value was: {'city': 'karachi', 'timestamp': '2026-08-30T10:39:47.649999+00:00', 'temperature': 28.9, 'humidity': 65, 'wind_speed': 10.29, 'aqi': 161, 'pm25': 161, 'pm10': 0, 'hour': 10, 'day': 30, 'month': 8, 'is_weekend': True, 'aqi_yesterday': 161, 'aqi_change_rate': 0.0, 'rolling_average_aqi': 113.5}
+[2026-08-30T10:41:43.020+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-30T10:41:43.079+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=feature_pipeline, task_id=transformation, run_id=scheduled__2026-08-29T22:00:00+00:00, map_index=2, execution_date=20260829T220000, start_date=20260830T104120, end_date=20260830T104143
+[2026-08-30T10:41:43.240+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-08-30T10:41:43.307+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-30T10:41:43.313+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

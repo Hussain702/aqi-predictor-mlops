@@ -1,0 +1,17 @@
+[2026-08-30T11:00:07.179+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-30T11:00:07.332+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: feature_pipeline.extraction scheduled__2026-08-30T10:00:00+00:00 [queued]>
+[2026-08-30T11:00:07.348+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: feature_pipeline.extraction scheduled__2026-08-30T10:00:00+00:00 [queued]>
+[2026-08-30T11:00:07.349+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-08-30T11:00:07.381+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): extraction> on 2026-08-30 10:00:00+00:00
+[2026-08-30T11:00:07.401+0000] {standard_task_runner.py:64} INFO - Started process 2090 to run task
+[2026-08-30T11:00:07.412+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'feature_pipeline', 'extraction', 'scheduled__2026-08-30T10:00:00+00:00', '--job-id', '458', '--raw', '--subdir', 'DAGS_FOLDER/feature_pipeline_dag.py', '--cfg-path', '/tmp/tmp12xukw2r']
+[2026-08-30T11:00:07.423+0000] {standard_task_runner.py:91} INFO - Job 458: Subtask extraction
+[2026-08-30T11:00:07.562+0000] {task_command.py:426} INFO - Running <TaskInstance: feature_pipeline.extraction scheduled__2026-08-30T10:00:00+00:00 [running]> on host eb0d84ea74be
+[2026-08-30T11:00:08.266+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='feature_pipeline' AIRFLOW_CTX_TASK_ID='extraction' AIRFLOW_CTX_EXECUTION_DATE='2026-08-30T10:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-30T10:00:00+00:00'
+[2026-08-30T11:00:08.268+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-30T11:00:16.107+0000] {python.py:237} INFO - Done. Returned value was: [{'city': 'lahore', 'timestamp': '2026-08-30T11:00:10.880128+00:00', 'temperature': 36.99, 'humidity': 49, 'wind_speed': 4.12, 'aqi': 34, 'pm25': 34, 'pm10': None}, {'city': 'islamabad', 'timestamp': '2026-08-30T11:00:13.421745+00:00', 'temperature': 37.19, 'humidity': 44, 'wind_speed': 2.02, 'aqi': 154, 'pm25': 154, 'pm10': None}, {'city': 'karachi', 'timestamp': '2026-08-30T11:00:16.160074+00:00', 'temperature': 28.9, 'humidity': 65, 'wind_speed': 10.29, 'aqi': 161, 'pm25': 161, 'pm10': None}, {'city': 'peshawar', 'timestamp': '2026-08-30T11:00:16.106876+00:00', 'temperature': 37.08, 'humidity': 56, 'wind_speed': 3.09, 'aqi': 25, 'pm25': 25, 'pm10': None}]
+[2026-08-30T11:00:16.111+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-30T11:00:16.255+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=feature_pipeline, task_id=extraction, run_id=scheduled__2026-08-30T10:00:00+00:00, execution_date=20260830T100000, start_date=20260830T110007, end_date=20260830T110016
+[2026-08-30T11:00:16.356+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-08-30T11:00:16.975+0000] {taskinstance.py:3503} INFO - 4 downstream tasks scheduled from follow-on schedule check
+[2026-08-30T11:00:16.982+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

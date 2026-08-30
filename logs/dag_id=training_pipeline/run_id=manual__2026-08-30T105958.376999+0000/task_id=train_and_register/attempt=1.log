@@ -1,0 +1,96 @@
+[2026-08-30T11:00:07.165+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-30T11:00:07.332+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: training_pipeline.train_and_register manual__2026-08-30T10:59:58.376999+00:00 [queued]>
+[2026-08-30T11:00:07.348+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: training_pipeline.train_and_register manual__2026-08-30T10:59:58.376999+00:00 [queued]>
+[2026-08-30T11:00:07.349+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-08-30T11:00:07.378+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): train_and_register> on 2026-08-30 10:59:58.376999+00:00
+[2026-08-30T11:00:07.398+0000] {standard_task_runner.py:64} INFO - Started process 2089 to run task
+[2026-08-30T11:00:07.408+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'training_pipeline', 'train_and_register', 'manual__2026-08-30T10:59:58.376999+00:00', '--job-id', '457', '--raw', '--subdir', 'DAGS_FOLDER/training_pipeline_dag.py', '--cfg-path', '/tmp/tmpy_7phw2a']
+[2026-08-30T11:00:07.418+0000] {standard_task_runner.py:91} INFO - Job 457: Subtask train_and_register
+[2026-08-30T11:00:07.545+0000] {task_command.py:426} INFO - Running <TaskInstance: training_pipeline.train_and_register manual__2026-08-30T10:59:58.376999+00:00 [running]> on host eb0d84ea74be
+[2026-08-30T11:00:08.226+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='training_pipeline' AIRFLOW_CTX_TASK_ID='train_and_register' AIRFLOW_CTX_EXECUTION_DATE='2026-08-30T10:59:58.376999+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-08-30T10:59:58.376999+00:00'
+[2026-08-30T11:00:08.228+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-30T11:00:10.725+0000] {external.py:63} INFO - Initializing external client
+[2026-08-30T11:00:10.727+0000] {external.py:70} INFO - Base URL: https://eu-west.cloud.hopsworks.ai:443
+[2026-08-30T11:00:16.316+0000] {python.py:140} INFO - Python Engine initialized.
+[2026-08-30T11:00:16.281+0000] {logging_mixin.py:188} INFO - 
+Logged in to project, explore it here https://eu-west.cloud.hopsworks.ai:443/p/41136
+[2026-08-30T11:00:32.136+0000] {logging_mixin.py:188} INFO - Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Reading data from Hopsworks, using Hopsworks Feature Query Service..   Reading data from Hopsworks, using Hopsworks Feature Query Service...   Reading data from Hopsworks, using Hopsworks Feature Query Service   Reading data from Hopsworks, using Hopsworks Feature Query Service.   Finished: Reading data from Hopsworks, using Hopsworks Feature Query Service (10.11s) 
+[2026-08-30T11:00:32.139+0000] {logging_mixin.py:188} INFO - Loaded 55431 historical rows from Hopsworks.
+[2026-08-30T11:00:32.655+0000] {logging_mixin.py:188} INFO - TensorFlow not installed -- skipping the neural_network candidate. Run `uv add tensorflow` to include it.
+[2026-08-30T11:00:32.656+0000] {logging_mixin.py:188} INFO - Training ridge_regression...
+[2026-08-30T11:00:33.799+0000] {logging_mixin.py:188} INFO - Training random_forest...
+[2026-08-30T11:00:37.288+0000] {logging_mixin.py:188} INFO - 
+ridge_regression:
+[2026-08-30T11:00:37.290+0000] {logging_mixin.py:188} INFO -   24h: RMSE=22.76  MAE=16.53  R2=0.694
+[2026-08-30T11:00:37.297+0000] {logging_mixin.py:188} INFO -   48h: RMSE=27.29  MAE=19.87  R2=0.565
+[2026-08-30T11:00:37.298+0000] {logging_mixin.py:188} INFO -   72h: RMSE=28.37  MAE=21.06  R2=0.524
+[2026-08-30T11:00:37.334+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/sklearn/ensemble/_base.py:174 UserWarning: Loky-backed parallel loops cannot be called in a multiprocessing, setting n_jobs=1
+[2026-08-30T11:00:37.502+0000] {logging_mixin.py:188} INFO - 
+random_forest:
+[2026-08-30T11:00:37.503+0000] {logging_mixin.py:188} INFO -   24h: RMSE=14.77  MAE=9.87  R2=0.871
+[2026-08-30T11:00:37.504+0000] {logging_mixin.py:188} INFO -   48h: RMSE=17.10  MAE=11.42  R2=0.829
+[2026-08-30T11:00:37.505+0000] {logging_mixin.py:188} INFO -   72h: RMSE=17.37  MAE=11.94  R2=0.822
+[2026-08-30T11:00:37.506+0000] {logging_mixin.py:188} INFO - 
+Best model: random_forest (avg RMSE across horizons = 16.41)
+[2026-08-30T11:00:37.508+0000] {external.py:292} INFO - Closing external client and cleaning up certificates.
+[2026-08-30T11:00:37.524+0000] {connection.py:481} INFO - Connection closed.
+[2026-08-30T11:00:37.528+0000] {external.py:63} INFO - Initializing external client
+[2026-08-30T11:00:37.530+0000] {external.py:70} INFO - Base URL: https://eu-west.cloud.hopsworks.ai:443
+[2026-08-30T11:00:40.631+0000] {python.py:140} INFO - Python Engine initialized.
+[2026-08-30T11:00:42.188+0000] {logging_mixin.py:188} INFO - 
+Logged in to project, explore it here https://eu-west.cloud.hopsworks.ai:443/p/41136
+[2026-08-30T11:00:43.138+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.11/site-packages/hsml/model.py:168 ProvenanceWarning: Model schema cannot not be inferred without both the feature view and the training dataset version.
+[2026-08-30T11:00:43.395+0000] {logging_mixin.py:188} WARNING -   0%|          | 0/6 [00:00<?, ?it/s]
+[2026-08-30T11:00:43.396+0000] {logging_mixin.py:188} WARNING - Creating model folder:   0%|          | 0/6 [00:00<?, ?it/s]
+[2026-08-30T11:00:48.494+0000] {logging_mixin.py:188} WARNING - Creating model folder:  17%|#6        | 1/6 [00:05<00:25,  5.10s/it]
+[2026-08-30T11:00:48.495+0000] {logging_mixin.py:188} WARNING - Uploading model files:  17%|#6        | 1/6 [00:05<00:25,  5.10s/it]
+[2026-08-30T11:00:48.497+0000] {logging_mixin.py:188} INFO - Moving model files from 'model_artifact' to the model registry... This is the default behavior. Set keep_original_files=True to copy files instead.
+[2026-08-30T11:00:48.498+0000] {logging_mixin.py:188} WARNING - Uploading model files (0 dirs, 0 files):  17%|#6        | 1/6 [00:05<00:25,  5.10s/it]
+[2026-08-30T11:00:48.995+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/model.pkl: 0.000%|          | 0/23306161 elapsed<00:00 remaining<?
+[2026-08-30T11:00:49.001+0000] {logging_mixin.py:188} WARNING - 
+[2026-08-30T11:01:35.715+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/model.pkl: 10.017%|#         | 2334641/23306161 elapsed<00:46 remaining<06:56
+[2026-08-30T11:01:36.064+0000] {logging_mixin.py:188} WARNING - 
+[2026-08-30T11:01:49.225+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/model.pkl: 10.017%|#         | 2334641/23306161 elapsed<01:00 remaining<06:56
+[2026-08-30T11:01:49.233+0000] {logging_mixin.py:188} WARNING - 
+[2026-08-30T11:02:51.017+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/model.pkl: 55.009%|#####5    | 12820401/23306161 elapsed<02:02 remaining<01:33
+[2026-08-30T11:02:51.028+0000] {logging_mixin.py:188} WARNING - 
+[2026-08-30T11:03:02.034+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/model.pkl: 55.009%|#####5    | 12820401/23306161 elapsed<02:13 remaining<01:33
+[2026-08-30T11:03:02.037+0000] {logging_mixin.py:188} WARNING - 
+[2026-08-30T11:03:05.387+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/model.pkl: 100.000%|##########| 23306161/23306161 elapsed<02:16 remaining<00:00
+[2026-08-30T11:03:05.389+0000] {logging_mixin.py:188} WARNING - 
+[2026-08-30T11:03:05.478+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/model.pkl: 100.000%|##########| 23306161/23306161 elapsed<02:16 remaining<00:00
+[2026-08-30T11:03:05.529+0000] {logging_mixin.py:188} WARNING - Uploading model files (0 dirs, 1 files):  17%|#6        | 1/6 [02:22<00:25,  5.10s/it]
+[2026-08-30T11:03:06.684+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/model_name.txt: 0.000%|          | 0/13 elapsed<00:00 remaining<?
+[2026-08-30T11:03:06.691+0000] {logging_mixin.py:188} WARNING - 
+[2026-08-30T11:03:08.148+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/model_name.txt: 100.000%|##########| 13/13 elapsed<00:01 remaining<00:00
+[2026-08-30T11:03:08.151+0000] {logging_mixin.py:188} WARNING - 
+[2026-08-30T11:03:08.154+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/model_name.txt: 100.000%|##########| 13/13 elapsed<00:01 remaining<00:00
+[2026-08-30T11:03:08.158+0000] {logging_mixin.py:188} WARNING - Uploading model files (0 dirs, 2 files):  17%|#6        | 1/6 [02:24<00:25,  5.10s/it]
+[2026-08-30T11:03:08.503+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/framework.txt: 0.000%|          | 0/7 elapsed<00:00 remaining<?
+[2026-08-30T11:03:08.507+0000] {logging_mixin.py:188} WARNING - 
+[2026-08-30T11:03:09.833+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/framework.txt: 100.000%|##########| 7/7 elapsed<00:01 remaining<00:00
+[2026-08-30T11:03:09.836+0000] {logging_mixin.py:188} WARNING - 
+[2026-08-30T11:03:09.844+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/framework.txt: 100.000%|##########| 7/7 elapsed<00:01 remaining<00:00
+[2026-08-30T11:03:09.845+0000] {logging_mixin.py:188} WARNING - Uploading model files (0 dirs, 3 files):  17%|#6        | 1/6 [02:26<00:25,  5.10s/it]
+[2026-08-30T11:03:10.267+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/feature_names.txt: 0.000%|          | 0/171 elapsed<00:00 remaining<?
+[2026-08-30T11:03:10.271+0000] {logging_mixin.py:188} WARNING - 
+[2026-08-30T11:03:11.568+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/feature_names.txt: 100.000%|##########| 171/171 elapsed<00:01 remaining<00:00
+[2026-08-30T11:03:11.571+0000] {logging_mixin.py:188} WARNING - 
+[2026-08-30T11:03:11.574+0000] {logging_mixin.py:188} WARNING - Uploading /opt/***/model_artifact/feature_names.txt: 100.000%|##########| 171/171 elapsed<00:01 remaining<00:00
+[2026-08-30T11:03:11.575+0000] {logging_mixin.py:188} WARNING - Uploading model files (0 dirs, 4 files):  17%|#6        | 1/6 [02:28<00:25,  5.10s/it]
+[2026-08-30T11:03:11.578+0000] {logging_mixin.py:188} WARNING - Uploading model files (0 dirs, 4 files):  33%|###3      | 2/6 [02:28<05:45, 86.27s/it]
+[2026-08-30T11:03:11.581+0000] {logging_mixin.py:188} WARNING - Uploading input_example and model_schema:  33%|###3      | 2/6 [02:28<05:45, 86.27s/it]
+[2026-08-30T11:03:11.589+0000] {logging_mixin.py:188} WARNING - Registering model:  33%|###3      | 2/6 [02:28<05:45, 86.27s/it]                       
+[2026-08-30T11:03:12.461+0000] {logging_mixin.py:188} WARNING - Registering model:  67%|######6   | 4/6 [02:29<01:04, 32.46s/it]
+[2026-08-30T11:03:12.468+0000] {logging_mixin.py:188} WARNING - Waiting for model registration:  67%|######6   | 4/6 [02:29<01:04, 32.46s/it]
+[2026-08-30T11:03:18.027+0000] {logging_mixin.py:188} WARNING - Waiting for model registration:  83%|########3 | 5/6 [02:34<00:24, 24.14s/it]
+[2026-08-30T11:03:18.030+0000] {logging_mixin.py:188} WARNING - Model export complete:  83%|########3 | 5/6 [02:34<00:24, 24.14s/it]         
+[2026-08-30T11:03:18.031+0000] {logging_mixin.py:188} WARNING - Model export complete: 100%|##########| 6/6 [02:34<00:00, 25.77s/it]
+[2026-08-30T11:03:18.038+0000] {logging_mixin.py:188} INFO - Model created, explore it at https://eu-west.cloud.hopsworks.ai:443/p/41136/models/aqi_predictor_model/13
+[2026-08-30T11:03:18.051+0000] {logging_mixin.py:188} INFO - Registered 'aqi_predictor_model' version 13 (random_forest, sklearn) in the Model Registry.
+[2026-08-30T11:03:18.313+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-08-30T11:03:18.373+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-30T11:03:18.699+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=training_pipeline, task_id=train_and_register, run_id=manual__2026-08-30T10:59:58.376999+00:00, execution_date=20260830T105958, start_date=20260830T110007, end_date=20260830T110318
+[2026-08-30T11:03:19.283+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-08-30T11:03:22.249+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-30T11:03:22.255+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

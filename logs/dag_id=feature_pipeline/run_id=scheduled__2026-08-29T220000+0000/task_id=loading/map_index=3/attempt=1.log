@@ -1,0 +1,29 @@
+[2026-08-30T10:44:11.296+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-08-30T10:44:11.395+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: feature_pipeline.loading scheduled__2026-08-29T22:00:00+00:00 map_index=3 [queued]>
+[2026-08-30T10:44:11.427+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: feature_pipeline.loading scheduled__2026-08-29T22:00:00+00:00 map_index=3 [queued]>
+[2026-08-30T10:44:11.430+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-08-30T10:44:11.536+0000] {taskinstance.py:2330} INFO - Executing <Mapped(_PythonDecoratedOperator): loading> on 2026-08-29 22:00:00+00:00
+[2026-08-30T10:44:11.571+0000] {standard_task_runner.py:64} INFO - Started process 792 to run task
+[2026-08-30T10:44:11.580+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'feature_pipeline', 'loading', 'scheduled__2026-08-29T22:00:00+00:00', '--job-id', '441', '--raw', '--subdir', 'DAGS_FOLDER/feature_pipeline_dag.py', '--cfg-path', '/tmp/tmpcgwj5is6', '--map-index', '3']
+[2026-08-30T10:44:11.593+0000] {standard_task_runner.py:91} INFO - Job 441: Subtask loading
+[2026-08-30T10:44:11.781+0000] {task_command.py:426} INFO - Running <TaskInstance: feature_pipeline.loading scheduled__2026-08-29T22:00:00+00:00 map_index=3 [running]> on host eb0d84ea74be
+[2026-08-30T10:44:12.544+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='feature_pipeline' AIRFLOW_CTX_TASK_ID='loading' AIRFLOW_CTX_EXECUTION_DATE='2026-08-29T22:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-08-29T22:00:00+00:00'
+[2026-08-30T10:44:12.546+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-08-30T10:44:12.639+0000] {external.py:63} INFO - Initializing external client
+[2026-08-30T10:44:12.640+0000] {external.py:70} INFO - Base URL: https://eu-west.cloud.hopsworks.ai:443
+[2026-08-30T10:44:16.781+0000] {python.py:140} INFO - Python Engine initialized.
+[2026-08-30T10:44:18.289+0000] {logging_mixin.py:188} INFO - 
+Logged in to project, explore it here https://eu-west.cloud.hopsworks.ai:443/p/41136
+[2026-08-30T10:44:25.690+0000] {logging_mixin.py:188} WARNING - Uploading Dataframe: 0.00% |          | Rows 0/1 | Elapsed Time: 00:00 | Remaining Time: ?
+[2026-08-30T10:44:27.421+0000] {logging_mixin.py:188} WARNING - Uploading Dataframe: 100.00% |##########| Rows 1/1 | Elapsed Time: 00:01 | Remaining Time: 00:00
+[2026-08-30T10:44:27.425+0000] {logging_mixin.py:188} WARNING - Uploading Dataframe: 100.00% |##########| Rows 1/1 | Elapsed Time: 00:01 | Remaining Time: 00:00
+[2026-08-30T10:44:28.250+0000] {logging_mixin.py:188} INFO - Launching job: aqi_features_1_offline_fg_materialization
+[2026-08-30T10:44:33.022+0000] {logging_mixin.py:188} INFO - Job started successfully, you can follow the progress at 
+https://eu-west.cloud.hopsworks.ai:443/p/41136/jobs/named/aqi_features_1_offline_fg_materialization/executions
+[2026-08-30T10:44:33.023+0000] {logging_mixin.py:188} INFO - Inserted 1 record into 'aqi_features' feature group.
+[2026-08-30T10:44:33.024+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-08-30T10:44:33.026+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-08-30T10:44:33.047+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=feature_pipeline, task_id=loading, run_id=scheduled__2026-08-29T22:00:00+00:00, map_index=3, execution_date=20260829T220000, start_date=20260830T104411, end_date=20260830T104433
+[2026-08-30T10:44:33.170+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2026-08-30T10:44:33.204+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-08-30T10:44:33.209+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

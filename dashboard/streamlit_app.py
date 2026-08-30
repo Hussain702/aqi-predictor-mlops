@@ -34,7 +34,7 @@ from utils.hopsworks_client import get_project
 from training.train import FEATURE_GROUP_NAME, FEATURE_GROUP_VERSION
 from serving.predict import load_latest_model, predict_for_city
 from serving.explain import explain_prediction
-from analytics.forecast_log import compute_accuracy
+from analytics.forecast_log import compute_accuracy, get_forecast_log_stats
 from analytics.eda import (
     aqi_trend_figure,
     aqi_distribution_figure,
@@ -385,10 +385,36 @@ def render_accuracy_tab():
         return
 
     if accuracy_df.empty:
-        st.info(
-            "No matched predictions yet. Run the forecast logging DAG and "
-            "wait for the forecast targets to occur."
-        )
+        stats = get_forecast_log_stats()
+
+        if stats["total_logged"] == 0:
+            st.warning(
+                "No forecasts have been logged at all yet. Check that the "
+                "`forecast_logging` DAG actually ran successfully -- open its "
+                "task logs in the Airflow UI and confirm it printed "
+                "\"Logged N forecasts...\" rather than an error."
+            )
+        else:
+            now = pd.Timestamp.now(tz="UTC")
+            earliest = stats["earliest_target"]
+            time_remaining = earliest - now
+
+            if time_remaining.total_seconds() > 0:
+                hours_left = time_remaining.total_seconds() / 3600
+                st.info(
+                    f"{stats['total_logged']} forecast(s) logged so far, but none of "
+                    f"their target dates have arrived yet. Earliest target: "
+                    f"**{earliest:%Y-%m-%d %H:%M} UTC** (about {hours_left:.1f}h from now). "
+                    "Check back after that -- this is expected right after the first run."
+                )
+            else:
+                st.info(
+                    f"{stats['total_logged']} forecast(s) logged, and the earliest target "
+                    f"date ({earliest:%Y-%m-%d %H:%M} UTC) has already passed, but no matching "
+                    "actual reading was found within the tolerance window. This can happen if "
+                    "the hourly feature_pipeline had a gap right around that time -- should "
+                    "resolve itself as more hourly data accumulates."
+                )
         return
 
     summary = (
