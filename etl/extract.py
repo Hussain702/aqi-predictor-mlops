@@ -1,18 +1,3 @@
-"""
-Step 1 - EXTRACT (v2: all 4 cities)
---------------------------------------
-Fetches current AQICN + OpenWeather readings for ALL 4 cities (Lahore,
-Islamabad, Karachi, Peshawar), not just one. extract() now returns a LIST
-of records instead of a single dict -- one entry per city that succeeded
-(a city that fails this run is skipped, not the whole run).
-
-The CITY variable in .env is no longer used by this pipeline (it was a
-single-city holdover from Step 1's original version) -- CITIES below is
-the source of truth now.
-
-How to run it standalone:
-    python etl/extract.py
-"""
 
 import os
 import requests

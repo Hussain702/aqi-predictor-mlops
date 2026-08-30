@@ -1,30 +1,4 @@
-"""
-Step 5 - Train ML models (multi-horizon forecasting)
---------------------------------------------------------
-Fetches ALL historical rows from the 'aqi_features' Hopsworks feature group
-and trains models to forecast AQI 24, 48, and 72 hours ahead -- all from
-ONE call using only what's knowable TODAY (no future weather needed).
 
-How the 3-day forecast actually works (the design gap flagged earlier,
-now resolved):
-    We use "direct multi-horizon forecasting": for each historical hourly
-    row (at time t), we build THREE targets by looking at the SAME city's
-    future rows already sitting in Hopsworks:
-        aqi_target_24h = that city's aqi value 24 hours after t
-        aqi_target_48h = ... 48 hours after t
-        aqi_target_72h = ... 72 hours after t
-    The model learns: "given today's temperature/humidity/pm2.5/pm10/current
-    aqi/rolling average, what will aqi be in 1/2/3 days?" No future weather
-    data is needed at prediction time -- only today's readings, which the
-    live hourly pipeline already provides. Both Random Forest and Ridge
-    support multi-output regression natively (no extra wrapper needed).
-
-Models used for now: Random Forest, Ridge Regression (both fast, no extra
-heavy installs). A TensorFlow/Keras model can be added as a follow-up.
-
-Run standalone (just trains + prints, no evaluation/registration):
-    python -m training.train
-"""
 
 import numpy as np
 import pandas as pd

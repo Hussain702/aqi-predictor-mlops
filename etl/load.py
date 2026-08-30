@@ -1,18 +1,4 @@
-"""
-Step 3 - LOAD
---------------
-Takes a transformed record (output of transform.py) and saves it into the
-Hopsworks Feature Store.
 
-How to run it standalone (does a full extract -> transform -> load):
-    python etl/load.py
-
-Before running this, make sure:
-    1. You've signed up at hopsworks.ai and created a project (see chat for
-       the step-by-step account setup)
-    2. You've added HOPSWORKS_API_KEY and HOPSWORKS_PROJECT_NAME to .env
-    3. You've run: pip install hopsworks
-"""
 
 import pandas as pd
 

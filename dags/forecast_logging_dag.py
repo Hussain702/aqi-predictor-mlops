@@ -1,13 +1,3 @@
-"""
-Forecast Logging DAG (TaskFlow API)
-----------------------------------------
-Runs once a day: predicts +24h/+48h/+72h for all 4 cities using the
-current best registered model, and logs each prediction to Hopsworks'
-forecast_log feature group. This is what makes real-world accuracy
-checking possible (see analytics/forecast_log.py) -- without this
-running daily, there's nothing to compare "what the model predicted"
-against "what actually happened" once time passes.
-"""
 
 from airflow.decorators import dag, task
 from datetime import datetime
