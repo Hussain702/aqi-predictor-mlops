@@ -376,3 +376,38 @@
 [2026-08-30T11:12:55.589+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:12:55.588+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2026-08-30T11:12:56.279+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:12:56.276+0000] {dag.py:3947} INFO - Setting next_dagrun for feature_pipeline to 2026-08-30 11:00:00+00:00, run_after=2026-08-30 12:00:00+00:00
 [2026-08-30T11:12:56.476+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/feature_pipeline_dag.py took 2.616 seconds
+[2026-08-30T11:13:27.025+0000] {processor.py:161} INFO - Started process (PID=426) to work on /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:13:27.028+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/feature_pipeline_dag.py for tasks to queue
+[2026-08-30T11:13:27.033+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:13:27.033+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:13:28.639+0000] {processor.py:840} INFO - DAG(s) 'feature_pipeline' retrieved from /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:13:28.717+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:13:28.716+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-30T11:13:29.204+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:13:29.203+0000] {dag.py:3947} INFO - Setting next_dagrun for feature_pipeline to 2026-08-30 11:00:00+00:00, run_after=2026-08-30 12:00:00+00:00
+[2026-08-30T11:13:29.252+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/feature_pipeline_dag.py took 2.247 seconds
+[2026-08-30T11:14:00.134+0000] {processor.py:161} INFO - Started process (PID=454) to work on /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:14:00.137+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/feature_pipeline_dag.py for tasks to queue
+[2026-08-30T11:14:00.145+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:14:00.144+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:14:05.378+0000] {processor.py:840} INFO - DAG(s) 'feature_pipeline' retrieved from /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:14:06.111+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:14:06.109+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-30T11:14:06.170+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:14:06.169+0000] {dag.py:3947} INFO - Setting next_dagrun for feature_pipeline to 2026-08-30 11:00:00+00:00, run_after=2026-08-30 12:00:00+00:00
+[2026-08-30T11:14:06.233+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/feature_pipeline_dag.py took 6.126 seconds
+[2026-08-30T11:14:35.886+0000] {processor.py:161} INFO - Started process (PID=472) to work on /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:14:35.888+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/feature_pipeline_dag.py for tasks to queue
+[2026-08-30T11:14:35.893+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:14:35.892+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:14:37.937+0000] {processor.py:840} INFO - DAG(s) 'feature_pipeline' retrieved from /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:14:38.600+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:14:38.599+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-30T11:14:39.093+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:14:39.093+0000] {dag.py:3947} INFO - Setting next_dagrun for feature_pipeline to 2026-08-30 11:00:00+00:00, run_after=2026-08-30 12:00:00+00:00
+[2026-08-30T11:14:39.285+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/feature_pipeline_dag.py took 3.421 seconds
+[2026-08-30T11:15:10.983+0000] {processor.py:161} INFO - Started process (PID=522) to work on /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:15:10.987+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/feature_pipeline_dag.py for tasks to queue
+[2026-08-30T11:15:07.610+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:15:07.608+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:15:09.858+0000] {processor.py:840} INFO - DAG(s) 'feature_pipeline' retrieved from /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:15:09.942+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:15:09.941+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-30T11:15:09.997+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:15:09.997+0000] {dag.py:3947} INFO - Setting next_dagrun for feature_pipeline to 2026-08-30 11:00:00+00:00, run_after=2026-08-30 12:00:00+00:00
+[2026-08-30T11:15:10.041+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/feature_pipeline_dag.py took 2.477 seconds
+[2026-08-30T11:15:40.255+0000] {processor.py:161} INFO - Started process (PID=552) to work on /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:15:40.258+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/feature_pipeline_dag.py for tasks to queue
+[2026-08-30T11:15:40.263+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:15:40.262+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:15:41.685+0000] {processor.py:840} INFO - DAG(s) 'feature_pipeline' retrieved from /opt/airflow/dags/feature_pipeline_dag.py
+[2026-08-30T11:15:41.760+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:15:41.759+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-08-30T11:15:41.838+0000] {logging_mixin.py:188} INFO - [2026-08-30T11:15:41.838+0000] {dag.py:3947} INFO - Setting next_dagrun for feature_pipeline to 2026-08-30 11:00:00+00:00, run_after=2026-08-30 12:00:00+00:00
+[2026-08-30T11:15:42.331+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/feature_pipeline_dag.py took 2.094 seconds
